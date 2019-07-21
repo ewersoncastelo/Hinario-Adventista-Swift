@@ -1,0 +1,412 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+body {
+    color: #444;
+    font-family: "Avenir",Helvetica,Arial,sans-serif;
+        /*    line-height: 1.5;*/
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+.clearfix::before, .clearfix::after {
+    content: " ";
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+}
+.clearfix {
+    clear: both;
+}
+.object-fit_fill {
+    -o-object-fit: fill;
+    object-fit: fill;
+}
+
+.object-fit_contain {
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.object-fit_cover {
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.object-fit_none {
+    -o-object-fit: none;
+    object-fit: none;
+}
+
+.object-fit_scale-down {
+    -o-object-fit: scale-down;
+    object-fit: scale-down;
+}
+img, picture, video, embed {
+    max-width: 100%;
+}
+.img-class {
+    position: relative;
+    /* Rectangle: */
+    /* Sketch doesnt export pattern fills at this point */
+    background-image: radial-gradient(50% 100%, rgba(40,35,35,0.00) 0%, rgba(0,0,0,0.50) 100%);
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+    
+    filter: blur(0.7px) contrast(0.6);
+    background:rgba(0,0,0,0.6);
+    
+}
+
+#imagem-topo {
+    height: 250px;
+    position: relative;
+	display: none;
+}
+.heading {
+    padding: 20px 0 0 0;
+    color: white;
+    font-weight: 500;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.authing {
+    bottom: 0;
+    color: #FFE191;
+    display: flex;
+    flex-direction: column;
+    font-weight: normal;
+    justify-content: center;
+    margin: auto;
+    padding: 0 10px 10px 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    width: 50%;
+    font-weight: bold;
+}
+h1 {
+    font-size: 4.7vw;
+}
+h2 {
+    font-size: 3.7vw;
+}
+h3 {
+    font-size: 3.0vw;
+    position: relative;
+}
+/*p {*/
+/*    font-size: 2.0vw;*/
+/*}*/
+
+#estrofe-prim, #coro, #estrofe-segun, #estrofe-terc, #estrofe-quart, #estrofe-quin {
+    color: #567891;
+    letter-spacing: 0px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px 0 15px 0;
+    text-align: center;
+}
+#ads-google {
+    width: 100%;
+    height: 50px;
+}
+.content {
+/*    color: #4A4A4A;*/
+    color: #939393;
+    letter-spacing: 0px;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+    text-align: center;
+    position: relative;
+    top: 5px;
+    margin: 0 auto;
+    width: 80%;
+    line-height: 1.0em;
+/*    font-size: 3.0vw;*/
+}
+
+/*-----------------------------------------até 2040px-------------------------------------------------*/
+@media screen and (max-width: 2040px) {
+    #imagem-topo img {
+        width: 2040px;
+        height: 250px;
+        object-fit: cover;
+		display: none;
+    }
+    
+}
+
+/*-----------------------------------------até 1128-------------------------------------------------*/
+@media screen and (max-width: 1128px) {
+    #imagem-topo img {
+        width: 1128px;
+        height: 175px;
+        object-fit: cover;
+    }
+    #imagem-topo {
+        height: 175px;
+		display: none;
+    }
+    
+    h1 {
+        font-size: 5.0vw;
+    }
+    h4 {
+        font-size: 1.5vw;
+    }
+    .heading {
+        padding: 15px 0 0 0;
+    }
+    .authing {
+        width: 50%;
+        padding: 0 10px 10px 0;
+    }
+    .content {
+/*        font-size: 3.9vw;*/
+        width: 90%;
+    }
+    h3 {
+        font-size: 7.0vw;
+    }
+
+}
+/*-----------------------------------------até 1024px-------------------------------------------------*/
+@media screen and (max-width: 1024px) {
+    #imagem-topo img {
+        width: 1024px;
+        height: 175px;
+        object-fit: cover;
+    }
+    #imagem-topo {
+        height: 175px;
+		display: none;
+    }
+    
+    h1 {
+        font-size: 5.0vw;
+    }
+    h4 {
+        font-size: 1.5vw;
+    }
+    .heading {
+        padding: 15px 0 0 0;
+    }
+    .authing {
+        width: 50%;
+        padding: 0 10px 10px 0;
+    }
+    
+    .content {
+/*        font-size: 4.3vw;*/
+        width: 90%;
+    }
+    h3 {
+        font-size: 7.9vw;
+    }
+
+}
+
+/*-----------------------------------------até 800px-------------------------------------------------*/
+@media screen and (max-width: 800px) {
+    #imagem-topo img {
+        width: 800px;
+        height: 175px;
+        object-fit: cover;
+		display: none;
+    }
+    h1 {
+        font-size: 6.2vw;
+    }
+    h4 {
+        font-size: 1.8vw;
+    }
+    .heading {
+        padding: 8px 0 0 0;
+    }
+    .authing {
+        width: 60%;
+        padding: 0 5px 5px 0;
+    }
+    .content {
+/*        font-size: 5.3vw;*/
+        width: 90%;
+    }
+    h3 {
+        font-size: 8.2vw;
+    }
+    
+
+}
+/*-----------------------------------------até 718px-------------------------------------------------*/
+@media screen and (max-width: 718px) {
+    #imagem-topo img {
+        width: 718px;
+        height: 175px;
+        object-fit: cover;
+		display: none;
+    }
+    h1 {
+        font-size: 7.4vw;
+    }
+    h4 {
+        font-size: 2.0vw;
+    }
+    .heading {
+        padding: 8px 0 0 0;
+    }
+    .authing {
+        width: 60%;
+        padding: 0 5px 5px 0;
+    }
+    .content {
+/*        font-size: 5.8vw;*/
+        width: 90%;
+    }
+    h3 {
+        font-size: 8.8vw;
+    }
+
+}
+/*-----------------------------------------até 640px-------------------------------------------------*/
+@media screen and (max-width: 640px) {
+    #imagem-topo img {
+        width: 640px;
+        height: 175px;
+        object-fit: cover;
+    }
+    #imagem-topo {
+        height: 175px;
+		display: none;
+    }
+    h1 {
+        font-size: 7.2vw;
+    }
+    h4 {
+        font-size: 2.2vw;
+    }
+    .heading {
+        padding: 8px 0 0 0;
+    }
+    .authing {
+        width: 60%;
+        padding: 0 5px 5px 0;
+    }
+    .content {
+/*        font-size: 6.0vw;*/
+        width: 90%;
+    }
+    h3 {
+        font-size: 10vw;
+    }
+}
+/*-----------------------------------------até 520px-------------------------------------------------*/
+@media screen and (max-width: 520px) {
+    #imagem-topo {
+        height: 150px;
+		display: none;
+    }
+    #imagem-topo img {
+        width: 520px;
+        height: 150px;
+        object-fit: cover;
+    }
+    h1 {
+        font-size: 8.3vw;
+    }
+    h4 {
+        font-size: 2.6vw;
+    }
+    .heading {
+        padding: 10px 0 0 0;
+    }
+    .authing {
+        width: 70%;
+        padding: 0 5px 5px 0;
+    }
+    .content {
+/*        font-size: 6.7vw;*/
+        width: 90%;
+    }
+    h3 {
+        font-size: 10vw;
+    }
+}
+/*-----------------------------------------até 320px-------------------------------------------------*/
+@media screen and (max-width: 320px) {
+    #imagem-topo img {
+        width: 320px;
+        height: 150px;
+        object-fit: cover;
+    }
+    #imagem-topo {
+        height: 150px;
+		display: none;
+    }
+    h1 {
+        font-size: 8.9vw;
+    }
+    h4 {
+        font-size: 3.2vw;
+    }
+    .authing {
+        width: 75%;
+    }
+    .content {
+/*        font-size: 7.3vw;*/
+        width: 90%;
+    }
+    h3 {
+        font-size: 12.3vw;
+    }
+
+}
