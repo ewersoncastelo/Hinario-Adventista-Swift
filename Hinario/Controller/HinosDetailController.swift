@@ -28,8 +28,6 @@ class HinosDetailController: UIViewController, UIScrollViewDelegate {
 	
 	var hinarios: Hinario!
 	
-	
-	
 	//Variavel da Classe favoritos
 	var listaFavoritos:[Favorito] = []
 	var favoritado:Bool = false
