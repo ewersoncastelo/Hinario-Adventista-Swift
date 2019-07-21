@@ -14,8 +14,6 @@ import SVProgressHUD
 var currentValueFont = UserDefaults.standard.string(forKey: "fontSelected")
 var currentColorBack = UserDefaults.standard.string(forKey: "colorBackSelected")
 
-var sharedSecret = "4ff27f537d914d3989cccce9f5cc9cfe"
-
 class NetworkActivityIndicatorManager: NSObject {
 	private static var loadingCount = 0
 	
@@ -39,9 +37,6 @@ class NetworkActivityIndicatorManager: NSObject {
 
 class HinosController: UITableViewController {
 	
-	// MARK: - App In Purchase
-	let bundleID = "swift.net.br.HinarioAdventista7Dia"
-
 	let cellId = "cellId"
 
 	var favoritableHinos = [Hinario]()
@@ -75,13 +70,13 @@ class HinosController: UITableViewController {
 		tableView.separatorStyle = UITableViewCell.SeparatorStyle.singleLine
 		tableView.separatorColor = UIColor.verdeTitulo
 		
-//		navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Sair", style: .plain, target: self, action: #selector(handleLogout))
+		navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Sair", style: .plain, target: self, action: #selector(handleLogout))
 		
 		navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Favoritos", style: .plain, target: self, action: #selector(handleBookmark))
 		
-		navigationItem.rightBarButtonItems = [UIBarButtonItem(title: "Sair", style: .plain, target: self
-			, action: #selector(handleLogout)), UIBarButtonItem(title: "Remover", style: .plain, target: self
-				, action: #selector(handleADSremove))]
+//		navigationItem.rightBarButtonItems = [UIBarButtonItem(title: "Sair", style: .plain, target: self
+//			, action: #selector(handleLogout)), UIBarButtonItem(title: "Remover", style: .plain, target: self
+//				, action: #selector(handleADSremove))]
 		
 		//UIsearchBar
 		searchBarImplementing()
@@ -111,11 +106,9 @@ class HinosController: UITableViewController {
 		bannerView = GADBannerView(adSize: kGADAdSizeBanner)
 		addBannerViewToView(bannerView)
 		bannerView.rootViewController = self
-		bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716" //Apenas Para Testes
-//		bannerView.adUnitID = "ca-app-pub-1249842998763621/9331041913"
+//		bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716" //Apenas Para Testes
+		bannerView.adUnitID = "ca-app-pub-1249842998763621/9331041913"
 		bannerView.load(GADRequest())
-//
-//		request.testDevices = @[ kGADSimulatorID ]
 		
 		//Tirei do ViewDidAppear
 		NotificationCenter.default.addObserver(self, selector: #selector(reachabilityChanged(note:)), name: .reachabilityChanged, object: reachability)
@@ -127,21 +120,13 @@ class HinosController: UITableViewController {
 
 	}
 	
-	//MARK: - App In Purschase Functions
-	@objc fileprivate func handleADSremove() {
-		print("Tentando remover Publicidade")
-	}
-	
 	func addBannerViewToView(_ bannerView: GADBannerView) {
 		bannerView.translatesAutoresizingMaskIntoConstraints = false
 		view.addSubview(bannerView)
 		if #available(iOS 11.0, *) {
-			// In iOS 11, we need to constrain the view to the safe area.
 			positionBannerViewFullWidthAtBottomOfSafeArea(bannerView)
 		}
 		else {
-			// In lower iOS versions, safe area is not available so we use
-			// bottom layout guide and view edges.
 			positionBannerViewFullWidthAtBottomOfView(bannerView)
 		}
 	}
@@ -185,8 +170,8 @@ class HinosController: UITableViewController {
 
 	private func fetchBannerADS() {
 		//Primeiro Banner
-		interstitial = GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/4411468910") //Apenas Para Testes
-//		interstitial = GADInterstitial(adUnitID: "ca-app-pub-1249842998763621/1161129630")
+//		interstitial = GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/4411468910") //Apenas Para Testes
+		interstitial = GADInterstitial(adUnitID: "ca-app-pub-1249842998763621/1161129630")
 		let request = GADRequest()
 		interstitial?.load(request)
 	}
