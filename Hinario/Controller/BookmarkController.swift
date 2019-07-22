@@ -47,8 +47,8 @@ class BookmarkController: UITableViewController {
 	
 	func fetchBannerADSfavor() {
 		//Primeiro Banner
-//		interstitial = GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/4411468910") //Apenas Para Testes
-		interstitial = GADInterstitial(adUnitID: "ca-app-pub-1249842998763621/1161129630")
+		interstitial = GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/4411468910") //Apenas Para Testes
+//		interstitial = GADInterstitial(adUnitID: "ca-app-pub-1249842998763621/1161129630")
 		let request = GADRequest()
 		interstitial?.load(request)
 	}

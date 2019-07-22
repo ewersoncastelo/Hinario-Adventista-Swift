@@ -15,9 +15,9 @@
 		900E494A20546FB200A7787F /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900E494920546FB200A7787F /* Page.swift */; };
 		9028CF712014E5EF006F6DF5 /* HinarioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9028CF702014E5EF006F6DF5 /* HinarioUITests.swift */; };
 		9028CF782014E612006F6DF5 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902EBE902014B69800DFD41C /* SnapshotHelper.swift */; };
+		9038D18722E544F300AC8C56 /* AlertExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9038D18622E544F300AC8C56 /* AlertExt.swift */; };
 		907091E22034782900E8AD8E /* Favorito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907091E12034782900E8AD8E /* Favorito.swift */; };
 		9080DAFD1FF7093D0081DFA7 /* BookmarkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9080DAFC1FF7093D0081DFA7 /* BookmarkController.swift */; };
-		90A6525E2259873900375F4A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A6525D2259873900375F4A /* StoreKit.framework */; };
 		90C9FD09203080160027650B /* BookmarkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C9FD08203080160027650B /* BookmarkCell.swift */; };
 		90CBDBD71FD88B580080BE00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CBDBD61FD88B580080BE00 /* AppDelegate.swift */; };
 		90CBDBD91FD88B580080BE00 /* HinosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CBDBD81FD88B580080BE00 /* HinosController.swift */; };
@@ -59,10 +59,10 @@
 		9028CF702014E5EF006F6DF5 /* HinarioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HinarioUITests.swift; sourceTree = "<group>"; };
 		9028CF722014E5EF006F6DF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		902EBE902014B69800DFD41C /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = HinarioUITests/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
+		9038D18622E544F300AC8C56 /* AlertExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertExt.swift; sourceTree = "<group>"; };
 		907091E12034782900E8AD8E /* Favorito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorito.swift; sourceTree = "<group>"; };
 		9080DAFC1FF7093D0081DFA7 /* BookmarkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkController.swift; sourceTree = "<group>"; };
 		908A875420017E24008DD6CD /* Hinário.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Hinário.entitlements"; sourceTree = "<group>"; };
-		90A6525D2259873900375F4A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		90C9FD08203080160027650B /* BookmarkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkCell.swift; sourceTree = "<group>"; };
 		90CBDBD31FD88B580080BE00 /* Hinario.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hinario.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90CBDBD61FD88B580080BE00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -96,7 +96,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEFEBD93E2BE94403C343482 /* Pods_Hinario.framework in Frameworks */,
-				90A6525E2259873900375F4A /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +181,7 @@
 				90CBDBDD1FD88B580080BE00 /* Assets.xcassets */,
 				900887ED22E524B800642894 /* GoogleService-Info.plist */,
 				90001C45205D93CC00BA06BF /* Extension.swift */,
+				9038D18622E544F300AC8C56 /* AlertExt.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -199,7 +199,6 @@
 		A8F3550E69A73F702DC41B42 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				90A6525D2259873900375F4A /* StoreKit.framework */,
 				22AC286F9481281BCD9147D0 /* Pods_Hinario.framework */,
 			);
 			name = Frameworks;
@@ -277,7 +276,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.Keychain = {
 								enabled = 1;
@@ -408,6 +407,7 @@
 				9080DAFD1FF7093D0081DFA7 /* BookmarkController.swift in Sources */,
 				900A165D1FF274B400688AAA /* UIColor+theme.swift in Sources */,
 				90FA153A20024BA2005D4F6B /* HinosCell.swift in Sources */,
+				9038D18722E544F300AC8C56 /* AlertExt.swift in Sources */,
 				900E494620536BD200A7787F /* Login.swift in Sources */,
 				900E494A20546FB200A7787F /* Page.swift in Sources */,
 				90CBDBD91FD88B580080BE00 /* HinosController.swift in Sources */,

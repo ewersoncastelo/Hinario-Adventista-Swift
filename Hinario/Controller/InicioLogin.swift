@@ -11,6 +11,7 @@ import Firebase
 import FBSDKLoginKit
 import GoogleSignIn
 import SVProgressHUD
+import LocalAuthentication
 
 
 class InicioLogin: UIViewController {
@@ -45,7 +46,9 @@ class InicioLogin: UIViewController {
 		button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
 		button.setTitleColor( .white, for: .normal)
 		button.backgroundColor = .blueFace
-		button.alpha = 0.7
+		button.alpha = 0.9
+		button.layer.cornerRadius = 7
+		button.layer.masksToBounds = true
 		//Add target to touch buttom
 		button.addTarget(self, action: #selector(handleFace), for: .touchUpInside)
 		return button
@@ -57,9 +60,26 @@ class InicioLogin: UIViewController {
 		button.translatesAutoresizingMaskIntoConstraints = false
 		button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
 		button.setTitleColor( .white, for: .normal)
-		button.alpha = 0.7
+		button.alpha = 0.9
+		button.layer.cornerRadius = 7
+		button.layer.masksToBounds = true
 		button.backgroundColor = UIColor(red: 190/255, green: 194/255, blue: 201/255, alpha: 1)
 		button.addTarget(self, action: #selector(handleAnonymos), for: .touchUpInside)
+		return button
+	}()
+	
+	private let touchFaceButton: UIButton = {
+		let button = UIButton(type: .system)
+		button.setTitle("Acesso Digital", for: .normal)
+		button.translatesAutoresizingMaskIntoConstraints = false
+		button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
+		button.setTitleColor( .white, for: .normal)
+		button.alpha = 0.9
+		//set radius corner button
+		button.layer.cornerRadius = 7
+		button.layer.masksToBounds = true
+		button.backgroundColor = UIColor(red: 100/255, green: 177/255, blue: 145/255, alpha: 1)
+		button.addTarget(self, action: #selector(handleTouch), for: .touchUpInside)
 		return button
 	}()
 	
@@ -77,22 +97,6 @@ class InicioLogin: UIViewController {
 		
 		SVProgressHUD.dismiss()
 		
-	}
-	
-	@objc func handleAnonymos() {
-		Auth.auth().signInAnonymously() { (user, error) in
-			if let error = error {
-				print("Login error: \(error.localizedDescription)")
-				let alertController = UIAlertController(title: "Atenção! Houve Algum Erro!", message: error.localizedDescription, preferredStyle: .alert)
-				let okayAction = UIAlertAction(title: "OK", style: .destructive, handler: nil)
-				alertController.addAction(okayAction)
-				self.present(alertController, animated: true, completion: nil)
-				
-				return
-			}
-			print("Conectado Anônimamente")
-			self.userLogado()
-		}
 	}
 	
 	@objc func handleFace() {
@@ -128,6 +132,46 @@ class InicioLogin: UIViewController {
 		}
 	}
 	
+	
+	@objc fileprivate func handleTouch(){
+		let context = LAContext()
+		
+		if context.canEvaluatePolicy(.deviceOwnerAuthentication, error: nil){
+			context.evaluatePolicy(.deviceOwnerAuthentication, localizedReason: "Isso permite que você se conecte com segurança no aplicativo") { (sucess, error) in
+				
+				if sucess {
+					Auth.auth().signInAnonymously() { (user, error) in
+						print("Conectado Anônimamente")
+						self.userLogado()
+					}
+				} else {
+					AlertExt.showBasic(title: "Ops.. Houve algum erro", msg: "Tente Novamente ou verifique se seu dispositivo suporta este tipo de acesso", vc: self)
+				}
+				
+			}
+		} else {
+			AlertExt.showBasic(title: "Não autorizado", msg: "Autenticação de segurança não permitida", vc: self)
+		}
+		
+		
+	}
+	
+	@objc func handleAnonymos() {
+		Auth.auth().signInAnonymously() { (user, error) in
+			if let error = error {
+				print("Login error: \(error.localizedDescription)")
+				let alertController = UIAlertController(title: "Atenção! Houve Algum Erro!", message: error.localizedDescription, preferredStyle: .alert)
+				let okayAction = UIAlertAction(title: "OK", style: .destructive, handler: nil)
+				alertController.addAction(okayAction)
+				self.present(alertController, animated: true, completion: nil)
+				
+				return
+			}
+			print("Conectado Anônimamente")
+			self.userLogado()
+		}
+	}
+	
 	func userLogado() {
 		//Present the main view
 		let hinosController = HinosController()
@@ -160,7 +204,7 @@ class InicioLogin: UIViewController {
 	}
 	
 	fileprivate func setupBottomControls() {
-		let bottomControlsStackView = UIStackView(arrangedSubviews: [/*googleButton,*/faceButton, anonymosButton])
+		let bottomControlsStackView = UIStackView(arrangedSubviews: [/*googleButton,*/faceButton, touchFaceButton, anonymosButton])
 		bottomControlsStackView.translatesAutoresizingMaskIntoConstraints = false
 		bottomControlsStackView.distribution = .equalSpacing
 		bottomControlsStackView.alignment = .fill
@@ -172,7 +216,7 @@ class InicioLogin: UIViewController {
 			NSLayoutConstraint.activate([
 				bottomControlsStackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
 				bottomControlsStackView.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor),
-				bottomControlsStackView.heightAnchor.constraint(equalToConstant: 60),
+				bottomControlsStackView.heightAnchor.constraint(equalToConstant: 90),
 				bottomControlsStackView.widthAnchor.constraint(equalToConstant: 194),
 				])
 		} else {
