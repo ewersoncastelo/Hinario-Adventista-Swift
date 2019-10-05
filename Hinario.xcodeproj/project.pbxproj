@@ -13,8 +13,6 @@
 		900E494620536BD200A7787F /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900E494520536BD200A7787F /* Login.swift */; };
 		900E494820541B2800A7787F /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900E494720541B2800A7787F /* PageCell.swift */; };
 		900E494A20546FB200A7787F /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900E494920546FB200A7787F /* Page.swift */; };
-		9028CF712014E5EF006F6DF5 /* HinarioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9028CF702014E5EF006F6DF5 /* HinarioUITests.swift */; };
-		9028CF782014E612006F6DF5 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902EBE902014B69800DFD41C /* SnapshotHelper.swift */; };
 		9038D18722E544F300AC8C56 /* AlertExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9038D18622E544F300AC8C56 /* AlertExt.swift */; };
 		907091E22034782900E8AD8E /* Favorito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907091E12034782900E8AD8E /* Favorito.swift */; };
 		9080DAFD1FF7093D0081DFA7 /* BookmarkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9080DAFC1FF7093D0081DFA7 /* BookmarkController.swift */; };
@@ -35,16 +33,6 @@
 		BEFEBD93E2BE94403C343482 /* Pods_Hinario.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AC286F9481281BCD9147D0 /* Pods_Hinario.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		9028CF732014E5EF006F6DF5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 90CBDBCB1FD88B580080BE00 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 90CBDBD21FD88B580080BE00;
-			remoteInfo = "Hinário";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		22AC286F9481281BCD9147D0 /* Pods_Hinario.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hinario.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		386796B51EC0683DD4BB5A4F /* Pods-Hinario.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hinario.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hinario/Pods-Hinario.release.xcconfig"; sourceTree = "<group>"; };
@@ -55,10 +43,6 @@
 		900E494520536BD200A7787F /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		900E494720541B2800A7787F /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
 		900E494920546FB200A7787F /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
-		9028CF6E2014E5EF006F6DF5 /* HinarioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HinarioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9028CF702014E5EF006F6DF5 /* HinarioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HinarioUITests.swift; sourceTree = "<group>"; };
-		9028CF722014E5EF006F6DF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		902EBE902014B69800DFD41C /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = HinarioUITests/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		9038D18622E544F300AC8C56 /* AlertExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertExt.swift; sourceTree = "<group>"; };
 		907091E12034782900E8AD8E /* Favorito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorito.swift; sourceTree = "<group>"; };
 		9080DAFC1FF7093D0081DFA7 /* BookmarkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkController.swift; sourceTree = "<group>"; };
@@ -84,13 +68,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9028CF6B2014E5EF006F6DF5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C068D8A0CD23F7EE75E0E7C6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -102,22 +79,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9028CF6F2014E5EF006F6DF5 /* HinarioUITests */ = {
-			isa = PBXGroup;
-			children = (
-				902EBE902014B69800DFD41C /* SnapshotHelper.swift */,
-				9028CF702014E5EF006F6DF5 /* HinarioUITests.swift */,
-				9028CF722014E5EF006F6DF5 /* Info.plist */,
-			);
-			path = HinarioUITests;
-			sourceTree = "<group>";
-		};
 		90CBDBCA1FD88B580080BE00 = {
 			isa = PBXGroup;
 			children = (
 				908A875420017E24008DD6CD /* Hinário.entitlements */,
 				90CBDBD51FD88B580080BE00 /* Hinario */,
-				9028CF6F2014E5EF006F6DF5 /* HinarioUITests */,
 				90CBDBD41FD88B580080BE00 /* Products */,
 				FE77FDE834666AD41AFD82F0 /* Pods */,
 				A8F3550E69A73F702DC41B42 /* Frameworks */,
@@ -128,7 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				90CBDBD31FD88B580080BE00 /* Hinario.app */,
-				9028CF6E2014E5EF006F6DF5 /* HinarioUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -216,24 +181,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9028CF6D2014E5EF006F6DF5 /* HinarioUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9028CF752014E5EF006F6DF5 /* Build configuration list for PBXNativeTarget "HinarioUITests" */;
-			buildPhases = (
-				9028CF6A2014E5EF006F6DF5 /* Sources */,
-				9028CF6B2014E5EF006F6DF5 /* Frameworks */,
-				9028CF6C2014E5EF006F6DF5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9028CF742014E5EF006F6DF5 /* PBXTargetDependency */,
-			);
-			name = HinarioUITests;
-			productName = HinarioUITests;
-			productReference = 9028CF6E2014E5EF006F6DF5 /* HinarioUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		90CBDBD21FD88B580080BE00 /* Hinario */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90CBDBE51FD88B580080BE00 /* Build configuration list for PBXNativeTarget "Hinario" */;
@@ -260,20 +207,13 @@
 		90CBDBCB1FD88B580080BE00 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
+				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Ewerson Castelo";
 				TargetAttributes = {
-					9028CF6D2014E5EF006F6DF5 = {
-						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 1000;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 90CBDBD21FD88B580080BE00;
-					};
 					90CBDBD21FD88B580080BE00 = {
 						CreatedOnToolsVersion = 9.1;
 						LastSwiftMigration = 1000;
-						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
 								enabled = 0;
@@ -303,19 +243,11 @@
 			projectRoot = "";
 			targets = (
 				90CBDBD21FD88B580080BE00 /* Hinario */,
-				9028CF6D2014E5EF006F6DF5 /* HinarioUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9028CF6C2014E5EF006F6DF5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		90CBDBD11FD88B580080BE00 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -390,15 +322,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9028CF6A2014E5EF006F6DF5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9028CF712014E5EF006F6DF5 /* HinarioUITests.swift in Sources */,
-				9028CF782014E612006F6DF5 /* SnapshotHelper.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		90CBDBCF1FD88B580080BE00 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -426,14 +349,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		9028CF742014E5EF006F6DF5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 90CBDBD21FD88B580080BE00 /* Hinario */;
-			targetProxy = 9028CF732014E5EF006F6DF5 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
 		90CBDBDA1FD88B580080BE00 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -456,46 +371,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		9028CF762014E5EF006F6DF5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4TP5KVW8P3;
-				INFOPLIST_FILE = HinarioUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = swift.net.br.HinarioAdventista7Dia.HinarioUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Hinário";
-			};
-			name = Debug;
-		};
-		9028CF772014E5EF006F6DF5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4TP5KVW8P3;
-				INFOPLIST_FILE = HinarioUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = swift.net.br.HinarioAdventista7Dia.HinarioUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Hinário";
-			};
-			name = Release;
-		};
 		90CBDBE31FD88B580080BE00 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -608,6 +483,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SYMROOT = "$(BUILD_DIR)/Release$(EFFECTIVE_PLATFORM_NAME)";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -618,8 +494,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Hinário.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 4TP5KVW8P3;
 				INFOPLIST_FILE = Hinario/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -630,7 +505,9 @@
 				MARKETING_VERSION = 5.4.1;
 				PRODUCT_BUNDLE_IDENTIFIER = swift.net.br.HinarioAdventista7Dia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = YES;
+				PROVISIONING_PROFILE_SPECIFIER = "iOS Development Hinario";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -642,8 +519,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Hinário.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = 4TP5KVW8P3;
 				INFOPLIST_FILE = Hinario/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -654,29 +532,106 @@
 				MARKETING_VERSION = 5.4.1;
 				PRODUCT_BUNDLE_IDENTIFIER = swift.net.br.HinarioAdventista7Dia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = YES;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
+		90EAFC8123492C8E001392C6 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_MODULE_NAME = "$(PROJECT_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SYMROOT = "$(BUILD_DIR)/Release$(EFFECTIVE_PLATFORM_NAME)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Staging;
+		};
+		90EAFC8223492C8E001392C6 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 386796B51EC0683DD4BB5A4F /* Pods-Hinario.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Hinário.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 4TP5KVW8P3;
+				INFOPLIST_FILE = Hinario/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 5.4.1;
+				PRODUCT_BUNDLE_IDENTIFIER = swift.net.br.HinarioAdventista7Dia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "iOS Distribution Hinario";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "iOS Development Hinario";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9028CF752014E5EF006F6DF5 /* Build configuration list for PBXNativeTarget "HinarioUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9028CF762014E5EF006F6DF5 /* Debug */,
-				9028CF772014E5EF006F6DF5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		90CBDBCE1FD88B580080BE00 /* Build configuration list for PBXProject "Hinario" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				90CBDBE31FD88B580080BE00 /* Debug */,
 				90CBDBE41FD88B580080BE00 /* Release */,
+				90EAFC8123492C8E001392C6 /* Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -686,6 +641,7 @@
 			buildConfigurations = (
 				90CBDBE61FD88B580080BE00 /* Debug */,
 				90CBDBE71FD88B580080BE00 /* Release */,
+				90EAFC8223492C8E001392C6 /* Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
