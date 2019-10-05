@@ -14,6 +14,11 @@ import SystemConfiguration
 import GoogleMobileAds
 import Reachability
 
+import AppCenter
+import AppCenterAnalytics
+import AppCenterCrashes
+
+
 class CustomNavigationController: UINavigationController {
 	override var preferredStatusBarStyle: UIStatusBarStyle {
 		return .lightContent
@@ -23,11 +28,11 @@ class CustomNavigationController: UINavigationController {
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow?
+  var window: UIWindow?
 	
 	let reachability = Reachability()!
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 		
 		FirebaseApp.configure()
 		
@@ -72,9 +77,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		} catch {
 			print("Unable to start notifier")
 		}
-				
-        return true
-    }
+    
+    MSAppCenter.start("9a24c3ed-0628-4037-a909-1fe4b1447f04", withServices:[
+      MSAnalytics.self,
+      MSCrashes.self
+    ])
+    
+    
+    return true
+  }
 	
 	func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
 		let handled = ApplicationDelegate.shared.application(app, open: url, sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String, annotation: options[UIApplication.OpenURLOptionsKey.annotation])
@@ -109,6 +120,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		NotificationCenter.default.removeObserver(self)
 		reachability.stopNotifier()
 	}
+  
+  func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+    return .portrait
+  }
 
 }
 
