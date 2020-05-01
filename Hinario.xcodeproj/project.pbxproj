@@ -81,6 +81,7 @@
 		90E0E4902013D6030061F664 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		90FA153720019DE6005D4F6B /* Hinario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hinario.swift; sourceTree = "<group>"; };
 		90FA153920024BA2005D4F6B /* HinosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HinosCell.swift; sourceTree = "<group>"; };
+		EEBEA2B79C2FD35E9DE1C708 /* Pods-Hinario.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hinario.staging.xcconfig"; path = "Pods/Target Support Files/Pods-Hinario/Pods-Hinario.staging.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +210,7 @@
 			children = (
 				5F325AA1797D41420A5DFE27 /* Pods-Hinario.debug.xcconfig */,
 				386796B51EC0683DD4BB5A4F /* Pods-Hinario.release.xcconfig */,
+				EEBEA2B79C2FD35E9DE1C708 /* Pods-Hinario.staging.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -720,7 +722,7 @@
 		};
 		90FA7AF123496BAA00E0C626 /* Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 386796B51EC0683DD4BB5A4F /* Pods-Hinario.release.xcconfig */;
+			baseConfigurationReference = EEBEA2B79C2FD35E9DE1C708 /* Pods-Hinario.staging.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Hinário.entitlements";
