@@ -149,6 +149,7 @@ class Login: UIViewController, UICollectionViewDataSource, UICollectionViewDeleg
 			//Present the main view
 			let hinoPageLogin = InicioLogin()
 			self.present(hinoPageLogin, animated: true, completion: nil)
+			
 		}
 	}
 	
@@ -175,7 +176,6 @@ class Login: UIViewController, UICollectionViewDataSource, UICollectionViewDeleg
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 		return CGSize(width: view.frame.width, height: view.frame.height)
 	}
-	
 	
 	override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
 		

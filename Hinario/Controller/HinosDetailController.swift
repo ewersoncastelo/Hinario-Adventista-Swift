@@ -24,7 +24,8 @@ extension UIApplication {
 
 class HinosDetailController: UIViewController, UIScrollViewDelegate {
 	
-	let reachability = Reachability()
+//	let reachability = Reachability()
+	let reachability = try? Reachability()
 	
 	var hinarios: Hinario!
 	
@@ -638,7 +639,7 @@ class HinosDetailController: UIViewController, UIScrollViewDelegate {
 			if hinarios.musicURL == nil || hinarios.musicURL == "" {
 				print("Sem URL DE MUSICA PARA TOCAR")
 			} else {
-				switch reachability!.connection {
+				switch reachability?.connection {
 				case .wifi:
 					print("Play Music Já Baixada ou Online")
 					guard let musicURLonline = hinarios.musicURL else { return }
@@ -651,6 +652,10 @@ class HinosDetailController: UIViewController, UIScrollViewDelegate {
 					downloadFileFromURL(url: urlMusic)
 				case .none:
 					print("Não Baixar Audio File")
+				case .unavailable:
+					print("default value unavailable")
+				case .some(.none):
+					print("default value none")
 				}
 			}
 			
@@ -715,7 +720,7 @@ class HinosDetailController: UIViewController, UIScrollViewDelegate {
 	
 	func checkReachabilityStopMusic() {
 		
-		switch reachability!.connection {
+		switch reachability?.connection {
 		case .wifi:
 			if playPauseButton.isEnabled == false {
 				print("Botão PLAY Desativado")
@@ -740,6 +745,10 @@ class HinosDetailController: UIViewController, UIScrollViewDelegate {
 				print("Botão Stop Ativado")
 				audioPlayer.stop()
 			}
+		case .unavailable:
+			print("value default unavailable")
+		case .some(.none):
+			print("default value none")
 		}
 		
 	}

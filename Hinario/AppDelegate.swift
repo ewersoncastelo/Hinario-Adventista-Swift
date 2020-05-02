@@ -19,18 +19,20 @@ import AppCenterAnalytics
 import AppCenterCrashes
 
 
-class CustomNavigationController: UINavigationController {
-	override var preferredStatusBarStyle: UIStatusBarStyle {
-		return .lightContent
-	}
-}
+//class CustomNavigationController: UINavigationController {
+//	override var preferredStatusBarStyle: UIStatusBarStyle {
+//		return .lightContent
+//	}
+//}
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+	
   var window: UIWindow?
 	
-	let reachability = Reachability()!
+//	let reachability = Reachability()
+	let reachability = try? Reachability()
+	
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 		
@@ -46,7 +48,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		UINavigationBar.appearance().barTintColor = UIColor(red: 30/255, green: 68/255, blue: 76/255, alpha: 1)
 	
 		if #available(iOS 11.0, *) {
-			UINavigationBar.appearance().prefersLargeTitles = true
+			UINavigationBar.appearance().prefersLargeTitles = false
 			UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.verdeTitulo]
 			UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.verdeTitulo]
 		} else {
@@ -57,23 +59,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		window?.makeKeyAndVisible()
 		
 		//start for Hinos Controller Page
-		let hinosController = HinosController()
-		let navController = CustomNavigationController(rootViewController: hinosController)
+		let hinosController = InicioLogin()
+		let navController = UINavigationController(rootViewController: hinosController)
 		window?.rootViewController = navController
 		
-		reachability.whenReachable = { reachability in
+		reachability?.whenReachable = { reachability in
 			if reachability.connection == .wifi {
 				print("Reachable via WiFi")
 			} else {
 				print("Reachable via Cellular")
 			}
 		}
-		reachability.whenUnreachable = { _ in
+		reachability?.whenUnreachable = { _ in
 			print("Not reachable")
 		}
 		
 		do {
-			try reachability.startNotifier()
+			try reachability?.startNotifier()
 		} catch {
 			print("Unable to start notifier")
 		}
@@ -113,12 +115,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-		reachability.stopNotifier()
+			reachability?.stopNotifier()
     }
 	
 	deinit {
 		NotificationCenter.default.removeObserver(self)
-		reachability.stopNotifier()
+		reachability?.stopNotifier()
 	}
   
   func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {

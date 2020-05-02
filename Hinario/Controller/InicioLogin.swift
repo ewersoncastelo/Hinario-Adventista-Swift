@@ -175,7 +175,7 @@ class InicioLogin: UIViewController {
 	func userLogado() {
 		//Present the main view
 		let hinosController = HinosController()
-		let navController = CustomNavigationController(rootViewController: hinosController)
+		let navController = UINavigationController(rootViewController: hinosController)
 		self.present(navController, animated: true, completion: nil)
 	}
 	
@@ -214,7 +214,7 @@ class InicioLogin: UIViewController {
 		
 		if #available(iOS 11.0, *) {
 			NSLayoutConstraint.activate([
-				bottomControlsStackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
+				bottomControlsStackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 0),
 				bottomControlsStackView.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor),
 				bottomControlsStackView.heightAnchor.constraint(equalToConstant: 90),
 				bottomControlsStackView.widthAnchor.constraint(equalToConstant: 194),

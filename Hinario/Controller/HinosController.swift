@@ -43,7 +43,8 @@ class HinosController: UITableViewController {
 	var favoritosBook:BookmarkController?
 	
 	var filteredCandies = [Hinario]()
-	let reachability = Reachability()
+//	let reachability = Reachability()
+	let reachability = try? Reachability()
 	let searchController = UISearchController(searchResultsController: nil)
 	
 	// MARK: - Etablish Connection Firebase
@@ -261,7 +262,9 @@ class HinosController: UITableViewController {
 			let defaultAction = UIAlertAction(title: "OK", style: .destructive, handler: nil)
 			alertController.addAction(defaultAction)
 			self.present(alertController, animated: true, completion: nil)
-		}
+        case .unavailable:
+            print("Default Value Unavailable")
+        }
 	}
 	
 	override func viewDidAppear(_ animated: Bool) {
@@ -284,7 +287,7 @@ class HinosController: UITableViewController {
 		
 		let createBookmarkController = BookmarkController()
 		
-		let navControllerBookmark = CustomNavigationController(rootViewController: createBookmarkController)
+		let navControllerBookmark = UINavigationController(rootViewController: createBookmarkController)
 		
 		createBookmarkController.favoritosBook = self
 		

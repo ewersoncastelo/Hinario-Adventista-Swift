@@ -19,8 +19,8 @@ import Reachability
 
 class BookDetailController: UIViewController, UIScrollViewDelegate {
 
-	let reachability = Reachability()!
-	
+//	let reachability = Reachability()
+	let reachability = try? Reachability()
 	var hinariosFavDetail: Favorito!
 	
 	//Variavel da Classe favoritos
@@ -632,7 +632,7 @@ class BookDetailController: UIViewController, UIScrollViewDelegate {
 			if hinariosFavDetail.musicUrlFav == "nil" || hinariosFavDetail.musicUrlFav == "" {
 				print("Sem URL DE MUSICA PARA TOCAR")
 			} else {
-				switch reachability.connection {
+				switch reachability?.connection {
 				case .wifi:
 					print("Play Music Já Baixada ou Online")
 					let musicURLonline = hinariosFavDetail.musicUrlFav
@@ -645,6 +645,10 @@ class BookDetailController: UIViewController, UIScrollViewDelegate {
 					downloadFileFromURL(url: urlMusic)
 				case .none:
 					print("Não Baixar Audio File")
+				case .unavailable:
+					print("Value Default Unavailable")
+				case .some(.none):
+					print("default value none")
 				}
 			}
 			
@@ -709,7 +713,7 @@ class BookDetailController: UIViewController, UIScrollViewDelegate {
 	
 	func checkReachabilityStopMusic() {
 		
-		switch reachability.connection {
+		switch reachability?.connection {
 		case .wifi:
 			if playPauseButton.isEnabled == false {
 				print("Botão PLAY Desativado")
@@ -734,6 +738,10 @@ class BookDetailController: UIViewController, UIScrollViewDelegate {
 				print("Botão Stop Ativado")
 				audioPlayer.stop()
 			}
+		case .unavailable:
+			print("Value Default Unavailable")
+		case .some(.none):
+			print("default value none")
 		}
 		
 	}
@@ -757,7 +765,7 @@ class BookDetailController: UIViewController, UIScrollViewDelegate {
 			alertController.addAction(defaultAction)
 			self.present(alertController, animated: true, completion: nil)
 			
-			print("Internet Para Ativaro Play")
+			print("Internet Para Ativar o Play")
 			//Status Inicial do Botão PLAY
 			if playPauseButton.isEnabled == false {
 				print("Aguarde um instante...")
@@ -770,7 +778,9 @@ class BookDetailController: UIViewController, UIScrollViewDelegate {
 			let defaultAction = UIAlertAction(title: "OK", style: .destructive, handler: nil)
 			alertController.addAction(defaultAction)
 			self.present(alertController, animated: true, completion: nil)
-		}
+        case .unavailable:
+            print("Value default unavailable")
+        }
 	}
 	
 	private func animateView(view: UIView, toHidden hidden: Bool) {
