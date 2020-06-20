@@ -11,12 +11,11 @@ import UIKit
 class HinosCell: UITableViewCell {
 	
 	var companyTest: Hinario? {
-		didSet {
-	  		//Configurar a cell
-	  		nameHino.text = companyTest?.name
-	  		numberHino.text = companyTest?.number
-	  		authHino.text = companyTest?.compositor
-		}
+        didSet {
+            nameHino.text = companyTest?.name
+            numberHino.text = companyTest?.number
+            authHino.text = companyTest?.compositor
+        }
 	}
 	
 	let imageHino: UIImageView = {
@@ -28,7 +27,7 @@ class HinosCell: UITableViewCell {
 		imageView.layer.borderWidth = 0.2
 		imageView.layer.borderColor = UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1).cgColor
 		imageView.layer.masksToBounds = true
-		//define a imagem como circular
+		//Define an imagem like circle
 		imageView.layer.cornerRadius = 30
 		imageView.clipsToBounds = true
 		return imageView
@@ -41,7 +40,6 @@ class HinosCell: UITableViewCell {
 		label.font = UIFont.preferredFont(forTextStyle: .headline)
 		label.lineBreakMode = NSLineBreakMode.byTruncatingTail
 		label.numberOfLines = 0
-//		label.backgroundColor = .green
 		return label
 	}()
 	
@@ -50,7 +48,6 @@ class HinosCell: UITableViewCell {
 		label.translatesAutoresizingMaskIntoConstraints = false
 		label.textColor = .tituloDois
 		label.font = UIFont.preferredFont(forTextStyle: .subheadline)
-//		label.backgroundColor = .black
 		return label
 	}()
 	
@@ -59,16 +56,13 @@ class HinosCell: UITableViewCell {
 		label.translatesAutoresizingMaskIntoConstraints = false
 		label.textColor = .tituloTres
 		label.font = UIFont.preferredFont(forTextStyle: .footnote)
-//		label.backgroundColor = .blue
 		return label
 	}()
 	
 	
 	override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
 		 super.init(style: style, reuseIdentifier: reuseIdentifier)
-		
 		setupViews()
-	
 	}
 	
 	func setupViews() {
@@ -95,7 +89,7 @@ class HinosCell: UITableViewCell {
 		allItemsCellStackView.spacing = 5
 		addSubview(allItemsCellStackView)
 		
-		//Constraints StackViewItem e Image
+		//Constraints StackViewItem and Image
 		if #available(iOS 11.0, *) {
 			allItemsCellStackView.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 10).isActive = true
 			allItemsCellStackView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 1).isActive = true
@@ -107,8 +101,7 @@ class HinosCell: UITableViewCell {
 			allItemsCellStackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 1).isActive = true
 			allItemsCellStackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 10).isActive = true
 		}
-
-		
+	
 	}
 	
 	required init?(coder aDecoder: NSCoder) {

@@ -74,24 +74,11 @@ class Login: UIViewController, UICollectionViewDataSource, UICollectionViewDeleg
 		view.addSubview(skipButton)
 		view.addSubview(nextButton)
 		
-		if #available(iOS 11.0, *) {
-			collectionView.anchorToTop(view.safeAreaLayoutGuide.topAnchor, left: view.safeAreaLayoutGuide.leftAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.safeAreaLayoutGuide.rightAnchor)
-			
-			pageControlBottomAnchor = pageControl.anchor(nil, left: view.safeAreaLayoutGuide.leftAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.safeAreaLayoutGuide.rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 30)[1]
-			
-			skipButtonBottomAnchor = skipButton.anchor(nil, left: view.safeAreaLayoutGuide.leftAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, right: nil, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 60, heightConstant: 50)[1]
-			
-			nextButtonBottomAnchor = nextButton.anchor(nil, left: nil, bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.safeAreaLayoutGuide.rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 80, heightConstant: 50)[0]
-			
-		} else {
-			collectionView.anchorToTop(view.topAnchor, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor)
-	
-			pageControlBottomAnchor = pageControl.anchor(nil, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 40)[1]
-		
-			skipButtonBottomAnchor = skipButton.anchor(nil, left: view.leftAnchor, bottom: view.bottomAnchor, right: nil, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 60, heightConstant: 50)[1]
-			
-			nextButtonBottomAnchor = nextButton.anchor(nil, left: nil, bottom: view.bottomAnchor, right: view.rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 80, heightConstant: 50)[0]
-		}
+        collectionView.anchorToTop(view.topAnchor, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor)
+        pageControlBottomAnchor = pageControl.anchor(nil, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 40)[1]
+		skipButtonBottomAnchor = skipButton.anchor(nil, left: view.leftAnchor, bottom: view.bottomAnchor, right: nil, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 60, heightConstant: 50)[1]
+		nextButtonBottomAnchor = nextButton.anchor(nil, left: nil, bottom: view.bottomAnchor, right: view.rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 80, heightConstant: 50)[0]
+
 		
 		registerCells()
 	}
@@ -121,6 +108,7 @@ class Login: UIViewController, UICollectionViewDataSource, UICollectionViewDeleg
 	@objc func handleSkip() {
 		//Present the main view
 		let hinoPageLogin = InicioLogin()
+        hinoPageLogin.modalPresentationStyle = .fullScreen
 		self.present(hinoPageLogin, animated: true, completion: nil)
 	}
 	
@@ -145,9 +133,9 @@ class Login: UIViewController, UICollectionViewDataSource, UICollectionViewDeleg
 	
 	func goToLoginScreen() {
 		if pageControl.currentPage == 4 {
-			print("Na tela do Login")
-			//Present the main view
 			let hinoPageLogin = InicioLogin()
+            // force presentation in fullscreen mode
+            hinoPageLogin.modalPresentationStyle = .fullScreen
 			self.present(hinoPageLogin, animated: true, completion: nil)
 			
 		}
@@ -187,10 +175,7 @@ class Login: UIViewController, UICollectionViewDataSource, UICollectionViewDeleg
 			self.collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
 		}
 	}
-	
 
-	
-	
 }
 
 

@@ -12,7 +12,6 @@ class PageCell: UICollectionViewCell {
 	
 	var page: Page? {
 		didSet {
-			
 			guard let page = page else { return }
 			
 			imageView.image = UIImage(named: page.imageName)
@@ -35,7 +34,6 @@ class PageCell: UICollectionViewCell {
 	
 	override init(frame: CGRect) {
 		super.init(frame: frame)
-		
 		setupViews()
 	}
 	

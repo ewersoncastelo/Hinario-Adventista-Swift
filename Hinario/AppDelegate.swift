@@ -19,11 +19,11 @@ import AppCenterAnalytics
 import AppCenterCrashes
 
 
-//class CustomNavigationController: UINavigationController {
-//	override var preferredStatusBarStyle: UIStatusBarStyle {
-//		return .lightContent
-//	}
-//}
+class CustomNavigationController: UINavigationController {
+	override var preferredStatusBarStyle: UIStatusBarStyle {
+		return .lightContent
+	}
+}
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -48,7 +48,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		UINavigationBar.appearance().barTintColor = UIColor(red: 30/255, green: 68/255, blue: 76/255, alpha: 1)
 	
 		if #available(iOS 11.0, *) {
-			UINavigationBar.appearance().prefersLargeTitles = false
+			UINavigationBar.appearance().prefersLargeTitles = true
 			UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.verdeTitulo]
 			UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.verdeTitulo]
 		} else {
@@ -59,8 +59,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		window?.makeKeyAndVisible()
 		
 		//start for Hinos Controller Page
-		let hinosController = InicioLogin()
-		let navController = UINavigationController(rootViewController: hinosController)
+		let hinosController = HinosController()
+		let navController = CustomNavigationController(rootViewController: hinosController)
 		window?.rootViewController = navController
 		
 		reachability?.whenReachable = { reachability in

@@ -19,7 +19,7 @@ class BookmarkCell: UITableViewCell {
 		imageView.layer.borderWidth = 0.2
 		imageView.layer.borderColor = UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1).cgColor
 		imageView.layer.masksToBounds = true
-		//define a imagem como circular
+        //Define an imagem like circle
 		imageView.layer.cornerRadius = 30
 		imageView.clipsToBounds = true
 		return imageView
@@ -32,7 +32,6 @@ class BookmarkCell: UITableViewCell {
 		label.font = UIFont.preferredFont(forTextStyle: .headline)
 		label.lineBreakMode = NSLineBreakMode.byTruncatingTail
 		label.numberOfLines = 0
-		//		label.backgroundColor = .green
 		return label
 	}()
 	
@@ -41,7 +40,6 @@ class BookmarkCell: UITableViewCell {
 		label.translatesAutoresizingMaskIntoConstraints = false
 		label.textColor = .tituloDois
 		label.font = UIFont.preferredFont(forTextStyle: .subheadline)
-		//		label.backgroundColor = .black
 		return label
 	}()
 	
@@ -50,16 +48,13 @@ class BookmarkCell: UITableViewCell {
 		label.translatesAutoresizingMaskIntoConstraints = false
 		label.textColor = .tituloTres
 		label.font = UIFont.preferredFont(forTextStyle: .footnote)
-		//		label.backgroundColor = .blue
 		return label
 	}()
 	
 	
 	override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
 		super.init(style: style, reuseIdentifier: reuseIdentifier)
-		
 		setupViews()
-		
 	}
 	
 	func setupViews() {
@@ -98,7 +93,6 @@ class BookmarkCell: UITableViewCell {
 			allItemsCellStackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 1).isActive = true
 			allItemsCellStackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 10).isActive = true
 		}
-		
 		
 	}
 	

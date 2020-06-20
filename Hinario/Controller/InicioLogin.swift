@@ -24,7 +24,7 @@ class InicioLogin: UIViewController {
 		return imageView
 	}()
 	
-	//Adiciona uma view para metade da tela, para quando rotacionar o logo não distorcer
+	//Add an view for half of screen, when it rotation and logo don't distorce
 	let topImageConteinerView: UIView = {
 		let imageTopView = UIView()
 		imageTopView.translatesAutoresizingMaskIntoConstraints = false
@@ -86,9 +86,6 @@ class InicioLogin: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		//Define navigation bar na cor branca
-		UIApplication.shared.statusBarStyle = .lightContent
-		
 		//Define Layout Contraints
 		setupLayout()
 		
@@ -96,7 +93,6 @@ class InicioLogin: UIViewController {
 		setupBottomControls()
 		
 		SVProgressHUD.dismiss()
-		
 	}
 	
 	@objc func handleFace() {
@@ -147,13 +143,11 @@ class InicioLogin: UIViewController {
 				} else {
 					AlertExt.showBasic(title: "Ops.. Houve algum erro", msg: "Tente Novamente ou verifique se seu dispositivo suporta este tipo de acesso", vc: self)
 				}
-				
 			}
 		} else {
 			AlertExt.showBasic(title: "Não autorizado", msg: "Autenticação de segurança não permitida", vc: self)
 		}
-		
-		
+
 	}
 	
 	@objc func handleAnonymos() {
@@ -175,7 +169,8 @@ class InicioLogin: UIViewController {
 	func userLogado() {
 		//Present the main view
 		let hinosController = HinosController()
-		let navController = UINavigationController(rootViewController: hinosController)
+		let navController = CustomNavigationController(rootViewController: hinosController)
+        navController.modalPresentationStyle = .fullScreen
 		self.present(navController, animated: true, completion: nil)
 	}
 	
@@ -200,7 +195,6 @@ class InicioLogin: UIViewController {
 		logoImage.centerYAnchor.constraint(equalTo: topImageConteinerView.centerYAnchor).isActive = true
 		logoImage.heightAnchor.constraint(equalTo: topImageConteinerView.heightAnchor, multiplier: 0.6).isActive = true
 		topImageConteinerView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.6).isActive = true
-		
 	}
 	
 	fileprivate func setupBottomControls() {

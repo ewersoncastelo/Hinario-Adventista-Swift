@@ -43,7 +43,6 @@ class HinosController: UITableViewController {
 	var favoritosBook:BookmarkController?
 	
 	var filteredCandies = [Hinario]()
-//	let reachability = Reachability()
 	let reachability = try? Reachability()
 	let searchController = UISearchController(searchResultsController: nil)
 	
@@ -100,18 +99,14 @@ class HinosController: UITableViewController {
 		//Banner
 		fetchBannerADS()
 		
-		//Define navigation bar na cor branca
-		UIApplication.shared.statusBarStyle = .lightContent
-		
 		// Instantiate the banner view with your desired banner size.
 		bannerView = GADBannerView(adSize: kGADAdSizeBanner)
 		addBannerViewToView(bannerView)
 		bannerView.rootViewController = self
-//		bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716" //Apenas Para Testes
 		bannerView.adUnitID = "ca-app-pub-1249842998763621/9331041913"
 		bannerView.load(GADRequest())
 		
-		//Tirei do ViewDidAppear
+		//Remove the of ViewDidAppear
 		NotificationCenter.default.addObserver(self, selector: #selector(reachabilityChanged(note:)), name: .reachabilityChanged, object: reachability)
 		do{
 			try reachability?.startNotifier()
@@ -120,7 +115,7 @@ class HinosController: UITableViewController {
 		}
 
 	}
-	
+
 	func addBannerViewToView(_ bannerView: GADBannerView) {
 		bannerView.translatesAutoresizingMaskIntoConstraints = false
 		view.addSubview(bannerView)
@@ -170,14 +165,13 @@ class HinosController: UITableViewController {
 	}
 
 	private func fetchBannerADS() {
-		//Primeiro Banner
-//		interstitial = GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/4411468910") //Apenas Para Testes
+		//First Banner
 		interstitial = GADInterstitial(adUnitID: "ca-app-pub-1249842998763621/1161129630")
 		let request = GADRequest()
 		interstitial?.load(request)
 	}
 	
-	//Tipo de Fonte Escolhida Padrão
+	//Type font default
 	func fontDefault() {
 		if currentValueFont == "Arial" {
 			print("FONTE SELECIONADA ARIAL")
@@ -199,7 +193,7 @@ class HinosController: UITableViewController {
 		}
 	}
 	
-	//Cor do Fundo PadrÃo
+	//Color Background default
 	func backColor() {
 		if currentColorBack == "black" {
 			print("COR BLACK SELECIONADO")
@@ -212,7 +206,7 @@ class HinosController: UITableViewController {
 			UserDefaults.standard.synchronize()
 		}
 	}
-	
+
 	func checkUserIsLogin() {
 		if Auth.auth().currentUser?.uid == nil {
 			perform(#selector(handleLogout), with: nil, afterDelay: 0)
@@ -229,9 +223,7 @@ class HinosController: UITableViewController {
 	
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(true)
-		
 		showBannerInstertitial()
-		
 	}
 
 	
@@ -244,7 +236,6 @@ class HinosController: UITableViewController {
 	}
 	
 	@objc func reachabilityChanged(note: Notification) {
-		
 		let reachability = note.object as! Reachability
 		
 		switch reachability.connection {
@@ -279,6 +270,7 @@ class HinosController: UITableViewController {
 		}
 	
 		let loginPage = Login()
+        loginPage.modalPresentationStyle = .fullScreen
 		present(loginPage, animated: true, completion: nil)
 
 	}
@@ -290,6 +282,7 @@ class HinosController: UITableViewController {
 		let navControllerBookmark = UINavigationController(rootViewController: createBookmarkController)
 		
 		createBookmarkController.favoritosBook = self
+        navControllerBookmark.modalPresentationStyle = .fullScreen
 		
 		present(navControllerBookmark, animated: true, completion: nil)
 		
