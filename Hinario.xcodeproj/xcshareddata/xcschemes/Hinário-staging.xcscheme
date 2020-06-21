@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1020"
+   LastUpgradeVersion = "1150"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "90CBDBD21FD88B580080BE00"
-               BuildableName = "Hinario.app"
+               BuildableName = "Hina&#x301;rio Seven.app"
                BlueprintName = "Hinario"
                ReferencedContainer = "container:Hinario.xcodeproj">
             </BuildableReference>
@@ -47,7 +47,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "90CBDBD21FD88B580080BE00"
-            BuildableName = "Hinario.app"
+            BuildableName = "Hina&#x301;rio Seven.app"
             BlueprintName = "Hinario"
             ReferencedContainer = "container:Hinario.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "90CBDBD21FD88B580080BE00"
-            BuildableName = "Hinario.app"
+            BuildableName = "Hina&#x301;rio Seven.app"
             BlueprintName = "Hinario"
             ReferencedContainer = "container:Hinario.xcodeproj">
          </BuildableReference>
@@ -104,7 +104,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "90CBDBD21FD88B580080BE00"
-            BuildableName = "Hinario.app"
+            BuildableName = "Hina&#x301;rio Seven.app"
             BlueprintName = "Hinario"
             ReferencedContainer = "container:Hinario.xcodeproj">
          </BuildableReference>

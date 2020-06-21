@@ -13,21 +13,21 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>ewersoncastelo.Hinario-Adventista</string>
+	<string>com.ewersoncastelo.hinariosevenday</string>
 	<key>PROJECT_ID</key>
 	<string>hinario-adventista-b9ea6</string>
 	<key>STORAGE_BUCKET</key>
 	<string>hinario-adventista-b9ea6.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_GCM_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>GOOGLE_APP_ID</key>
 	<string>1:737984087469:ios:48c5d150a1906614</string>
 	<key>DATABASE_URL</key>

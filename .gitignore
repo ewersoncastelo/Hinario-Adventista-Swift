@@ -2,3 +2,6 @@ Pods
 fastlane
 screenshots
 Podfile.lock
+Hinario/Utils/GoogleService-Info.plist
+Hinario/Utils/GoogleService-Info_old.plist
+Hinario/Info.plist

@@ -59,7 +59,7 @@ class HinosController: UITableViewController {
 		
 		tableView.register(HinosCell.self, forCellReuseIdentifier: cellId)
 
-		navigationItem.title = "Hinário Adventista"
+		navigationItem.title = "Hinário Seven Day"
 		
 		view.backgroundColor = .white
 		tableView.backgroundColor = .lightGray

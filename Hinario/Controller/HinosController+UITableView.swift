@@ -37,7 +37,7 @@ extension HinosController {
 		let shareAction = UITableViewRowAction(style: .default, title: "Compartilhar") { (rowAction, indexPath) in
 			print("Share Action")
 			
-			let defaultText = "''" + self.favoritableHinos[indexPath.row].number + "-" + self.favoritableHinos[indexPath.row].name + "''. É meu hino favorito! Baixe agora o Novo App Hinário Adventista: https://goo.gl/ET4UcB #Hinario7Dia"
+			let defaultText = "''" + self.favoritableHinos[indexPath.row].number + "-" + self.favoritableHinos[indexPath.row].name + "''. É meu hino favorito! Baixe agora o Novo App Hinário Seven Day: https://goo.gl/ET4UcB #Hinario7Dia"
 			let activityController = UIActivityViewController(activityItems: [defaultText], applicationActivities: nil)
 			self.present(activityController, animated: true, completion: nil)
 		}

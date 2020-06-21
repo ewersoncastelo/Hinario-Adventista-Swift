@@ -27,7 +27,7 @@ class Login: UIViewController, UICollectionViewDataSource, UICollectionViewDeleg
 	let loginCellId = "loginCellId"
 	
 	let pages: [Page] = {
-		let firstPage = Page(title: "Tenha o Hinário Adventista em Suas Mãos", message: "Utilize-o em qualquer lugar, baixe os hinos e ouça eles off-line.", imageName: "page1")
+		let firstPage = Page(title: "Tenha o Hinário Seven Day em Suas Mãos", message: "Utilize-o em qualquer lugar, baixe os hinos e ouça eles off-line.", imageName: "page1")
 		
 		let secondPage = Page(title: "Pesquise pelo nome ou número do hino", message: "Arraste para baixo para exibir o campo de busca, então, basta selecionar sua forma preferida de pesquisa, por: \"Nome\" ou \"Número\".", imageName: "page2")
 		
