@@ -1,5 +1,0 @@
-version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
-options: "2ce81995660b18097723e513d0394da0"
-build_time: [1592703287, 341276000]
-inputs:
-  "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/OneSignalNotificationServiceExtension/NotificationService.swift": [1592701839, 833054562]
