@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+options: "bd56fd6b7d218827b6bd939ff9ea786e"
+build_time: [1593271401, 565880000]
+inputs:
+  "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/HinarioUITests/HinarioUITests.swift": [1592619136, 300613071]
+  "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/HinarioUITests/SnapshotHelper.swift": [1592619136, 300798227]

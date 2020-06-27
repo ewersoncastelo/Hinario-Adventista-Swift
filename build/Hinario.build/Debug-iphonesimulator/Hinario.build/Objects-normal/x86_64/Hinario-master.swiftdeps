@@ -1,0 +1,22 @@
+version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+options: "e1d91b67523f439f3004cf9070dbe074"
+build_time: [1593271391, 247642000]
+inputs:
+  "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Hinario/Utils/Extension.swift": !dirty [1592619136, 299633957]
+  "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Hinario/Controller/BookmarkController.swift": !dirty [1592619136, 276087891]
+  "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Hinario/UIColor+theme.swift": !dirty [1592619136, 277599657]
+  "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Hinario/View/HinosCell.swift": !dirty [1592701803, 252020412]
+  "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Hinario/Utils/AlertExt.swift": !dirty [1592619136, 277721099]
+  "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Hinario/Controller/Login.swift": !dirty [1592701839, 829033686]
+  "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Hinario/Model/Page.swift": !dirty [1592619136, 277521332]
+  "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Hinario/Controller/HinosController.swift": !dirty [1592704100, 832072440]
+  "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Hinario/Controller/HinosController+SearchBar.swift": !dirty [1592626756, 755137447]
+  "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Hinario/Controller/HinosController+UITableView.swift": !dirty [1592701839, 828261337]
+  "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Hinario/Controller/HinosDetailController.swift": !dirty [1592619136, 276779129]
+  "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Hinario/AppDelegate.swift": !dirty [1592703745, 322454878]
+  "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Hinario/Model/Hinario.swift": !dirty [1592619136, 277446725]
+  "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Hinario/View/PageCell.swift": !dirty [1592701803, 252481021]
+  "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Hinario/Controller/BookDetailController.swift": !dirty [1592619136, 275953628]
+  "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Hinario/Model/Favorito.swift": !dirty [1592619136, 277367237]
+  "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Hinario/Controller/InicioLogin.swift": !dirty [1592701803, 247877722]
+  "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Hinario/View/BookmarkCell.swift": !dirty [1592701803, 251625871]

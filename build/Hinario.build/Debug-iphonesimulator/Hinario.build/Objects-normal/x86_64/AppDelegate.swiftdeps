@@ -1,0 +1,1405 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CustomNavigationController"
+- "AppDelegate"
+provides-nominal:
+- "7Hinario26CustomNavigationControllerC"
+- "7Hinario11AppDelegateC"
+provides-member:
+- ["7Hinario26CustomNavigationControllerC", ""]
+- ["7Hinario11AppDelegateC", ""]
+provides-dynamic-lookup:
+- "application"
+- "applicationDidBecomeActive"
+- "applicationDidEnterBackground"
+- "applicationWillEnterForeground"
+- "applicationWillResignActive"
+- "applicationWillTerminate"
+- "preferredStatusBarStyle"
+- "reachability"
+- "window"
+depends-top-level:
+- !private "/"
+- "AppDelegate"
+- !private "ApplicationDelegate"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- "CastingPrecedence"
+- "CustomNavigationController"
+- !private "Database"
+- !private "FirebaseApp"
+- !private "FloatLiteralType"
+- !private "HinosController"
+- !private "IntegerLiteralType"
+- !private "MSAnalytics"
+- !private "MSAppCenter"
+- !private "MSCrashes"
+- !private "NSAttributedString"
+- !private "NotificationCenter"
+- !private "OSNotificationDisplayType"
+- !private "OneSignal"
+- "Reachability"
+- !private "StringLiteralType"
+- "UIApplication"
+- "UIApplicationDelegate"
+- !private "UIColor"
+- "UIInterfaceOrientationMask"
+- !private "UINavigationBar"
+- "UINavigationController"
+- "UIResponder"
+- "UIStatusBarStyle"
+- "UIWindow"
+- "URL"
+- !private "kOSSettingsKeyAutoPrompt"
+- !private "kOSSettingsKeyInAppLaunchURL"
+- !private "print"
+depends-member:
+- !private ["7Hinario11AppDelegateC", "ApplicationDelegate"]
+- ["7Hinario11AppDelegateC", "Bool"]
+- !private ["7Hinario11AppDelegateC", "CustomNavigationController"]
+- !private ["7Hinario11AppDelegateC", "Database"]
+- !private ["7Hinario11AppDelegateC", "FirebaseApp"]
+- !private ["7Hinario11AppDelegateC", "HinosController"]
+- !private ["7Hinario11AppDelegateC", "MSAnalytics"]
+- !private ["7Hinario11AppDelegateC", "MSAppCenter"]
+- !private ["7Hinario11AppDelegateC", "MSCrashes"]
+- !private ["7Hinario11AppDelegateC", "NSAttributedString"]
+- !private ["7Hinario11AppDelegateC", "NotificationCenter"]
+- !private ["7Hinario11AppDelegateC", "OSNotificationDisplayType"]
+- !private ["7Hinario11AppDelegateC", "OneSignal"]
+- ["7Hinario11AppDelegateC", "Reachability"]
+- ["7Hinario11AppDelegateC", "UIApplication"]
+- !private ["7Hinario11AppDelegateC", "UIColor"]
+- ["7Hinario11AppDelegateC", "UIInterfaceOrientationMask"]
+- !private ["7Hinario11AppDelegateC", "UINavigationBar"]
+- ["7Hinario11AppDelegateC", "UIWindow"]
+- ["7Hinario11AppDelegateC", "URL"]
+- ["7Hinario11AppDelegateC", "application"]
+- ["7Hinario11AppDelegateC", "applicationDidBecomeActive"]
+- ["7Hinario11AppDelegateC", "applicationDidEnterBackground"]
+- ["7Hinario11AppDelegateC", "applicationDidFinishLaunching"]
+- ["7Hinario11AppDelegateC", "applicationDidReceiveMemoryWarning"]
+- ["7Hinario11AppDelegateC", "applicationProtectedDataDidBecomeAvailable"]
+- ["7Hinario11AppDelegateC", "applicationProtectedDataWillBecomeUnavailable"]
+- ["7Hinario11AppDelegateC", "applicationShouldRequestHealthAuthorization"]
+- ["7Hinario11AppDelegateC", "applicationSignificantTimeChange"]
+- ["7Hinario11AppDelegateC", "applicationWillEnterForeground"]
+- ["7Hinario11AppDelegateC", "applicationWillResignActive"]
+- ["7Hinario11AppDelegateC", "applicationWillTerminate"]
+- ["7Hinario11AppDelegateC", "deinit"]
+- ["7Hinario11AppDelegateC", "init"]
+- !private ["7Hinario11AppDelegateC", "kOSSettingsKeyAutoPrompt"]
+- !private ["7Hinario11AppDelegateC", "kOSSettingsKeyInAppLaunchURL"]
+- !private ["7Hinario11AppDelegateC", "print"]
+- !private ["7Hinario11AppDelegateC", "reachability"]
+- ["7Hinario11AppDelegateC", "window"]
+- !private ["So15CALayerDelegateP", "appearance"]
+- !private ["So15CALayerDelegateP", "barTintColor"]
+- !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "isTranslucent"]
+- !private ["So15CALayerDelegateP", "largeTitleTextAttributes"]
+- !private ["So15CALayerDelegateP", "makeKeyAndVisible"]
+- !private ["So15CALayerDelegateP", "prefersLargeTitles"]
+- !private ["So15CALayerDelegateP", "rootViewController"]
+- !private ["So15CALayerDelegateP", "tintColor"]
+- !private ["So15CALayerDelegateP", "titleTextAttributes"]
+- !private ["s7CVarArgP", "ApplicationDelegate"]
+- !private ["s7CVarArgP", "CustomNavigationController"]
+- !private ["s7CVarArgP", "Database"]
+- !private ["s7CVarArgP", "FirebaseApp"]
+- !private ["s7CVarArgP", "HinosController"]
+- !private ["s7CVarArgP", "Key"]
+- ["s7CVarArgP", "LaunchOptionsKey"]
+- !private ["s7CVarArgP", "MSAnalytics"]
+- !private ["s7CVarArgP", "MSAppCenter"]
+- !private ["s7CVarArgP", "MSCrashes"]
+- !private ["s7CVarArgP", "NSAttributedString"]
+- !private ["s7CVarArgP", "NotificationCenter"]
+- !private ["s7CVarArgP", "OSNotificationDisplayType"]
+- !private ["s7CVarArgP", "OneSignal"]
+- ["s7CVarArgP", "OpenURLOptionsKey"]
+- ["s7CVarArgP", "Reachability"]
+- !private ["s7CVarArgP", "UIApplication"]
+- !private ["s7CVarArgP", "UIColor"]
+- !private ["s7CVarArgP", "UINavigationBar"]
+- !private ["s7CVarArgP", "UIWindow"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "appearance"]
+- ["s7CVarArgP", "application"]
+- ["s7CVarArgP", "applicationDidBecomeActive"]
+- ["s7CVarArgP", "applicationDidEnterBackground"]
+- ["s7CVarArgP", "applicationDidFinishLaunching"]
+- ["s7CVarArgP", "applicationDidReceiveMemoryWarning"]
+- ["s7CVarArgP", "applicationProtectedDataDidBecomeAvailable"]
+- ["s7CVarArgP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["s7CVarArgP", "applicationShouldRequestHealthAuthorization"]
+- ["s7CVarArgP", "applicationSignificantTimeChange"]
+- ["s7CVarArgP", "applicationWillEnterForeground"]
+- ["s7CVarArgP", "applicationWillResignActive"]
+- ["s7CVarArgP", "applicationWillTerminate"]
+- !private ["s7CVarArgP", "barTintColor"]
+- !private ["s7CVarArgP", "default"]
+- !private ["s7CVarArgP", "inFocusDisplayType"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "initWithLaunchOptions"]
+- !private ["s7CVarArgP", "isTranslucent"]
+- !private ["s7CVarArgP", "kOSSettingsKeyAutoPrompt"]
+- !private ["s7CVarArgP", "kOSSettingsKeyInAppLaunchURL"]
+- !private ["s7CVarArgP", "largeTitleTextAttributes"]
+- !private ["s7CVarArgP", "makeKeyAndVisible"]
+- !private ["s7CVarArgP", "prefersLargeTitles"]
+- !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "promptForPushNotifications"]
+- !private ["s7CVarArgP", "reachability"]
+- !private ["s7CVarArgP", "removeObserver"]
+- !private ["s7CVarArgP", "rootViewController"]
+- !private ["s7CVarArgP", "setLogLevel"]
+- !private ["s7CVarArgP", "start"]
+- !private ["s7CVarArgP", "tintColor"]
+- !private ["s7CVarArgP", "titleTextAttributes"]
+- !private ["s7CVarArgP", "verdeTitulo"]
+- !private ["s7CVarArgP", "white"]
+- ["s7CVarArgP", "window"]
+- !private ["s28CustomDebugStringConvertibleP", "ApplicationDelegate"]
+- !private ["s28CustomDebugStringConvertibleP", "CustomNavigationController"]
+- !private ["s28CustomDebugStringConvertibleP", "Database"]
+- !private ["s28CustomDebugStringConvertibleP", "FirebaseApp"]
+- !private ["s28CustomDebugStringConvertibleP", "HinosController"]
+- !private ["s28CustomDebugStringConvertibleP", "Key"]
+- ["s28CustomDebugStringConvertibleP", "LaunchOptionsKey"]
+- !private ["s28CustomDebugStringConvertibleP", "MSAnalytics"]
+- !private ["s28CustomDebugStringConvertibleP", "MSAppCenter"]
+- !private ["s28CustomDebugStringConvertibleP", "MSCrashes"]
+- !private ["s28CustomDebugStringConvertibleP", "NSAttributedString"]
+- !private ["s28CustomDebugStringConvertibleP", "NotificationCenter"]
+- !private ["s28CustomDebugStringConvertibleP", "OSNotificationDisplayType"]
+- !private ["s28CustomDebugStringConvertibleP", "OneSignal"]
+- ["s28CustomDebugStringConvertibleP", "OpenURLOptionsKey"]
+- ["s28CustomDebugStringConvertibleP", "Reachability"]
+- !private ["s28CustomDebugStringConvertibleP", "UIApplication"]
+- !private ["s28CustomDebugStringConvertibleP", "UIColor"]
+- !private ["s28CustomDebugStringConvertibleP", "UINavigationBar"]
+- !private ["s28CustomDebugStringConvertibleP", "UIWindow"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "appearance"]
+- ["s28CustomDebugStringConvertibleP", "application"]
+- ["s28CustomDebugStringConvertibleP", "applicationDidBecomeActive"]
+- ["s28CustomDebugStringConvertibleP", "applicationDidEnterBackground"]
+- ["s28CustomDebugStringConvertibleP", "applicationDidFinishLaunching"]
+- ["s28CustomDebugStringConvertibleP", "applicationDidReceiveMemoryWarning"]
+- ["s28CustomDebugStringConvertibleP", "applicationProtectedDataDidBecomeAvailable"]
+- ["s28CustomDebugStringConvertibleP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["s28CustomDebugStringConvertibleP", "applicationShouldRequestHealthAuthorization"]
+- ["s28CustomDebugStringConvertibleP", "applicationSignificantTimeChange"]
+- ["s28CustomDebugStringConvertibleP", "applicationWillEnterForeground"]
+- ["s28CustomDebugStringConvertibleP", "applicationWillResignActive"]
+- ["s28CustomDebugStringConvertibleP", "applicationWillTerminate"]
+- !private ["s28CustomDebugStringConvertibleP", "barTintColor"]
+- !private ["s28CustomDebugStringConvertibleP", "default"]
+- !private ["s28CustomDebugStringConvertibleP", "inFocusDisplayType"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "initWithLaunchOptions"]
+- !private ["s28CustomDebugStringConvertibleP", "isTranslucent"]
+- !private ["s28CustomDebugStringConvertibleP", "kOSSettingsKeyAutoPrompt"]
+- !private ["s28CustomDebugStringConvertibleP", "kOSSettingsKeyInAppLaunchURL"]
+- !private ["s28CustomDebugStringConvertibleP", "largeTitleTextAttributes"]
+- !private ["s28CustomDebugStringConvertibleP", "makeKeyAndVisible"]
+- !private ["s28CustomDebugStringConvertibleP", "prefersLargeTitles"]
+- !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "promptForPushNotifications"]
+- !private ["s28CustomDebugStringConvertibleP", "reachability"]
+- !private ["s28CustomDebugStringConvertibleP", "removeObserver"]
+- !private ["s28CustomDebugStringConvertibleP", "rootViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "setLogLevel"]
+- !private ["s28CustomDebugStringConvertibleP", "start"]
+- !private ["s28CustomDebugStringConvertibleP", "tintColor"]
+- !private ["s28CustomDebugStringConvertibleP", "titleTextAttributes"]
+- !private ["s28CustomDebugStringConvertibleP", "verdeTitulo"]
+- !private ["s28CustomDebugStringConvertibleP", "white"]
+- ["s28CustomDebugStringConvertibleP", "window"]
+- ["7Hinario26CustomNavigationControllerC", "UIStatusBarStyle"]
+- ["7Hinario26CustomNavigationControllerC", "deinit"]
+- ["7Hinario26CustomNavigationControllerC", "init"]
+- ["7Hinario26CustomNavigationControllerC", "preferredStatusBarStyle"]
+- !private ["s17CustomReflectableP", "white"]
+- !private ["s23CustomStringConvertibleP", "ApplicationDelegate"]
+- !private ["s23CustomStringConvertibleP", "CustomNavigationController"]
+- !private ["s23CustomStringConvertibleP", "Database"]
+- !private ["s23CustomStringConvertibleP", "FirebaseApp"]
+- !private ["s23CustomStringConvertibleP", "HinosController"]
+- !private ["s23CustomStringConvertibleP", "Key"]
+- ["s23CustomStringConvertibleP", "LaunchOptionsKey"]
+- !private ["s23CustomStringConvertibleP", "MSAnalytics"]
+- !private ["s23CustomStringConvertibleP", "MSAppCenter"]
+- !private ["s23CustomStringConvertibleP", "MSCrashes"]
+- !private ["s23CustomStringConvertibleP", "NSAttributedString"]
+- !private ["s23CustomStringConvertibleP", "NotificationCenter"]
+- !private ["s23CustomStringConvertibleP", "OSNotificationDisplayType"]
+- !private ["s23CustomStringConvertibleP", "OneSignal"]
+- ["s23CustomStringConvertibleP", "OpenURLOptionsKey"]
+- ["s23CustomStringConvertibleP", "Reachability"]
+- !private ["s23CustomStringConvertibleP", "UIApplication"]
+- !private ["s23CustomStringConvertibleP", "UIColor"]
+- !private ["s23CustomStringConvertibleP", "UINavigationBar"]
+- !private ["s23CustomStringConvertibleP", "UIWindow"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "appearance"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- ["s23CustomStringConvertibleP", "application"]
+- ["s23CustomStringConvertibleP", "applicationDidBecomeActive"]
+- ["s23CustomStringConvertibleP", "applicationDidEnterBackground"]
+- ["s23CustomStringConvertibleP", "applicationDidFinishLaunching"]
+- ["s23CustomStringConvertibleP", "applicationDidReceiveMemoryWarning"]
+- ["s23CustomStringConvertibleP", "applicationProtectedDataDidBecomeAvailable"]
+- ["s23CustomStringConvertibleP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["s23CustomStringConvertibleP", "applicationShouldRequestHealthAuthorization"]
+- ["s23CustomStringConvertibleP", "applicationSignificantTimeChange"]
+- ["s23CustomStringConvertibleP", "applicationWillEnterForeground"]
+- ["s23CustomStringConvertibleP", "applicationWillResignActive"]
+- ["s23CustomStringConvertibleP", "applicationWillTerminate"]
+- !private ["s23CustomStringConvertibleP", "barTintColor"]
+- !private ["s23CustomStringConvertibleP", "default"]
+- !private ["s23CustomStringConvertibleP", "inFocusDisplayType"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "initWithLaunchOptions"]
+- !private ["s23CustomStringConvertibleP", "isTranslucent"]
+- !private ["s23CustomStringConvertibleP", "kOSSettingsKeyAutoPrompt"]
+- !private ["s23CustomStringConvertibleP", "kOSSettingsKeyInAppLaunchURL"]
+- !private ["s23CustomStringConvertibleP", "largeTitleTextAttributes"]
+- !private ["s23CustomStringConvertibleP", "makeKeyAndVisible"]
+- !private ["s23CustomStringConvertibleP", "prefersLargeTitles"]
+- !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "promptForPushNotifications"]
+- !private ["s23CustomStringConvertibleP", "reachability"]
+- !private ["s23CustomStringConvertibleP", "removeObserver"]
+- !private ["s23CustomStringConvertibleP", "rootViewController"]
+- !private ["s23CustomStringConvertibleP", "setLogLevel"]
+- !private ["s23CustomStringConvertibleP", "start"]
+- !private ["s23CustomStringConvertibleP", "tintColor"]
+- !private ["s23CustomStringConvertibleP", "titleTextAttributes"]
+- !private ["s23CustomStringConvertibleP", "verdeTitulo"]
+- !private ["s23CustomStringConvertibleP", "white"]
+- ["s23CustomStringConvertibleP", "window"]
+- !private ["Se", "white"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["SE", "white"]
+- !private ["SQ", "ApplicationDelegate"]
+- !private ["SQ", "CustomNavigationController"]
+- !private ["SQ", "Database"]
+- !private ["SQ", "FirebaseApp"]
+- !private ["SQ", "HinosController"]
+- !private ["SQ", "Key"]
+- !private ["SQ", "LL_NONE"]
+- !private ["SQ", "LL_VERBOSE"]
+- ["SQ", "LaunchOptionsKey"]
+- !private ["SQ", "MSAnalytics"]
+- !private ["SQ", "MSAppCenter"]
+- !private ["SQ", "MSCrashes"]
+- !private ["SQ", "NSAttributedString"]
+- !private ["SQ", "NotificationCenter"]
+- !private ["SQ", "OSNotificationDisplayType"]
+- !private ["SQ", "OneSignal"]
+- ["SQ", "OpenURLOptionsKey"]
+- ["SQ", "Reachability"]
+- !private ["SQ", "UIApplication"]
+- !private ["SQ", "UIColor"]
+- !private ["SQ", "UINavigationBar"]
+- !private ["SQ", "UIWindow"]
+- ["SQ", ""]
+- !private ["SQ", "annotation"]
+- !private ["SQ", "appearance"]
+- ["SQ", "application"]
+- ["SQ", "applicationDidBecomeActive"]
+- ["SQ", "applicationDidEnterBackground"]
+- ["SQ", "applicationDidFinishLaunching"]
+- ["SQ", "applicationDidReceiveMemoryWarning"]
+- ["SQ", "applicationProtectedDataDidBecomeAvailable"]
+- ["SQ", "applicationProtectedDataWillBecomeUnavailable"]
+- ["SQ", "applicationShouldRequestHealthAuthorization"]
+- ["SQ", "applicationSignificantTimeChange"]
+- ["SQ", "applicationWillEnterForeground"]
+- ["SQ", "applicationWillResignActive"]
+- ["SQ", "applicationWillTerminate"]
+- !private ["SQ", "barTintColor"]
+- !private ["SQ", "default"]
+- !private ["SQ", "foregroundColor"]
+- !private ["SQ", "inFocusDisplayType"]
+- !private ["SQ", "init"]
+- !private ["SQ", "initWithLaunchOptions"]
+- !private ["SQ", "isTranslucent"]
+- !private ["SQ", "kOSSettingsKeyAutoPrompt"]
+- !private ["SQ", "kOSSettingsKeyInAppLaunchURL"]
+- !private ["SQ", "largeTitleTextAttributes"]
+- !private ["SQ", "lightContent"]
+- !private ["SQ", "makeKeyAndVisible"]
+- !private ["SQ", "notification"]
+- !private ["SQ", "portrait"]
+- !private ["SQ", "prefersLargeTitles"]
+- !private ["SQ", "print"]
+- !private ["SQ", "promptForPushNotifications"]
+- !private ["SQ", "reachability"]
+- !private ["SQ", "removeObserver"]
+- !private ["SQ", "rootViewController"]
+- !private ["SQ", "setLogLevel"]
+- !private ["SQ", "sourceApplication"]
+- !private ["SQ", "start"]
+- !private ["SQ", "tintColor"]
+- !private ["SQ", "titleTextAttributes"]
+- !private ["SQ", "verdeTitulo"]
+- !private ["SQ", "white"]
+- ["SQ", "window"]
+- !private ["s25ExpressibleByArrayLiteralP", "portrait"]
+- !private ["s23ExpressibleByNilLiteralP", "white"]
+- !private ["SH", "ApplicationDelegate"]
+- !private ["SH", "CustomNavigationController"]
+- !private ["SH", "Database"]
+- !private ["SH", "FirebaseApp"]
+- !private ["SH", "HinosController"]
+- !private ["SH", "Key"]
+- !private ["SH", "LL_NONE"]
+- !private ["SH", "LL_VERBOSE"]
+- ["SH", "LaunchOptionsKey"]
+- !private ["SH", "MSAnalytics"]
+- !private ["SH", "MSAppCenter"]
+- !private ["SH", "MSCrashes"]
+- !private ["SH", "NSAttributedString"]
+- !private ["SH", "NotificationCenter"]
+- !private ["SH", "OSNotificationDisplayType"]
+- !private ["SH", "OneSignal"]
+- ["SH", "OpenURLOptionsKey"]
+- ["SH", "Reachability"]
+- !private ["SH", "UIApplication"]
+- !private ["SH", "UIColor"]
+- !private ["SH", "UINavigationBar"]
+- !private ["SH", "UIWindow"]
+- ["SH", ""]
+- !private ["SH", "annotation"]
+- !private ["SH", "appearance"]
+- ["SH", "application"]
+- ["SH", "applicationDidBecomeActive"]
+- ["SH", "applicationDidEnterBackground"]
+- ["SH", "applicationDidFinishLaunching"]
+- ["SH", "applicationDidReceiveMemoryWarning"]
+- ["SH", "applicationProtectedDataDidBecomeAvailable"]
+- ["SH", "applicationProtectedDataWillBecomeUnavailable"]
+- ["SH", "applicationShouldRequestHealthAuthorization"]
+- ["SH", "applicationSignificantTimeChange"]
+- ["SH", "applicationWillEnterForeground"]
+- ["SH", "applicationWillResignActive"]
+- ["SH", "applicationWillTerminate"]
+- !private ["SH", "barTintColor"]
+- !private ["SH", "default"]
+- !private ["SH", "foregroundColor"]
+- !private ["SH", "inFocusDisplayType"]
+- !private ["SH", "init"]
+- !private ["SH", "initWithLaunchOptions"]
+- !private ["SH", "isTranslucent"]
+- !private ["SH", "kOSSettingsKeyAutoPrompt"]
+- !private ["SH", "kOSSettingsKeyInAppLaunchURL"]
+- !private ["SH", "largeTitleTextAttributes"]
+- !private ["SH", "lightContent"]
+- !private ["SH", "makeKeyAndVisible"]
+- !private ["SH", "notification"]
+- !private ["SH", "prefersLargeTitles"]
+- !private ["SH", "print"]
+- !private ["SH", "promptForPushNotifications"]
+- !private ["SH", "reachability"]
+- !private ["SH", "removeObserver"]
+- !private ["SH", "rootViewController"]
+- !private ["SH", "setLogLevel"]
+- !private ["SH", "sourceApplication"]
+- !private ["SH", "start"]
+- !private ["SH", "tintColor"]
+- !private ["SH", "titleTextAttributes"]
+- !private ["SH", "verdeTitulo"]
+- !private ["SH", "white"]
+- ["SH", "window"]
+- !private ["7Hinario15HinosControllerC", "deinit"]
+- !private ["7Hinario15HinosControllerC", "init"]
+- !private ["So21NSAttributedStringKeya", "foregroundColor"]
+- !private ["So11MSAppCenterC", "start"]
+- !private ["So18NSAttributedStringC", "Key"]
+- !private ["So8NSCodingP", "Key"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "appearance"]
+- !private ["So8NSCodingP", "barTintColor"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "isTranslucent"]
+- !private ["So8NSCodingP", "largeTitleTextAttributes"]
+- !private ["So8NSCodingP", "makeKeyAndVisible"]
+- !private ["So8NSCodingP", "prefersLargeTitles"]
+- !private ["So8NSCodingP", "rootViewController"]
+- !private ["So8NSCodingP", "tintColor"]
+- !private ["So8NSCodingP", "titleTextAttributes"]
+- !private ["So8NSCodingP", "verdeTitulo"]
+- !private ["So8NSCodingP", "white"]
+- !private ["So9NSCopyingP", "Key"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "verdeTitulo"]
+- !private ["So9NSCopyingP", "white"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So21NSItemProviderReadingP", "Key"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderReadingP", "verdeTitulo"]
+- !private ["So21NSItemProviderReadingP", "white"]
+- !private ["So21NSItemProviderWritingP", "Key"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So21NSItemProviderWritingP", "verdeTitulo"]
+- !private ["So21NSItemProviderWritingP", "white"]
+- !private ["So16NSMutableCopyingP", "Key"]
+- !private ["So8NSObjectC", "ApplicationDelegate"]
+- ["So8NSObjectC", "Bool"]
+- !private ["So8NSObjectC", "CustomNavigationController"]
+- !private ["So8NSObjectC", "Database"]
+- !private ["So8NSObjectC", "FirebaseApp"]
+- !private ["So8NSObjectC", "HinosController"]
+- !private ["So8NSObjectC", "Key"]
+- ["So8NSObjectC", "LaunchOptionsKey"]
+- !private ["So8NSObjectC", "MSAnalytics"]
+- !private ["So8NSObjectC", "MSAppCenter"]
+- !private ["So8NSObjectC", "MSCrashes"]
+- !private ["So8NSObjectC", "NSAttributedString"]
+- !private ["So8NSObjectC", "NotificationCenter"]
+- !private ["So8NSObjectC", "OSNotificationDisplayType"]
+- !private ["So8NSObjectC", "OneSignal"]
+- ["So8NSObjectC", "OpenURLOptionsKey"]
+- ["So8NSObjectC", "Reachability"]
+- ["So8NSObjectC", "UIApplication"]
+- !private ["So8NSObjectC", "UIColor"]
+- ["So8NSObjectC", "UIInterfaceOrientationMask"]
+- !private ["So8NSObjectC", "UINavigationBar"]
+- ["So8NSObjectC", "UIStatusBarStyle"]
+- ["So8NSObjectC", "UIWindow"]
+- ["So8NSObjectC", "URL"]
+- !private ["So8NSObjectC", "appearance"]
+- ["So8NSObjectC", "application"]
+- ["So8NSObjectC", "applicationDidBecomeActive"]
+- ["So8NSObjectC", "applicationDidEnterBackground"]
+- ["So8NSObjectC", "applicationDidFinishLaunching"]
+- ["So8NSObjectC", "applicationDidReceiveMemoryWarning"]
+- ["So8NSObjectC", "applicationProtectedDataDidBecomeAvailable"]
+- ["So8NSObjectC", "applicationProtectedDataWillBecomeUnavailable"]
+- ["So8NSObjectC", "applicationShouldRequestHealthAuthorization"]
+- ["So8NSObjectC", "applicationSignificantTimeChange"]
+- ["So8NSObjectC", "applicationWillEnterForeground"]
+- ["So8NSObjectC", "applicationWillResignActive"]
+- ["So8NSObjectC", "applicationWillTerminate"]
+- !private ["So8NSObjectC", "barTintColor"]
+- !private ["So8NSObjectC", "default"]
+- !private ["So8NSObjectC", "inFocusDisplayType"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "initWithLaunchOptions"]
+- !private ["So8NSObjectC", "isTranslucent"]
+- !private ["So8NSObjectC", "kOSSettingsKeyAutoPrompt"]
+- !private ["So8NSObjectC", "kOSSettingsKeyInAppLaunchURL"]
+- !private ["So8NSObjectC", "largeTitleTextAttributes"]
+- !private ["So8NSObjectC", "makeKeyAndVisible"]
+- ["So8NSObjectC", "preferredStatusBarStyle"]
+- !private ["So8NSObjectC", "prefersLargeTitles"]
+- !private ["So8NSObjectC", "print"]
+- !private ["So8NSObjectC", "promptForPushNotifications"]
+- !private ["So8NSObjectC", "reachability"]
+- !private ["So8NSObjectC", "removeObserver"]
+- !private ["So8NSObjectC", "rootViewController"]
+- !private ["So8NSObjectC", "setLogLevel"]
+- !private ["So8NSObjectC", "start"]
+- !private ["So8NSObjectC", "tintColor"]
+- !private ["So8NSObjectC", "titleTextAttributes"]
+- !private ["So8NSObjectC", "verdeTitulo"]
+- !private ["So8NSObjectC", "white"]
+- ["So8NSObjectC", "window"]
+- !private ["So8NSObjectP", "ApplicationDelegate"]
+- !private ["So8NSObjectP", "CustomNavigationController"]
+- !private ["So8NSObjectP", "Database"]
+- !private ["So8NSObjectP", "FirebaseApp"]
+- !private ["So8NSObjectP", "HinosController"]
+- !private ["So8NSObjectP", "Key"]
+- ["So8NSObjectP", "LaunchOptionsKey"]
+- !private ["So8NSObjectP", "MSAnalytics"]
+- !private ["So8NSObjectP", "MSAppCenter"]
+- !private ["So8NSObjectP", "MSCrashes"]
+- !private ["So8NSObjectP", "NSAttributedString"]
+- !private ["So8NSObjectP", "NotificationCenter"]
+- !private ["So8NSObjectP", "OSNotificationDisplayType"]
+- !private ["So8NSObjectP", "OneSignal"]
+- ["So8NSObjectP", "OpenURLOptionsKey"]
+- ["So8NSObjectP", "Reachability"]
+- !private ["So8NSObjectP", "UIApplication"]
+- !private ["So8NSObjectP", "UIColor"]
+- !private ["So8NSObjectP", "UINavigationBar"]
+- !private ["So8NSObjectP", "UIWindow"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "appearance"]
+- ["So8NSObjectP", "application"]
+- ["So8NSObjectP", "applicationDidBecomeActive"]
+- ["So8NSObjectP", "applicationDidEnterBackground"]
+- ["So8NSObjectP", "applicationDidFinishLaunching"]
+- ["So8NSObjectP", "applicationDidReceiveMemoryWarning"]
+- ["So8NSObjectP", "applicationProtectedDataDidBecomeAvailable"]
+- ["So8NSObjectP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["So8NSObjectP", "applicationShouldRequestHealthAuthorization"]
+- ["So8NSObjectP", "applicationSignificantTimeChange"]
+- ["So8NSObjectP", "applicationWillEnterForeground"]
+- ["So8NSObjectP", "applicationWillResignActive"]
+- ["So8NSObjectP", "applicationWillTerminate"]
+- !private ["So8NSObjectP", "barTintColor"]
+- !private ["So8NSObjectP", "default"]
+- !private ["So8NSObjectP", "inFocusDisplayType"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "initWithLaunchOptions"]
+- !private ["So8NSObjectP", "isTranslucent"]
+- !private ["So8NSObjectP", "kOSSettingsKeyAutoPrompt"]
+- !private ["So8NSObjectP", "kOSSettingsKeyInAppLaunchURL"]
+- !private ["So8NSObjectP", "largeTitleTextAttributes"]
+- !private ["So8NSObjectP", "makeKeyAndVisible"]
+- !private ["So8NSObjectP", "prefersLargeTitles"]
+- !private ["So8NSObjectP", "print"]
+- !private ["So8NSObjectP", "promptForPushNotifications"]
+- !private ["So8NSObjectP", "reachability"]
+- !private ["So8NSObjectP", "removeObserver"]
+- !private ["So8NSObjectP", "rootViewController"]
+- !private ["So8NSObjectP", "setLogLevel"]
+- !private ["So8NSObjectP", "start"]
+- !private ["So8NSObjectP", "tintColor"]
+- !private ["So8NSObjectP", "titleTextAttributes"]
+- !private ["So8NSObjectP", "verdeTitulo"]
+- !private ["So8NSObjectP", "white"]
+- ["So8NSObjectP", "window"]
+- !private ["So14NSSecureCodingP", "Key"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "verdeTitulo"]
+- !private ["So14NSSecureCodingP", "white"]
+- !private ["So20NSNotificationCenterC", "default"]
+- !private ["So20NSNotificationCenterC", "removeObserver"]
+- !private ["So15ONE_S_LOG_LEVELV", "LL_NONE"]
+- !private ["So15ONE_S_LOG_LEVELV", "LL_VERBOSE"]
+- !private ["So25OSNotificationDisplayTypeV", "notification"]
+- !private ["So9OneSignalC", "inFocusDisplayType"]
+- !private ["So9OneSignalC", "initWithLaunchOptions"]
+- !private ["So9OneSignalC", "promptForPushNotifications"]
+- !private ["So9OneSignalC", "setLogLevel"]
+- !private ["So30UIApplicationOpenURLOptionsKeya", "annotation"]
+- !private ["So30UIApplicationOpenURLOptionsKeya", "sourceApplication"]
+- !private ["s9OptionSetP", "portrait"]
+- !private ["Sq", "white"]
+- !private ["SY", "LL_NONE"]
+- !private ["SY", "LL_VERBOSE"]
+- !private ["SY", "annotation"]
+- !private ["SY", "foregroundColor"]
+- !private ["SY", "lightContent"]
+- !private ["SY", "notification"]
+- !private ["SY", "portrait"]
+- !private ["SY", "sourceApplication"]
+- !private ["s10SetAlgebraP", "portrait"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["So29UIAccessibilityIdentificationP", "appearance"]
+- !private ["So29UIAccessibilityIdentificationP", "barTintColor"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "isTranslucent"]
+- !private ["So29UIAccessibilityIdentificationP", "largeTitleTextAttributes"]
+- !private ["So29UIAccessibilityIdentificationP", "makeKeyAndVisible"]
+- !private ["So29UIAccessibilityIdentificationP", "prefersLargeTitles"]
+- !private ["So29UIAccessibilityIdentificationP", "rootViewController"]
+- !private ["So29UIAccessibilityIdentificationP", "tintColor"]
+- !private ["So29UIAccessibilityIdentificationP", "titleTextAttributes"]
+- !private ["So12UIAppearanceP", "appearance"]
+- !private ["So12UIAppearanceP", "barTintColor"]
+- !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "isTranslucent"]
+- !private ["So12UIAppearanceP", "largeTitleTextAttributes"]
+- !private ["So12UIAppearanceP", "makeKeyAndVisible"]
+- !private ["So12UIAppearanceP", "prefersLargeTitles"]
+- !private ["So12UIAppearanceP", "rootViewController"]
+- !private ["So12UIAppearanceP", "tintColor"]
+- !private ["So12UIAppearanceP", "titleTextAttributes"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "appearance"]
+- !private ["So21UIAppearanceContainerP", "barTintColor"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "isTranslucent"]
+- !private ["So21UIAppearanceContainerP", "largeTitleTextAttributes"]
+- !private ["So21UIAppearanceContainerP", "makeKeyAndVisible"]
+- !private ["So21UIAppearanceContainerP", "prefersLargeTitles"]
+- !private ["So21UIAppearanceContainerP", "rootViewController"]
+- !private ["So21UIAppearanceContainerP", "tintColor"]
+- !private ["So21UIAppearanceContainerP", "titleTextAttributes"]
+- ["So13UIApplicationC", "LaunchOptionsKey"]
+- ["So13UIApplicationC", "OpenURLOptionsKey"]
+- !private ["So21UIApplicationDelegateP", "ApplicationDelegate"]
+- !private ["So21UIApplicationDelegateP", "CustomNavigationController"]
+- !private ["So21UIApplicationDelegateP", "Database"]
+- !private ["So21UIApplicationDelegateP", "FirebaseApp"]
+- !private ["So21UIApplicationDelegateP", "HinosController"]
+- !private ["So21UIApplicationDelegateP", "MSAnalytics"]
+- !private ["So21UIApplicationDelegateP", "MSAppCenter"]
+- !private ["So21UIApplicationDelegateP", "MSCrashes"]
+- !private ["So21UIApplicationDelegateP", "NSAttributedString"]
+- !private ["So21UIApplicationDelegateP", "NotificationCenter"]
+- !private ["So21UIApplicationDelegateP", "OSNotificationDisplayType"]
+- !private ["So21UIApplicationDelegateP", "OneSignal"]
+- ["So21UIApplicationDelegateP", "Reachability"]
+- !private ["So21UIApplicationDelegateP", "UIApplication"]
+- !private ["So21UIApplicationDelegateP", "UIColor"]
+- !private ["So21UIApplicationDelegateP", "UINavigationBar"]
+- !private ["So21UIApplicationDelegateP", "UIWindow"]
+- ["So21UIApplicationDelegateP", ""]
+- ["So21UIApplicationDelegateP", "application"]
+- ["So21UIApplicationDelegateP", "applicationDidBecomeActive"]
+- ["So21UIApplicationDelegateP", "applicationDidEnterBackground"]
+- ["So21UIApplicationDelegateP", "applicationDidFinishLaunching"]
+- ["So21UIApplicationDelegateP", "applicationDidReceiveMemoryWarning"]
+- ["So21UIApplicationDelegateP", "applicationProtectedDataDidBecomeAvailable"]
+- ["So21UIApplicationDelegateP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["So21UIApplicationDelegateP", "applicationShouldRequestHealthAuthorization"]
+- ["So21UIApplicationDelegateP", "applicationSignificantTimeChange"]
+- ["So21UIApplicationDelegateP", "applicationWillEnterForeground"]
+- ["So21UIApplicationDelegateP", "applicationWillResignActive"]
+- ["So21UIApplicationDelegateP", "applicationWillTerminate"]
+- !private ["So21UIApplicationDelegateP", "kOSSettingsKeyAutoPrompt"]
+- !private ["So21UIApplicationDelegateP", "kOSSettingsKeyInAppLaunchURL"]
+- !private ["So21UIApplicationDelegateP", "print"]
+- !private ["So21UIApplicationDelegateP", "reachability"]
+- ["So21UIApplicationDelegateP", "window"]
+- !private ["So16UIBarPositioningP", "appearance"]
+- !private ["So16UIBarPositioningP", "barTintColor"]
+- !private ["So16UIBarPositioningP", "isTranslucent"]
+- !private ["So16UIBarPositioningP", "largeTitleTextAttributes"]
+- !private ["So16UIBarPositioningP", "prefersLargeTitles"]
+- !private ["So16UIBarPositioningP", "tintColor"]
+- !private ["So16UIBarPositioningP", "titleTextAttributes"]
+- !private ["So24UIBarPositioningDelegateP", "init"]
+- !private ["So7UIColorC", "init"]
+- !private ["So7UIColorC", "verdeTitulo"]
+- !private ["So7UIColorC", "white"]
+- ["So18UIContentContainerP", ""]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So17UICoordinateSpaceP", "appearance"]
+- !private ["So17UICoordinateSpaceP", "barTintColor"]
+- !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "isTranslucent"]
+- !private ["So17UICoordinateSpaceP", "largeTitleTextAttributes"]
+- !private ["So17UICoordinateSpaceP", "makeKeyAndVisible"]
+- !private ["So17UICoordinateSpaceP", "prefersLargeTitles"]
+- !private ["So17UICoordinateSpaceP", "rootViewController"]
+- !private ["So17UICoordinateSpaceP", "tintColor"]
+- !private ["So17UICoordinateSpaceP", "titleTextAttributes"]
+- !private ["So13UIDynamicItemP", "appearance"]
+- !private ["So13UIDynamicItemP", "barTintColor"]
+- !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "isTranslucent"]
+- !private ["So13UIDynamicItemP", "largeTitleTextAttributes"]
+- !private ["So13UIDynamicItemP", "makeKeyAndVisible"]
+- !private ["So13UIDynamicItemP", "prefersLargeTitles"]
+- !private ["So13UIDynamicItemP", "rootViewController"]
+- !private ["So13UIDynamicItemP", "tintColor"]
+- !private ["So13UIDynamicItemP", "titleTextAttributes"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "appearance"]
+- !private ["So18UIFocusEnvironmentP", "barTintColor"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "isTranslucent"]
+- !private ["So18UIFocusEnvironmentP", "largeTitleTextAttributes"]
+- !private ["So18UIFocusEnvironmentP", "makeKeyAndVisible"]
+- !private ["So18UIFocusEnvironmentP", "prefersLargeTitles"]
+- !private ["So18UIFocusEnvironmentP", "rootViewController"]
+- !private ["So18UIFocusEnvironmentP", "tintColor"]
+- !private ["So18UIFocusEnvironmentP", "titleTextAttributes"]
+- !private ["So11UIFocusItemP", "appearance"]
+- !private ["So11UIFocusItemP", "barTintColor"]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "isTranslucent"]
+- !private ["So11UIFocusItemP", "largeTitleTextAttributes"]
+- !private ["So11UIFocusItemP", "makeKeyAndVisible"]
+- !private ["So11UIFocusItemP", "prefersLargeTitles"]
+- !private ["So11UIFocusItemP", "rootViewController"]
+- !private ["So11UIFocusItemP", "tintColor"]
+- !private ["So11UIFocusItemP", "titleTextAttributes"]
+- !private ["So20UIFocusItemContainerP", "appearance"]
+- !private ["So20UIFocusItemContainerP", "barTintColor"]
+- !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "isTranslucent"]
+- !private ["So20UIFocusItemContainerP", "largeTitleTextAttributes"]
+- !private ["So20UIFocusItemContainerP", "makeKeyAndVisible"]
+- !private ["So20UIFocusItemContainerP", "prefersLargeTitles"]
+- !private ["So20UIFocusItemContainerP", "rootViewController"]
+- !private ["So20UIFocusItemContainerP", "tintColor"]
+- !private ["So20UIFocusItemContainerP", "titleTextAttributes"]
+- !private ["So26UIInterfaceOrientationMaskV", "portrait"]
+- !private ["So24UILargeContentViewerItemP", "appearance"]
+- !private ["So24UILargeContentViewerItemP", "barTintColor"]
+- !private ["So24UILargeContentViewerItemP", "init"]
+- !private ["So24UILargeContentViewerItemP", "isTranslucent"]
+- !private ["So24UILargeContentViewerItemP", "largeTitleTextAttributes"]
+- !private ["So24UILargeContentViewerItemP", "makeKeyAndVisible"]
+- !private ["So24UILargeContentViewerItemP", "prefersLargeTitles"]
+- !private ["So24UILargeContentViewerItemP", "rootViewController"]
+- !private ["So24UILargeContentViewerItemP", "tintColor"]
+- !private ["So24UILargeContentViewerItemP", "titleTextAttributes"]
+- !private ["So15UINavigationBarC", "appearance"]
+- !private ["So15UINavigationBarC", "barTintColor"]
+- !private ["So15UINavigationBarC", "isTranslucent"]
+- !private ["So15UINavigationBarC", "largeTitleTextAttributes"]
+- !private ["So15UINavigationBarC", "prefersLargeTitles"]
+- !private ["So15UINavigationBarC", "tintColor"]
+- !private ["So15UINavigationBarC", "titleTextAttributes"]
+- ["So22UINavigationControllerC", "UIStatusBarStyle"]
+- ["So22UINavigationControllerC", ""]
+- ["So22UINavigationControllerC", "init"]
+- ["So22UINavigationControllerC", "preferredStatusBarStyle"]
+- !private ["So30UIPasteConfigurationSupportingP", "ApplicationDelegate"]
+- !private ["So30UIPasteConfigurationSupportingP", "CustomNavigationController"]
+- !private ["So30UIPasteConfigurationSupportingP", "Database"]
+- !private ["So30UIPasteConfigurationSupportingP", "FirebaseApp"]
+- !private ["So30UIPasteConfigurationSupportingP", "HinosController"]
+- ["So30UIPasteConfigurationSupportingP", "LaunchOptionsKey"]
+- !private ["So30UIPasteConfigurationSupportingP", "MSAnalytics"]
+- !private ["So30UIPasteConfigurationSupportingP", "MSAppCenter"]
+- !private ["So30UIPasteConfigurationSupportingP", "MSCrashes"]
+- !private ["So30UIPasteConfigurationSupportingP", "NSAttributedString"]
+- !private ["So30UIPasteConfigurationSupportingP", "NotificationCenter"]
+- !private ["So30UIPasteConfigurationSupportingP", "OSNotificationDisplayType"]
+- !private ["So30UIPasteConfigurationSupportingP", "OneSignal"]
+- ["So30UIPasteConfigurationSupportingP", "OpenURLOptionsKey"]
+- ["So30UIPasteConfigurationSupportingP", "Reachability"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIApplication"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "UINavigationBar"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIWindow"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "appearance"]
+- ["So30UIPasteConfigurationSupportingP", "application"]
+- ["So30UIPasteConfigurationSupportingP", "applicationDidBecomeActive"]
+- ["So30UIPasteConfigurationSupportingP", "applicationDidEnterBackground"]
+- ["So30UIPasteConfigurationSupportingP", "applicationDidFinishLaunching"]
+- ["So30UIPasteConfigurationSupportingP", "applicationDidReceiveMemoryWarning"]
+- ["So30UIPasteConfigurationSupportingP", "applicationProtectedDataDidBecomeAvailable"]
+- ["So30UIPasteConfigurationSupportingP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["So30UIPasteConfigurationSupportingP", "applicationShouldRequestHealthAuthorization"]
+- ["So30UIPasteConfigurationSupportingP", "applicationSignificantTimeChange"]
+- ["So30UIPasteConfigurationSupportingP", "applicationWillEnterForeground"]
+- ["So30UIPasteConfigurationSupportingP", "applicationWillResignActive"]
+- ["So30UIPasteConfigurationSupportingP", "applicationWillTerminate"]
+- !private ["So30UIPasteConfigurationSupportingP", "barTintColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "isTranslucent"]
+- !private ["So30UIPasteConfigurationSupportingP", "kOSSettingsKeyAutoPrompt"]
+- !private ["So30UIPasteConfigurationSupportingP", "kOSSettingsKeyInAppLaunchURL"]
+- !private ["So30UIPasteConfigurationSupportingP", "largeTitleTextAttributes"]
+- !private ["So30UIPasteConfigurationSupportingP", "makeKeyAndVisible"]
+- !private ["So30UIPasteConfigurationSupportingP", "prefersLargeTitles"]
+- !private ["So30UIPasteConfigurationSupportingP", "print"]
+- !private ["So30UIPasteConfigurationSupportingP", "reachability"]
+- !private ["So30UIPasteConfigurationSupportingP", "rootViewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "tintColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "titleTextAttributes"]
+- ["So30UIPasteConfigurationSupportingP", "window"]
+- !private ["So11UIResponderC", "ApplicationDelegate"]
+- ["So11UIResponderC", "Bool"]
+- !private ["So11UIResponderC", "CustomNavigationController"]
+- !private ["So11UIResponderC", "Database"]
+- !private ["So11UIResponderC", "FirebaseApp"]
+- !private ["So11UIResponderC", "HinosController"]
+- ["So11UIResponderC", "LaunchOptionsKey"]
+- !private ["So11UIResponderC", "MSAnalytics"]
+- !private ["So11UIResponderC", "MSAppCenter"]
+- !private ["So11UIResponderC", "MSCrashes"]
+- !private ["So11UIResponderC", "NSAttributedString"]
+- !private ["So11UIResponderC", "NotificationCenter"]
+- !private ["So11UIResponderC", "OSNotificationDisplayType"]
+- !private ["So11UIResponderC", "OneSignal"]
+- ["So11UIResponderC", "OpenURLOptionsKey"]
+- ["So11UIResponderC", "Reachability"]
+- ["So11UIResponderC", "UIApplication"]
+- !private ["So11UIResponderC", "UIColor"]
+- ["So11UIResponderC", "UIInterfaceOrientationMask"]
+- !private ["So11UIResponderC", "UINavigationBar"]
+- ["So11UIResponderC", "UIStatusBarStyle"]
+- ["So11UIResponderC", "UIWindow"]
+- ["So11UIResponderC", "URL"]
+- ["So11UIResponderC", ""]
+- !private ["So11UIResponderC", "appearance"]
+- ["So11UIResponderC", "application"]
+- ["So11UIResponderC", "applicationDidBecomeActive"]
+- ["So11UIResponderC", "applicationDidEnterBackground"]
+- ["So11UIResponderC", "applicationDidFinishLaunching"]
+- ["So11UIResponderC", "applicationDidReceiveMemoryWarning"]
+- ["So11UIResponderC", "applicationProtectedDataDidBecomeAvailable"]
+- ["So11UIResponderC", "applicationProtectedDataWillBecomeUnavailable"]
+- ["So11UIResponderC", "applicationShouldRequestHealthAuthorization"]
+- ["So11UIResponderC", "applicationSignificantTimeChange"]
+- ["So11UIResponderC", "applicationWillEnterForeground"]
+- ["So11UIResponderC", "applicationWillResignActive"]
+- ["So11UIResponderC", "applicationWillTerminate"]
+- !private ["So11UIResponderC", "barTintColor"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "isTranslucent"]
+- !private ["So11UIResponderC", "kOSSettingsKeyAutoPrompt"]
+- !private ["So11UIResponderC", "kOSSettingsKeyInAppLaunchURL"]
+- !private ["So11UIResponderC", "largeTitleTextAttributes"]
+- !private ["So11UIResponderC", "makeKeyAndVisible"]
+- ["So11UIResponderC", "preferredStatusBarStyle"]
+- !private ["So11UIResponderC", "prefersLargeTitles"]
+- !private ["So11UIResponderC", "print"]
+- !private ["So11UIResponderC", "reachability"]
+- !private ["So11UIResponderC", "rootViewController"]
+- !private ["So11UIResponderC", "tintColor"]
+- !private ["So11UIResponderC", "titleTextAttributes"]
+- ["So11UIResponderC", "window"]
+- !private ["So30UIResponderStandardEditActionsP", "ApplicationDelegate"]
+- !private ["So30UIResponderStandardEditActionsP", "CustomNavigationController"]
+- !private ["So30UIResponderStandardEditActionsP", "Database"]
+- !private ["So30UIResponderStandardEditActionsP", "FirebaseApp"]
+- !private ["So30UIResponderStandardEditActionsP", "HinosController"]
+- ["So30UIResponderStandardEditActionsP", "LaunchOptionsKey"]
+- !private ["So30UIResponderStandardEditActionsP", "MSAnalytics"]
+- !private ["So30UIResponderStandardEditActionsP", "MSAppCenter"]
+- !private ["So30UIResponderStandardEditActionsP", "MSCrashes"]
+- !private ["So30UIResponderStandardEditActionsP", "NSAttributedString"]
+- !private ["So30UIResponderStandardEditActionsP", "NotificationCenter"]
+- !private ["So30UIResponderStandardEditActionsP", "OSNotificationDisplayType"]
+- !private ["So30UIResponderStandardEditActionsP", "OneSignal"]
+- ["So30UIResponderStandardEditActionsP", "OpenURLOptionsKey"]
+- ["So30UIResponderStandardEditActionsP", "Reachability"]
+- !private ["So30UIResponderStandardEditActionsP", "UIApplication"]
+- !private ["So30UIResponderStandardEditActionsP", "UIColor"]
+- !private ["So30UIResponderStandardEditActionsP", "UINavigationBar"]
+- !private ["So30UIResponderStandardEditActionsP", "UIWindow"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "appearance"]
+- ["So30UIResponderStandardEditActionsP", "application"]
+- ["So30UIResponderStandardEditActionsP", "applicationDidBecomeActive"]
+- ["So30UIResponderStandardEditActionsP", "applicationDidEnterBackground"]
+- ["So30UIResponderStandardEditActionsP", "applicationDidFinishLaunching"]
+- ["So30UIResponderStandardEditActionsP", "applicationDidReceiveMemoryWarning"]
+- ["So30UIResponderStandardEditActionsP", "applicationProtectedDataDidBecomeAvailable"]
+- ["So30UIResponderStandardEditActionsP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["So30UIResponderStandardEditActionsP", "applicationShouldRequestHealthAuthorization"]
+- ["So30UIResponderStandardEditActionsP", "applicationSignificantTimeChange"]
+- ["So30UIResponderStandardEditActionsP", "applicationWillEnterForeground"]
+- ["So30UIResponderStandardEditActionsP", "applicationWillResignActive"]
+- ["So30UIResponderStandardEditActionsP", "applicationWillTerminate"]
+- !private ["So30UIResponderStandardEditActionsP", "barTintColor"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "isTranslucent"]
+- !private ["So30UIResponderStandardEditActionsP", "kOSSettingsKeyAutoPrompt"]
+- !private ["So30UIResponderStandardEditActionsP", "kOSSettingsKeyInAppLaunchURL"]
+- !private ["So30UIResponderStandardEditActionsP", "largeTitleTextAttributes"]
+- !private ["So30UIResponderStandardEditActionsP", "makeKeyAndVisible"]
+- !private ["So30UIResponderStandardEditActionsP", "prefersLargeTitles"]
+- !private ["So30UIResponderStandardEditActionsP", "print"]
+- !private ["So30UIResponderStandardEditActionsP", "reachability"]
+- !private ["So30UIResponderStandardEditActionsP", "rootViewController"]
+- !private ["So30UIResponderStandardEditActionsP", "tintColor"]
+- !private ["So30UIResponderStandardEditActionsP", "titleTextAttributes"]
+- ["So30UIResponderStandardEditActionsP", "window"]
+- !private ["So20UIScrollViewDelegateP", "init"]
+- !private ["So19UISearchBarDelegateP", "init"]
+- !private ["So23UISearchResultsUpdatingP", "init"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStatusBarStyleV", "lightContent"]
+- !private ["So21UITableViewControllerC", "init"]
+- !private ["So21UITableViewDataSourceP", "init"]
+- !private ["So19UITableViewDelegateP", "init"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "appearance"]
+- !private ["So18UITraitEnvironmentP", "barTintColor"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "isTranslucent"]
+- !private ["So18UITraitEnvironmentP", "largeTitleTextAttributes"]
+- !private ["So18UITraitEnvironmentP", "makeKeyAndVisible"]
+- !private ["So18UITraitEnvironmentP", "prefersLargeTitles"]
+- !private ["So18UITraitEnvironmentP", "rootViewController"]
+- !private ["So18UITraitEnvironmentP", "tintColor"]
+- !private ["So18UITraitEnvironmentP", "titleTextAttributes"]
+- !private ["So23UIUserActivityRestoringP", "ApplicationDelegate"]
+- !private ["So23UIUserActivityRestoringP", "CustomNavigationController"]
+- !private ["So23UIUserActivityRestoringP", "Database"]
+- !private ["So23UIUserActivityRestoringP", "FirebaseApp"]
+- !private ["So23UIUserActivityRestoringP", "HinosController"]
+- ["So23UIUserActivityRestoringP", "LaunchOptionsKey"]
+- !private ["So23UIUserActivityRestoringP", "MSAnalytics"]
+- !private ["So23UIUserActivityRestoringP", "MSAppCenter"]
+- !private ["So23UIUserActivityRestoringP", "MSCrashes"]
+- !private ["So23UIUserActivityRestoringP", "NSAttributedString"]
+- !private ["So23UIUserActivityRestoringP", "NotificationCenter"]
+- !private ["So23UIUserActivityRestoringP", "OSNotificationDisplayType"]
+- !private ["So23UIUserActivityRestoringP", "OneSignal"]
+- ["So23UIUserActivityRestoringP", "OpenURLOptionsKey"]
+- ["So23UIUserActivityRestoringP", "Reachability"]
+- !private ["So23UIUserActivityRestoringP", "UIApplication"]
+- !private ["So23UIUserActivityRestoringP", "UIColor"]
+- !private ["So23UIUserActivityRestoringP", "UINavigationBar"]
+- !private ["So23UIUserActivityRestoringP", "UIWindow"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "appearance"]
+- ["So23UIUserActivityRestoringP", "application"]
+- ["So23UIUserActivityRestoringP", "applicationDidBecomeActive"]
+- ["So23UIUserActivityRestoringP", "applicationDidEnterBackground"]
+- ["So23UIUserActivityRestoringP", "applicationDidFinishLaunching"]
+- ["So23UIUserActivityRestoringP", "applicationDidReceiveMemoryWarning"]
+- ["So23UIUserActivityRestoringP", "applicationProtectedDataDidBecomeAvailable"]
+- ["So23UIUserActivityRestoringP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["So23UIUserActivityRestoringP", "applicationShouldRequestHealthAuthorization"]
+- ["So23UIUserActivityRestoringP", "applicationSignificantTimeChange"]
+- ["So23UIUserActivityRestoringP", "applicationWillEnterForeground"]
+- ["So23UIUserActivityRestoringP", "applicationWillResignActive"]
+- ["So23UIUserActivityRestoringP", "applicationWillTerminate"]
+- !private ["So23UIUserActivityRestoringP", "barTintColor"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "isTranslucent"]
+- !private ["So23UIUserActivityRestoringP", "kOSSettingsKeyAutoPrompt"]
+- !private ["So23UIUserActivityRestoringP", "kOSSettingsKeyInAppLaunchURL"]
+- !private ["So23UIUserActivityRestoringP", "largeTitleTextAttributes"]
+- !private ["So23UIUserActivityRestoringP", "makeKeyAndVisible"]
+- !private ["So23UIUserActivityRestoringP", "prefersLargeTitles"]
+- !private ["So23UIUserActivityRestoringP", "print"]
+- !private ["So23UIUserActivityRestoringP", "reachability"]
+- !private ["So23UIUserActivityRestoringP", "rootViewController"]
+- !private ["So23UIUserActivityRestoringP", "tintColor"]
+- !private ["So23UIUserActivityRestoringP", "titleTextAttributes"]
+- ["So23UIUserActivityRestoringP", "window"]
+- !private ["So6UIViewC", "appearance"]
+- !private ["So6UIViewC", "barTintColor"]
+- !private ["So6UIViewC", "init"]
+- !private ["So6UIViewC", "isTranslucent"]
+- !private ["So6UIViewC", "largeTitleTextAttributes"]
+- !private ["So6UIViewC", "makeKeyAndVisible"]
+- !private ["So6UIViewC", "prefersLargeTitles"]
+- !private ["So6UIViewC", "rootViewController"]
+- !private ["So6UIViewC", "tintColor"]
+- !private ["So6UIViewC", "titleTextAttributes"]
+- ["So16UIViewControllerC", "UIStatusBarStyle"]
+- ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "preferredStatusBarStyle"]
+- !private ["So8UIWindowC", "init"]
+- !private ["So8UIWindowC", "makeKeyAndVisible"]
+- !private ["So8UIWindowC", "rootViewController"]
+- !private ["s26_ExpressibleByColorLiteralP", "init"]
+- !private ["s26_ExpressibleByColorLiteralP", "verdeTitulo"]
+- !private ["s26_ExpressibleByColorLiteralP", "white"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "annotation"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "foregroundColor"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "sourceApplication"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ApplicationDelegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CustomNavigationController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Database"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "FirebaseApp"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "HinosController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Key"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "LaunchOptionsKey"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "MSAnalytics"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "MSAppCenter"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "MSCrashes"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NSAttributedString"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NotificationCenter"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "OSNotificationDisplayType"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "OneSignal"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "OpenURLOptionsKey"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "Reachability"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIApplication"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UINavigationBar"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIWindow"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "appearance"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "application"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationDidBecomeActive"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationDidEnterBackground"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationDidFinishLaunching"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationDidReceiveMemoryWarning"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationProtectedDataDidBecomeAvailable"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationShouldRequestHealthAuthorization"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationSignificantTimeChange"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillEnterForeground"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillResignActive"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillTerminate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "barTintColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "default"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "inFocusDisplayType"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "initWithLaunchOptions"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isTranslucent"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "kOSSettingsKeyAutoPrompt"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "kOSSettingsKeyInAppLaunchURL"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "largeTitleTextAttributes"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "makeKeyAndVisible"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "prefersLargeTitles"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "promptForPushNotifications"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "reachability"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "removeObserver"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "rootViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setLogLevel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "start"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tintColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "titleTextAttributes"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "verdeTitulo"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "white"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "window"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ApplicationDelegate"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CustomNavigationController"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Database"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "FirebaseApp"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "HinosController"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Key"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "LaunchOptionsKey"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "MSAnalytics"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "MSAppCenter"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "MSCrashes"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "NSAttributedString"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "NotificationCenter"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "OSNotificationDisplayType"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "OneSignal"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "OpenURLOptionsKey"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Reachability"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIApplication"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIColor"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UINavigationBar"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIWindow"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "appearance"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "application"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "applicationDidBecomeActive"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "applicationDidEnterBackground"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "applicationDidFinishLaunching"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "applicationDidReceiveMemoryWarning"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "applicationProtectedDataDidBecomeAvailable"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "applicationShouldRequestHealthAuthorization"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "applicationSignificantTimeChange"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "applicationWillEnterForeground"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "applicationWillResignActive"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "applicationWillTerminate"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "barTintColor"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "default"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "inFocusDisplayType"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "initWithLaunchOptions"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "isTranslucent"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "kOSSettingsKeyAutoPrompt"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "kOSSettingsKeyInAppLaunchURL"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "largeTitleTextAttributes"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "makeKeyAndVisible"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "prefersLargeTitles"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "print"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "promptForPushNotifications"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "reachability"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "removeObserver"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "rootViewController"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setLogLevel"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "start"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "tintColor"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "titleTextAttributes"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "verdeTitulo"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "white"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "window"]
+- !private ["s21_ObjectiveCBridgeableP", "annotation"]
+- !private ["s21_ObjectiveCBridgeableP", "foregroundColor"]
+- !private ["s21_ObjectiveCBridgeableP", "sourceApplication"]
+- !private ["s21_ObjectiveCBridgeableP", "white"]
+- !private ["s20_SwiftNewtypeWrapperP", "annotation"]
+- !private ["s20_SwiftNewtypeWrapperP", "foregroundColor"]
+- !private ["s20_SwiftNewtypeWrapperP", "sourceApplication"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "appearance"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "barTintColor"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "isTranslucent"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "largeTitleTextAttributes"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "makeKeyAndVisible"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "prefersLargeTitles"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "rootViewController"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "tintColor"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "titleTextAttributes"]
+depends-nominal:
+- "7Hinario11AppDelegateC"
+- !private "So15CALayerDelegateP"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- "7Hinario26CustomNavigationControllerC"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "s26DefaultStringInterpolationV"
+- !private "SE"
+- "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- "SH"
+- !private "7Hinario15HinosControllerC"
+- !private "So21NSAttributedStringKeya"
+- !private "So11MSAppCenterC"
+- !private "So18NSAttributedStringC"
+- "So8NSCodingP"
+- !private "So9NSCopyingP"
+- "So26NSExtensionRequestHandlingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "So20NSNotificationCenterC"
+- !private "So15ONE_S_LOG_LEVELV"
+- !private "So25OSNotificationDisplayTypeV"
+- !private "So9OneSignalC"
+- !private "So30UIApplicationOpenURLOptionsKeya"
+- !private "s9OptionSetP"
+- !private "Sq"
+- !private "SY"
+- !private "s10SetAlgebraP"
+- !private "s27StringInterpolationProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So13UIApplicationC"
+- "So21UIApplicationDelegateP"
+- !private "So16UIBarPositioningP"
+- !private "So24UIBarPositioningDelegateP"
+- !private "So7UIColorC"
+- "So18UIContentContainerP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
+- !private "So26UIInterfaceOrientationMaskV"
+- !private "So24UILargeContentViewerItemP"
+- !private "So15UINavigationBarC"
+- "So22UINavigationControllerC"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- !private "So20UIScrollViewDelegateP"
+- !private "So19UISearchBarDelegateP"
+- !private "So23UISearchResultsUpdatingP"
+- "So16UIStateRestoringP"
+- !private "So16UIStatusBarStyleV"
+- !private "So21UITableViewControllerC"
+- !private "So21UITableViewDataSourceP"
+- !private "So19UITableViewDelegateP"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- !private "So6UIViewC"
+- "So16UIViewControllerC"
+- !private "So8UIWindowC"
+- !private "s26_ExpressibleByColorLiteralP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s20_SwiftNewtypeWrapperP"
+- !private "s38__DefaultCustomPlaygroundQuickLookableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreMIDI.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreMedia.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreData.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/simd.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreImage.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/QuartzCore.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/AVFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreAudio.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/MediaPlayer.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADAdMetadata.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADRewardedAd.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/Mediation/GADMediationRewardedAd.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADNativeCustomTemplateAd.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADNativeAd.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADUnifiedNativeAd.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/Mediation/GADMediatedUnifiedNativeAd.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/Mediation/GADMediationNativeAd.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADCustomEventNativeAd.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/Mediation/GADMediationInterstitialAd.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADInstreamAd.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADAppOpenAd.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/Mediation/GADMediationAd.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAd.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/Mediation/GADMediationBannerAd.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADAdReward.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenter.framework/Headers/MSDevice.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenter.framework/Headers/MSService.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenterAnalytics.framework/Headers/MSService.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenterCrashes.framework/Headers/MSService.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/Mediation/GADMediatedUnifiedNativeAdNotificationSource.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADNativeAdImage.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenter.framework/Headers/MSEnable.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADUnifiedNativeAd+CustomClickGesture.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADRewardedAdMetadataDelegate.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADRewardedAdDelegate.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADNativeAdDelegate.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADUnifiedNativeAdDelegate.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADCustomEventNativeAdDelegate.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAdDelegate.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADUnifiedNativeAdUnconfirmedClickDelegate.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADCustomEventInterstitialDelegate.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenterCrashes.framework/Headers/MSCrashHandlerSetupDelegate.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADAdLoaderDelegate.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenterAnalytics.framework/Headers/MSAnalyticsAuthenticationProviderDelegate.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADAudioVideoManagerDelegate.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADVideoControllerDelegate.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADCustomEventBannerDelegate.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenterCrashes.framework/Headers/MSCrashesDelegate.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/Mediation/GADMediationAdEventDelegate.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADNativeExpressAdViewDelegate.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADAdValue.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADAdSize.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/Mediation/GADMediationAdSize.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenter.framework/Headers/MSLog.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenter.framework/Headers/MSAbstractLog.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenterAnalytics.framework/Headers/MSAbstractLog.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenterCrashes.framework/Headers/MSAbstractLog.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenterCrashes.framework/Headers/MSErrorAttachmentLog.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenterAnalytics.framework/Headers/MSEventLog.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADUnifiedNativeAd+ConfirmationClick.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenter.framework/Headers/MSWrapperSdk.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADInterstitial.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/DFPInterstitial.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADCustomEventInterstitial.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/OneSignal/iOS_SDK/OneSignalSDK/Framework/OneSignal.framework/Headers/OneSignal.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenter.framework/Headers/MSChannelProtocol.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenter.framework/Headers/MSChannelGroupProtocol.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/Mediation/GADMAdNetworkAdapterProtocol.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/Mediation/GADMRewardBasedVideoAdNetworkAdapterProtocol.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/Mediation/GADMAdNetworkConnectorProtocol.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/Mediation/GADMRewardBasedVideoAdNetworkConnectorProtocol.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignIn.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GoogleSignIn.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDAuthentication.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADNativeAdImage+Mediation.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/Mediation/GADMediationAdConfiguration.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/Mediation/GADMediationServerConfiguration.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADRequestConfiguration.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADMuteThisAdReason.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignInButton.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADResponseInfo.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADMediaAspectRatio.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/Mediation/GADVersionNumber.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADAdLoader.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenterAnalytics.framework/Headers/MSAnalyticsAuthenticationProvider.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADAudioVideoManager.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenter.framework/Headers/MSLogger.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenter.framework/Headers/MSWrapperLogger.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADVideoController.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADDebugOptionsViewController.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADCustomEventBanner.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenterCrashes.framework/Headers/MSWrapperCrashesHelper.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDGoogleUser.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenter.framework/Headers/AppCenter.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenter.framework/Headers/MSAppCenter.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/RTBMediation/GADRTBAdapter.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/Mediation/GADMediationAdapter.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADPresentationError.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADRequestError.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenterAnalytics.framework/Headers/MSPropertyConfigurator.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADExtras.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADCustomEventExtras.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenterAnalytics.framework/Headers/MSAnalytics.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenterAnalytics.framework/Headers/AppCenterAnalytics.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADMobileAds.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenterCrashes.framework/Headers/MSCrashes.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenterCrashes.framework/Headers/AppCenterCrashes.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenterAnalytics.framework/Headers/MSLogWithNameAndProperties.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenter.framework/Headers/MSLogWithProperties.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenterAnalytics.framework/Headers/MSLogWithProperties.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenter.framework/Headers/MSCustomProperties.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenterAnalytics.framework/Headers/MSEventProperties.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADAdLoaderAdTypes.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenterAnalytics.framework/Headers/MSConstants+Flags.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/Mediation/GADMEnums.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADNativeAdViewAdOptions.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADDelayedAdRenderingOptions.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADServerSideVerificationOptions.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADVideoOptions.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADNativeAdMediaAdLoaderOptions.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADNativeAdImageAdLoaderOptions.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADMultipleAdsAdLoaderOptions.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADNativeMuteThisAdLoaderOptions.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/DFPBannerViewOptions.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADUnifiedNativeAdAssetIdentifiers.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADCustomEventParameters.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/RTBMediation/GADRTBRequestParameters.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenter.framework/Headers/MSAppCenterErrors.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenter.framework/Headers/MSConstants.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADInitializationStatus.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADAdFormat.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenter.framework/Headers/MSServiceAbstract.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenterAnalytics.framework/Headers/MSServiceAbstract.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenterCrashes.framework/Headers/MSServiceAbstract.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenterAnalytics.framework/Headers/MSAnalyticsTransmissionTarget.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADDisplayAdMeasurement.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADMediaContent.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenterCrashes.framework/Headers/MSErrorReport.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADRequest.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/DFPRequest.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/Mediation/GADMediationAdRequest.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADDynamicHeightSearchRequest.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADCustomEventRequest.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADMediaView.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADInstreamAdView.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADNativeExpressAdView.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADBannerView.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/DFPBannerView.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADSearchBannerView.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Headers/GADAdChoicesView.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenterCrashes.framework/Headers/MSErrorAttachmentLog+Utility.h"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/OneSignal/iOS_SDK/OneSignalSDK/Framework/OneSignal.framework/Modules/module.modulemap"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Modules/module.modulemap"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenter.framework/Modules/module.modulemap"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenterAnalytics.framework/Modules/module.modulemap"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Users/ewersoncastelo/Developer/www/Hinario-Adventista-Swift/Pods/AppCenter/AppCenter-SDK-Apple/iOS/AppCenterCrashes.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/LocalAuthentication.framework/Headers/LocalAuthentication.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/MediaPlayer.framework/Headers/MediaPlayer.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreAudioTypes.framework/Headers/CoreAudioTypes.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/StoreKit.framework/Headers/StoreKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "56f3af574a4f7712aa4d1a9f54ddabe6"
