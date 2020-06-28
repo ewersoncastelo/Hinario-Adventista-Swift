@@ -36,7 +36,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>FacebookAppID</key>
 	<string>927172097412248</string>
 	<key>FacebookDisplayName</key>
@@ -65,6 +65,8 @@
 	</dict>
 	<key>NSFaceIDUsageDescription</key>
 	<string>Isso permite que você se conecte com segurança no aplicativo</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>O aplicativo terá acesso a dados sensíveis para o envio de notificações push</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>remote-notification</string>
