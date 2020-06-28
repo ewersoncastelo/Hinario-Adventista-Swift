@@ -18,7 +18,8 @@ class Login: UIViewController, UICollectionViewDataSource, UICollectionViewDeleg
 		cv.translatesAutoresizingMaskIntoConstraints = false
 		cv.dataSource = self
 		cv.delegate = self
-		cv.backgroundColor = .white
+		cv.backgroundColor = .black
+        cv.tintColor = .green
 		cv.isPagingEnabled = true
 		return cv
 	}()

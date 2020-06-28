@@ -16,6 +16,8 @@ import SystemConfiguration
 import GoogleMobileAds
 import Reachability
 
+import WebKit
+
 extension UIApplication {
 	var statusBarView: UIView? {
 		return value(forKey: "statusBar") as? UIView
@@ -66,8 +68,8 @@ class HinosDetailController: UIViewController, UIScrollViewDelegate {
 		return view
 	}()
 	
-	private let viewWebView: UIView = {
-		let view = UIView()
+	private let viewWebView: WKWebView = {
+		let view = WKWebView()
 		view.translatesAutoresizingMaskIntoConstraints = false
 		return view
 	}()
