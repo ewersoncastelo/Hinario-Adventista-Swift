@@ -80,7 +80,7 @@ class HinosDetailController: UIViewController, UIScrollViewDelegate {
 		stack.alignment = .fill
 		stack.distribution = .fill
 		stack.spacing = 0
-		stack.heightAnchor.constraint(equalToConstant: 60)
+//		stack.heightAnchor.constraint(equalToConstant: 60)
 		return stack
 	}()
 
@@ -234,8 +234,8 @@ class HinosDetailController: UIViewController, UIScrollViewDelegate {
 		return label
 	}()
 
-	private let myWebView: UIWebView! = {
-		let webView = UIWebView()
+	private let myWebView: WKWebView! = {
+		let webView = WKWebView()
 		webView.translatesAutoresizingMaskIntoConstraints = false
 		return webView
 	}()
@@ -830,13 +830,12 @@ class HinosDetailController: UIViewController, UIScrollViewDelegate {
 		defaults["textFontSize"] = textFontSizeTemp
 		
 		let jsString = "document.getElementsByTagName('body')[0].style.fontSize='\(textFontSizeTemp)vw'"
-		myWebView.stringByEvaluatingJavaScript(from: jsString)
+		myWebView.evaluateJavaScript(jsString, completionHandler: nil)
 		
 		fonteSizeLabel.text = "\(textFontSizeTemp)px"
 		
 		UserDefaults.standard.set(senderValue, forKey: "sliderValue")
 		UserDefaults.standard.synchronize()
-		
 	}
 	
 	//Recupera TAMANHO FONTE salvo no UserDefaults
@@ -854,7 +853,7 @@ class HinosDetailController: UIViewController, UIScrollViewDelegate {
 		
 		let jsString = "document.getElementsByTagName('body')[0].style.fontFamily='\(textFontTypeTemp)'"
 		
-		myWebView.stringByEvaluatingJavaScript(from: jsString)
+		myWebView.evaluateJavaScript(jsString, completionHandler: nil)
 		
 		UserDefaults.standard.set(textFontTypeTemp, forKey: "fontSelected")
 		UserDefaults.standard.synchronize()
@@ -874,7 +873,7 @@ class HinosDetailController: UIViewController, UIScrollViewDelegate {
 		
 		let jsString = "document.getElementsByTagName('body')[0].style.fontFamily='\(textFontTypeTemp)'"
 		
-		myWebView.stringByEvaluatingJavaScript(from: jsString)
+		myWebView.evaluateJavaScript(jsString, completionHandler: nil)
 		
 		UserDefaults.standard.set(textFontTypeTemp, forKey: "fontSelected")
 		UserDefaults.standard.synchronize()
@@ -894,7 +893,7 @@ class HinosDetailController: UIViewController, UIScrollViewDelegate {
 		
 		let jsString = "document.getElementsByTagName('body')[0].style.fontFamily='\(textFontTypeTemp)'"
 		
-		myWebView.stringByEvaluatingJavaScript(from: jsString)
+		myWebView.evaluateJavaScript(jsString, completionHandler: nil)
 		
 		UserDefaults.standard.set(textFontTypeTemp, forKey: "fontSelected")
 		UserDefaults.standard.synchronize()
@@ -914,7 +913,7 @@ class HinosDetailController: UIViewController, UIScrollViewDelegate {
 		
 		let jsString = "document.getElementsByTagName('body')[0].style.fontFamily='\(textFontTypeTemp)'"
 		
-		myWebView.stringByEvaluatingJavaScript(from: jsString)
+		myWebView.evaluateJavaScript(jsString, completionHandler: nil)
 		
 		UserDefaults.standard.set(textFontTypeTemp, forKey: "fontSelected")
 		UserDefaults.standard.synchronize()
@@ -968,7 +967,7 @@ class HinosDetailController: UIViewController, UIScrollViewDelegate {
 			let diaNoiteModoSelected = true
 			let colorBackground = "black"
 			let jsStringFundo = "document.body.style.backgroundColor=\"\(colorBackground)\""
-			myWebView.stringByEvaluatingJavaScript(from: jsStringFundo)
+			myWebView.evaluateJavaScript(jsStringFundo, completionHandler: nil)
 			
 			UserDefaults.standard.set(colorBackground, forKey: "colorBackSelected")
 			UserDefaults.standard.set(diaNoiteModoSelected, forKey: "diaNoiteModoSelected")
@@ -982,7 +981,7 @@ class HinosDetailController: UIViewController, UIScrollViewDelegate {
 			let colorBackground = "white"
 			let diaNoiteModoSelected = false
 			let jsStringFundo = "document.body.style.backgroundColor=\"\(colorBackground)\""
-			myWebView.stringByEvaluatingJavaScript(from: jsStringFundo)
+			myWebView.evaluateJavaScript(jsStringFundo, completionHandler: nil)
 			
 			UserDefaults.standard.set(colorBackground, forKey: "colorBackSelected")
 			UserDefaults.standard.set(diaNoiteModoSelected, forKey: "diaNoiteModoSelected")

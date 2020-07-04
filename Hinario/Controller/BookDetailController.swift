@@ -16,6 +16,7 @@ import MediaPlayer
 import SystemConfiguration
 import GoogleMobileAds
 import Reachability
+import WebKit
 
 class BookDetailController: UIViewController, UIScrollViewDelegate {
 
@@ -60,8 +61,8 @@ class BookDetailController: UIViewController, UIScrollViewDelegate {
 		return view
 	}()
 	
-	private let viewWebView: UIView = {
-		let view = UIView()
+	private let viewWebView: WKWebView = {
+		let view = WKWebView()
 		view.translatesAutoresizingMaskIntoConstraints = false
 		return view
 	}()
@@ -72,7 +73,7 @@ class BookDetailController: UIViewController, UIScrollViewDelegate {
 		stack.alignment = .fill
 		stack.distribution = .fill
 		stack.spacing = 0
-		stack.heightAnchor.constraint(equalToConstant: 60)
+//		stack.heightAnchor.constraint(equalToConstant: 60)
 		return stack
 	}()
 	
@@ -226,8 +227,8 @@ class BookDetailController: UIViewController, UIScrollViewDelegate {
 		return label
 	}()
 	
-	private let myWebView: UIWebView! = {
-		let webView = UIWebView()
+	private let myWebView: WKWebView! = {
+		let webView = WKWebView()
 		webView.translatesAutoresizingMaskIntoConstraints = false
 		return webView
 	}()
@@ -823,7 +824,7 @@ class BookDetailController: UIViewController, UIScrollViewDelegate {
 		defaults["textFontSize"] = textFontSizeTemp
 		
 		let jsString = "document.getElementsByTagName('body')[0].style.fontSize='\(textFontSizeTemp)vw'"
-		myWebView.stringByEvaluatingJavaScript(from: jsString)
+		myWebView.evaluateJavaScript(jsString, completionHandler: nil)
 		
 		fonteSizeLabel.text = "\(textFontSizeTemp)px"
 		
@@ -847,7 +848,7 @@ class BookDetailController: UIViewController, UIScrollViewDelegate {
 		
 		let jsString = "document.getElementsByTagName('body')[0].style.fontFamily='\(textFontTypeTemp)'"
 		
-		myWebView.stringByEvaluatingJavaScript(from: jsString)
+		myWebView.evaluateJavaScript(jsString, completionHandler: nil)
 		
 		UserDefaults.standard.set(textFontTypeTemp, forKey: "fontSelected")
 		UserDefaults.standard.synchronize()
@@ -867,7 +868,7 @@ class BookDetailController: UIViewController, UIScrollViewDelegate {
 		
 		let jsString = "document.getElementsByTagName('body')[0].style.fontFamily='\(textFontTypeTemp)'"
 		
-		myWebView.stringByEvaluatingJavaScript(from: jsString)
+		myWebView.evaluateJavaScript(jsString, completionHandler: nil)
 		
 		UserDefaults.standard.set(textFontTypeTemp, forKey: "fontSelected")
 		UserDefaults.standard.synchronize()
@@ -887,7 +888,7 @@ class BookDetailController: UIViewController, UIScrollViewDelegate {
 		
 		let jsString = "document.getElementsByTagName('body')[0].style.fontFamily='\(textFontTypeTemp)'"
 		
-		myWebView.stringByEvaluatingJavaScript(from: jsString)
+		myWebView.evaluateJavaScript(jsString, completionHandler: nil)
 		
 		UserDefaults.standard.set(textFontTypeTemp, forKey: "fontSelected")
 		UserDefaults.standard.synchronize()
@@ -907,7 +908,7 @@ class BookDetailController: UIViewController, UIScrollViewDelegate {
 		
 		let jsString = "document.getElementsByTagName('body')[0].style.fontFamily='\(textFontTypeTemp)'"
 		
-		myWebView.stringByEvaluatingJavaScript(from: jsString)
+		myWebView.evaluateJavaScript(jsString, completionHandler: nil)
 		
 		UserDefaults.standard.set(textFontTypeTemp, forKey: "fontSelected")
 		UserDefaults.standard.synchronize()
@@ -961,7 +962,7 @@ class BookDetailController: UIViewController, UIScrollViewDelegate {
 			let diaNoiteModoSelected = true
 			let colorBackground = "black"
 			let jsStringFundo = "document.body.style.backgroundColor=\"\(colorBackground)\""
-			myWebView.stringByEvaluatingJavaScript(from: jsStringFundo)
+			myWebView.evaluateJavaScript(jsStringFundo, completionHandler: nil)
 			
 			UserDefaults.standard.set(colorBackground, forKey: "colorBackSelected")
 			UserDefaults.standard.set(diaNoiteModoSelected, forKey: "diaNoiteModoSelected")
@@ -975,7 +976,7 @@ class BookDetailController: UIViewController, UIScrollViewDelegate {
 			let colorBackground = "white"
 			let diaNoiteModoSelected = false
 			let jsStringFundo = "document.body.style.backgroundColor=\"\(colorBackground)\""
-			myWebView.stringByEvaluatingJavaScript(from: jsStringFundo)
+			myWebView.evaluateJavaScript(jsStringFundo, completionHandler: nil)
 			
 			UserDefaults.standard.set(colorBackground, forKey: "colorBackSelected")
 			UserDefaults.standard.set(diaNoiteModoSelected, forKey: "diaNoiteModoSelected")

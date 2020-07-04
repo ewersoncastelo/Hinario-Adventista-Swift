@@ -65,8 +65,8 @@
 	</dict>
 	<key>NSFaceIDUsageDescription</key>
 	<string>Isso permite que você se conecte com segurança no aplicativo</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>O aplicativo terá acesso a dados sensíveis para o envio de notificações push</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>$(PRODUCT_NAME) location use.</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>remote-notification</string>
