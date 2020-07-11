@@ -18,7 +18,6 @@ class Login: UIViewController, UICollectionViewDataSource, UICollectionViewDeleg
 		cv.translatesAutoresizingMaskIntoConstraints = false
 		cv.dataSource = self
 		cv.delegate = self
-		cv.backgroundColor = .black
         cv.tintColor = .green
 		cv.isPagingEnabled = true
 		return cv
@@ -43,6 +42,7 @@ class Login: UIViewController, UICollectionViewDataSource, UICollectionViewDeleg
 		let pc = UIPageControl()
 		pc.pageIndicatorTintColor = .darkGray
 		pc.currentPageIndicatorTintColor = .verdeTitulo
+//		pc.backgroundColor = .red
 		pc.numberOfPages = pages.count + 1
 		return pc
 	}()
@@ -66,6 +66,23 @@ class Login: UIViewController, UICollectionViewDataSource, UICollectionViewDeleg
 	var pageControlBottomAnchor: NSLayoutConstraint?
 	var skipButtonBottomAnchor: NSLayoutConstraint?
 	var nextButtonBottomAnchor: NSLayoutConstraint?
+	
+	override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+
+        if #available(iOS 13.0, *) {
+            if self.traitCollection.hasDifferentColorAppearance(comparedTo: previousTraitCollection) {
+                if traitCollection.userInterfaceStyle == .dark {
+					collectionView.backgroundColor = .black
+                }
+                else {
+					collectionView.backgroundColor = .white
+                }
+            }
+        } else {
+			collectionView.backgroundColor = .white
+        }
+    }
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()

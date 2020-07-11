@@ -90,7 +90,7 @@ class HinosController: UITableViewController {
 		backColor()
 		
 //		//Checa se o usuario está logado
-//		checkUserIsLogin()
+		checkUserIsLogin()
 		
 		//Obtem dados database
 		fetchListHinos()
@@ -207,11 +207,43 @@ class HinosController: UITableViewController {
 	}
 
 	func checkUserIsLogin() {
-		if Auth.auth().currentUser?.uid == nil {
-			perform(#selector(handleLogout), with: nil, afterDelay: 0)
+		//Checa se o usuario está logado
+		if #available(iOS 13.0, *) {
+			SignInWithAppleManager.checkUserAuth { (authState) in
+				switch authState {
+				case .undefined:
+					if Auth.auth().currentUser?.uid == nil {
+						self.perform(#selector(self.handleLogout), with: nil, afterDelay: 0)
+					} else {
+						print("Usuario Logado")
+					}
+				case .signedOut:
+					if Auth.auth().currentUser?.uid == nil {
+						self.perform(#selector(self.handleLogout), with: nil, afterDelay: 0)
+					} else {
+						print("Usuario Logado")
+					}
+//					let controller = InicioLogin()
+//					controller.modalPresentationStyle = .fullScreen
+//					controller.delegate = self
+//					self.present(controller, animated: true, completion: nil)
+				case .signedIn:
+					print("signedIn")
+				}
+			}
 		} else {
-			print("Usuario Logado")
+			// Fallback on earlier versions
+			if Auth.auth().currentUser?.uid == nil {
+				self.perform(#selector(self.handleLogout), with: nil, afterDelay: 0)
+			} else {
+				print("Usuario Logado")
+			}
 		}
+//		if Auth.auth().currentUser?.uid == nil {
+//			perform(#selector(handleLogout), with: nil, afterDelay: 0)
+//		} else {
+//			print("Usuario Logado")
+//		}
 	}
 	
 	
@@ -224,29 +256,6 @@ class HinosController: UITableViewController {
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(true)
 		showBannerInstertitial()
-		
-		//Checa se o usuario está logado
-		if #available(iOS 13.0, *) {
-			SignInWithAppleManager.checkUserAuth { (authState) in
-				switch authState {
-				case .undefined:
-					let controller = InicioLogin()
-					controller.modalPresentationStyle = .fullScreen
-					controller.delegate = self
-					self.present(controller, animated: true, completion: nil)
-				case .signedOut:
-					let controller = InicioLogin()
-					controller.modalPresentationStyle = .fullScreen
-					controller.delegate = self
-					self.present(controller, animated: true, completion: nil)
-				case .signedIn:
-					print("signedIn")
-				}
-			}
-		} else {
-			checkUserIsLogin()
-		}
-		
 	}
 
 	
@@ -283,6 +292,8 @@ class HinosController: UITableViewController {
 	
 	override func viewDidAppear(_ animated: Bool) {
 		navigationController?.hidesBarsOnSwipe = false
+		
+		
 	}
 	
 	@objc func handleLogout() {
