@@ -36,7 +36,6 @@ class NetworkActivityIndicatorManager: NSObject {
 }
 
 class HinosController: UITableViewController {
-	
 	let cellId = "cellId"
 
 	var favoritableHinos = [Hinario]()
@@ -90,8 +89,8 @@ class HinosController: UITableViewController {
 		//Cor do Fundo PadrÃo
 		backColor()
 		
-		//Checa se o usuario está logado
-		checkUserIsLogin()
+//		//Checa se o usuario está logado
+//		checkUserIsLogin()
 		
 		//Obtem dados database
 		fetchListHinos()
@@ -215,6 +214,7 @@ class HinosController: UITableViewController {
 		}
 	}
 	
+	
 	override func viewWillDisappear(_ animated: Bool) {
 		super.viewWillDisappear(animated)
 		reachability?.stopNotifier()
@@ -224,6 +224,29 @@ class HinosController: UITableViewController {
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(true)
 		showBannerInstertitial()
+		
+		//Checa se o usuario está logado
+		if #available(iOS 13.0, *) {
+			SignInWithAppleManager.checkUserAuth { (authState) in
+				switch authState {
+				case .undefined:
+					let controller = InicioLogin()
+					controller.modalPresentationStyle = .fullScreen
+					controller.delegate = self
+					self.present(controller, animated: true, completion: nil)
+				case .signedOut:
+					let controller = InicioLogin()
+					controller.modalPresentationStyle = .fullScreen
+					controller.delegate = self
+					self.present(controller, animated: true, completion: nil)
+				case .signedIn:
+					print("signedIn")
+				}
+			}
+		} else {
+			checkUserIsLogin()
+		}
+		
 	}
 
 	
@@ -331,4 +354,15 @@ class HinosController: UITableViewController {
 		
 	}
 
+}
+
+extension HinosController: InicioLoginControllerDelegate {
+	func didFinishAuth() {
+		if #available(iOS 13.0, *) {
+			print("\(String(describing: UserDefaults.standard.string(forKey: SignInWithAppleManager.userIdentifierKey)))")
+		} else {
+			// Fallback on earlier versions
+		}
+		
+	}
 }

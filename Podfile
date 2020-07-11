@@ -14,6 +14,7 @@ target 'Hinario' do
 	#pod 'Kingfisher'
   pod 'Firebase/AdMob'
   pod 'InAppPurchaseButton'
+	pod 'CryptoKit'
   
   
   pod 'BGTableViewRowActionWithImage'
