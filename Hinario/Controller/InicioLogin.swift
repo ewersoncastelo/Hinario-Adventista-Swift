@@ -12,9 +12,16 @@ import FBSDKLoginKit
 import GoogleSignIn
 import SVProgressHUD
 import LocalAuthentication
+import AuthenticationServices
+import CryptoKit
 
+protocol InicioLoginControllerDelegate {
+	func didFinishAuth()
+}
 
 class InicioLogin: UIViewController {
+	
+	var delegate: InicioLoginControllerDelegate?
 	
 	let logoImageBackground: UIImageView = {
 		let imageView = UIImageView(image: #imageLiteral(resourceName: "login-layout"))
@@ -83,6 +90,26 @@ class InicioLogin: UIViewController {
 		return button
 	}()
 	
+	@available(iOS 13.0, *)
+	lazy var appleButton : ASAuthorizationAppleIDButton = {
+		let button = ASAuthorizationAppleIDButton()
+		button.addTarget(self, action: #selector(handleApple), for: .touchUpInside)
+		return button
+	}()
+	
+		
+	@available(iOS 13.0, *)
+	@objc fileprivate func handleApple(){
+		print("tapped apple")
+		let request = ASAuthorizationAppleIDProvider().createRequest()
+		request.requestedScopes = [.fullName, .email]
+		let controller = ASAuthorizationController(authorizationRequests: [request])
+		controller.delegate = self
+		controller.presentationContextProvider = self
+		controller.performRequests()
+		
+	}
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
@@ -198,28 +225,112 @@ class InicioLogin: UIViewController {
 	}
 	
 	fileprivate func setupBottomControls() {
-		let bottomControlsStackView = UIStackView(arrangedSubviews: [/*googleButton,*/faceButton, touchFaceButton, anonymosButton])
-		bottomControlsStackView.translatesAutoresizingMaskIntoConstraints = false
-		bottomControlsStackView.distribution = .equalSpacing
-		bottomControlsStackView.alignment = .fill
-		bottomControlsStackView.axis = .vertical
-		bottomControlsStackView.spacing = 2
-		view.addSubview(bottomControlsStackView)
-		
-		if #available(iOS 11.0, *) {
+		if #available(iOS 13.0, *){
+			let bottomControlsStackView = UIStackView(arrangedSubviews: [faceButton, appleButton, anonymosButton])
+			bottomControlsStackView.translatesAutoresizingMaskIntoConstraints = false
+			bottomControlsStackView.distribution = .equalSpacing
+			bottomControlsStackView.alignment = .fill
+			bottomControlsStackView.axis = .vertical
+			bottomControlsStackView.spacing = 2
+			view.addSubview(bottomControlsStackView)
+			
 			NSLayoutConstraint.activate([
-				bottomControlsStackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 0),
-				bottomControlsStackView.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor),
-				bottomControlsStackView.heightAnchor.constraint(equalToConstant: 90),
-				bottomControlsStackView.widthAnchor.constraint(equalToConstant: 194),
-				])
+			bottomControlsStackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 0),
+			bottomControlsStackView.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor),
+			bottomControlsStackView.heightAnchor.constraint(equalToConstant: 90),
+			bottomControlsStackView.widthAnchor.constraint(equalToConstant: 194),
+			])
 		} else {
+			let bottomControlsStackView = UIStackView(arrangedSubviews: [faceButton, touchFaceButton, anonymosButton])
+			bottomControlsStackView.translatesAutoresizingMaskIntoConstraints = false
+			bottomControlsStackView.distribution = .equalSpacing
+			bottomControlsStackView.alignment = .fill
+			bottomControlsStackView.axis = .vertical
+			bottomControlsStackView.spacing = 2
+			view.addSubview(bottomControlsStackView)
+		
 			NSLayoutConstraint.activate([
 				bottomControlsStackView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20),
 				bottomControlsStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
 				bottomControlsStackView.heightAnchor.constraint(equalToConstant: 60),
 				bottomControlsStackView.widthAnchor.constraint(equalToConstant: 194)
 			])
+			
+		}
+		
+		
+	}
+}
+
+extension InicioLogin: ASAuthorizationControllerDelegate {
+	
+	@available(iOS 13.0, *)
+	private func registerNewAccount(credential: ASAuthorizationAppleIDCredential){
+		print("Register account with: \(credential.user)")
+		self.userLogado()
+		delegate?.didFinishAuth()
+		self.dismiss(animated: true, completion: nil)
+	}
+	
+	@available(iOS 13.0, *)
+	private func SignInWithExistingAccount(credential: ASAuthorizationAppleIDCredential){
+		print("Signing in existing account with: \(credential.user)")
+		self.userLogado()
+		delegate?.didFinishAuth()
+		self.dismiss(animated: true, completion: nil)
+	}
+	
+	@available(iOS 13.0, *)
+	private func SignInWithUserAndPassword(credential: ASPasswordCredential){
+		print("Signing account with keyChain credential: \(credential.user)")
+		self.userLogado()
+		delegate?.didFinishAuth()
+		self.dismiss(animated: true, completion: nil)
+	}
+	
+	@available(iOS 13.0, *)
+	func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
+		//
+		switch authorization.credential {
+		case let appleIdCredential as ASAuthorizationAppleIDCredential:
+			let userId = appleIdCredential.user
+			UserDefaults.standard.set(userId, forKey: SignInWithAppleManager.userIdentifierKey)
+			
+			if let _ = appleIdCredential.email, let _ = appleIdCredential.fullName {
+				registerNewAccount(credential: appleIdCredential)
+				self.userLogado()
+			} else {
+				SignInWithExistingAccount(credential: appleIdCredential)
+				self.userLogado()
+			}
+			
+			break
+		
+		case let passwordCredential as ASPasswordCredential:
+			let userId = passwordCredential.user
+			UserDefaults.standard.set(userId, forKey: SignInWithAppleManager.userIdentifierKey)
+			self.userLogado()
+			SignInWithUserAndPassword(credential: passwordCredential)
+		default:
+			break
 		}
 	}
+	
+	@available(iOS 13.0, *)
+	func authorizationController(controller: ASAuthorizationController, didCompleteWithError error: Error) {
+		let alertController = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
+		let actionOk = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+		alertController.addAction(actionOk)
+		self.present(alertController, animated: true, completion: nil)
+	}
+}
+
+extension InicioLogin: ASAuthorizationControllerPresentationContextProviding{
+	@available(iOS 13.0, *)
+	func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
+		print("ok true")
+		self.userLogado()
+		return self.view.window!
+	}
+	
 }

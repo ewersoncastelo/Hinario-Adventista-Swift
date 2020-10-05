@@ -36,7 +36,6 @@ class NetworkActivityIndicatorManager: NSObject {
 }
 
 class HinosController: UITableViewController {
-	
 	let cellId = "cellId"
 
 	var favoritableHinos = [Hinario]()
@@ -90,7 +89,7 @@ class HinosController: UITableViewController {
 		//Cor do Fundo PadrÃo
 		backColor()
 		
-		//Checa se o usuario está logado
+//		//Checa se o usuario está logado
 		checkUserIsLogin()
 		
 		//Obtem dados database
@@ -208,12 +207,43 @@ class HinosController: UITableViewController {
 	}
 
 	func checkUserIsLogin() {
-		if Auth.auth().currentUser?.uid == nil {
-			perform(#selector(handleLogout), with: nil, afterDelay: 0)
+		//Checa se o usuario está logado
+		if #available(iOS 13.0, *) {
+			SignInWithAppleManager.checkUserAuth { (authState) in
+				switch authState {
+				case .undefined:
+					print("undefined")
+//					let loginPage = HinosController()
+//					loginPage.modalPresentationStyle = .fullScreen
+//					self.present(loginPage, animated: true, completion: nil)
+				case .signedOut:
+					print("signedOut")
+//					let loginPage = HinosController()
+//					loginPage.modalPresentationStyle = .fullScreen
+//					self.present(loginPage, animated: true, completion: nil)
+//					let controller = InicioLogin()
+//					controller.modalPresentationStyle = .fullScreen
+//					controller.delegate = self
+//					self.present(controller, animated: true, completion: nil)
+				case .signedIn:
+					print("signedIn")
+				}
+			}
 		} else {
-			print("Usuario Logado")
+			// Fallback on earlier versions
+			if Auth.auth().currentUser?.uid == nil {
+				self.perform(#selector(self.handleLogout), with: nil, afterDelay: 0)
+			} else {
+				print("Usuario Logado")
+			}
 		}
+//		if Auth.auth().currentUser?.uid == nil {
+//			perform(#selector(handleLogout), with: nil, afterDelay: 0)
+//		} else {
+//			print("Usuario Logado")
+//		}
 	}
+	
 	
 	override func viewWillDisappear(_ animated: Bool) {
 		super.viewWillDisappear(animated)
@@ -260,6 +290,8 @@ class HinosController: UITableViewController {
 	
 	override func viewDidAppear(_ animated: Bool) {
 		navigationController?.hidesBarsOnSwipe = false
+		
+		
 	}
 	
 	@objc func handleLogout() {
@@ -331,4 +363,15 @@ class HinosController: UITableViewController {
 		
 	}
 
+}
+
+extension HinosController: InicioLoginControllerDelegate {
+	func didFinishAuth() {
+		if #available(iOS 13.0, *) {
+			print("\(String(describing: UserDefaults.standard.string(forKey: SignInWithAppleManager.userIdentifierKey)))")
+		} else {
+			// Fallback on earlier versions
+		}
+		
+	}
 }

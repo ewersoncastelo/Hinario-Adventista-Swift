@@ -27,7 +27,7 @@
 		<key>NSExtensionPrincipalClass</key>
 		<string>$(PRODUCT_MODULE_NAME).NotificationService</string>
 	</dict>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>O aplicativo terá acesso a dados sensíveis para o envio de notificações push</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>$(PRODUCT_NAME) location use.</string>
 </dict>
 </plist>
