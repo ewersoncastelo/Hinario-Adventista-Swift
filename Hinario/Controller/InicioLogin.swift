@@ -267,6 +267,7 @@ extension InicioLogin: ASAuthorizationControllerDelegate {
 	@available(iOS 13.0, *)
 	private func registerNewAccount(credential: ASAuthorizationAppleIDCredential){
 		print("Register account with: \(credential.user)")
+		self.userLogado()
 		delegate?.didFinishAuth()
 		self.dismiss(animated: true, completion: nil)
 	}
@@ -274,6 +275,7 @@ extension InicioLogin: ASAuthorizationControllerDelegate {
 	@available(iOS 13.0, *)
 	private func SignInWithExistingAccount(credential: ASAuthorizationAppleIDCredential){
 		print("Signing in existing account with: \(credential.user)")
+		self.userLogado()
 		delegate?.didFinishAuth()
 		self.dismiss(animated: true, completion: nil)
 	}
@@ -281,6 +283,7 @@ extension InicioLogin: ASAuthorizationControllerDelegate {
 	@available(iOS 13.0, *)
 	private func SignInWithUserAndPassword(credential: ASPasswordCredential){
 		print("Signing account with keyChain credential: \(credential.user)")
+		self.userLogado()
 		delegate?.didFinishAuth()
 		self.dismiss(animated: true, completion: nil)
 	}
@@ -295,8 +298,10 @@ extension InicioLogin: ASAuthorizationControllerDelegate {
 			
 			if let _ = appleIdCredential.email, let _ = appleIdCredential.fullName {
 				registerNewAccount(credential: appleIdCredential)
+				self.userLogado()
 			} else {
 				SignInWithExistingAccount(credential: appleIdCredential)
+				self.userLogado()
 			}
 			
 			break
@@ -304,7 +309,7 @@ extension InicioLogin: ASAuthorizationControllerDelegate {
 		case let passwordCredential as ASPasswordCredential:
 			let userId = passwordCredential.user
 			UserDefaults.standard.set(userId, forKey: SignInWithAppleManager.userIdentifierKey)
-			
+			self.userLogado()
 			SignInWithUserAndPassword(credential: passwordCredential)
 		default:
 			break
@@ -324,6 +329,7 @@ extension InicioLogin: ASAuthorizationControllerPresentationContextProviding{
 	@available(iOS 13.0, *)
 	func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
 		print("ok true")
+		self.userLogado()
 		return self.view.window!
 	}
 	

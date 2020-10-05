@@ -624,7 +624,7 @@
 				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = 4TP5KVW8P3;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -652,7 +652,7 @@
 				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = 4TP5KVW8P3;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -679,7 +679,7 @@
 				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = 4TP5KVW8P3;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -867,7 +867,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Hinario/Hinário SevenDebug.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = 4TP5KVW8P3;
 				INFOPLIST_FILE = Hinario/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -896,7 +896,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Hinario/Hinário SevenRelease.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = 4TP5KVW8P3;
 				INFOPLIST_FILE = Hinario/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -981,7 +981,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Hinário.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = 4TP5KVW8P3;
 				INFOPLIST_FILE = Hinario/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;

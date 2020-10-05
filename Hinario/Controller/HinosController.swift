@@ -212,17 +212,15 @@ class HinosController: UITableViewController {
 			SignInWithAppleManager.checkUserAuth { (authState) in
 				switch authState {
 				case .undefined:
-					if Auth.auth().currentUser?.uid == nil {
-						self.perform(#selector(self.handleLogout), with: nil, afterDelay: 0)
-					} else {
-						print("Usuario Logado")
-					}
+					print("undefined")
+//					let loginPage = HinosController()
+//					loginPage.modalPresentationStyle = .fullScreen
+//					self.present(loginPage, animated: true, completion: nil)
 				case .signedOut:
-					if Auth.auth().currentUser?.uid == nil {
-						self.perform(#selector(self.handleLogout), with: nil, afterDelay: 0)
-					} else {
-						print("Usuario Logado")
-					}
+					print("signedOut")
+//					let loginPage = HinosController()
+//					loginPage.modalPresentationStyle = .fullScreen
+//					self.present(loginPage, animated: true, completion: nil)
 //					let controller = InicioLogin()
 //					controller.modalPresentationStyle = .fullScreen
 //					controller.delegate = self
