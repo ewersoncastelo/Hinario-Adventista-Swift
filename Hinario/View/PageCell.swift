@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class PageCell: UICollectionViewCell {
 	
@@ -16,7 +17,7 @@ class PageCell: UICollectionViewCell {
 			
 			imageView.image = UIImage(named: page.imageName)
 			
-			let color = UIColor(white: 0.2, alpha: 1)
+			let color = UIColor(white: 0.6, alpha: 1)
 			
 			let attributedText = NSMutableAttributedString(string: page.title, attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20, weight: UIFont.Weight.medium), NSAttributedString.Key.foregroundColor: color])
 			
@@ -64,14 +65,27 @@ class PageCell: UICollectionViewCell {
 		addSubview(imageView)
 		addSubview(textView)
 		addSubview(lineSeparatorView)
+        
+        imageView.snp.makeConstraints { make in
+            make.top.equalTo(snp.top).inset(-10)
+            make.left.equalTo(snp.left)
+            make.right.equalTo(snp.right)
+            make.bottom.equalTo(textView.snp.top)
+        }
 		
-		imageView.anchorToTop(topAnchor, left: leftAnchor, bottom: textView.topAnchor, right: rightAnchor)
-	
-		textView.anchorWithConstantsToTop(nil, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor, topConstant: 0, leftConstant: 16, bottomConstant: 0, rightConstant: 16)
-		textView.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.3).isActive = true
-		
-		lineSeparatorView.anchorToTop(nil, left: leftAnchor, bottom: textView.topAnchor, right: rightAnchor)
-		lineSeparatorView.heightAnchor.constraint(equalToConstant: 1).isActive = true
+        textView.snp.makeConstraints { make in
+            make.left.equalTo(snp.left).inset(20)
+            make.right.equalTo(snp.right).inset(20)
+            make.bottom.equalTo(snp.bottom)
+            make.height.equalTo(snp.height).multipliedBy(0.3)
+        }
+        
+        lineSeparatorView.snp.makeConstraints { make in
+            make.left.equalTo(snp.left)
+            make.right.equalTo(snp.right)
+            make.bottom.equalTo(textView.snp.top)
+            make.height.equalTo(1)
+        }
 	}
 	
 	required init?(coder aDecoder: NSCoder) {

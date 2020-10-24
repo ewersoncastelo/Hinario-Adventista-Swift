@@ -23,6 +23,7 @@ class Walkthrough: UIViewController, UICollectionViewDataSource, UICollectionVie
 		cv.delegate = self
         cv.tintColor = .green
 		cv.isPagingEnabled = true
+        cv.backgroundColor = .white
 		return cv
 	}()
     
