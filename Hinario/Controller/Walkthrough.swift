@@ -7,21 +7,49 @@
 //
 
 import UIKit
+import SnapKit
 
 class Walkthrough: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 	
-	lazy var collectionView: UICollectionView = {
+    // MARK:- Variables
+    
+    lazy var collectionView: UICollectionView = {
 		let layout = UICollectionViewFlowLayout()
 		layout.scrollDirection = .horizontal
 		layout.minimumLineSpacing = 0
-		let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
-		cv.translatesAutoresizingMaskIntoConstraints = false
+		
+        let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
 		cv.dataSource = self
 		cv.delegate = self
         cv.tintColor = .green
 		cv.isPagingEnabled = true
 		return cv
 	}()
+    
+    lazy var pageControl: UIPageControl = {
+        let pc = UIPageControl()
+        pc.pageIndicatorTintColor = .darkGray
+        pc.currentPageIndicatorTintColor = .verdeTitulo
+        pc.backgroundColor = .black
+        pc.numberOfPages = pages.count + 1
+        return pc
+    }()
+    
+    let skipButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("Pular", for: .normal)
+        button.setTitleColor(.orange, for: .normal)
+        button.addTarget(self, action: #selector(handleSkip), for: .touchUpInside)
+        return button
+    }()
+    
+    lazy var nextButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("Próximo", for: .normal)
+        button.setTitleColor(.orange, for: .normal)
+        button.addTarget(self, action: #selector(handleNext), for: .touchUpInside)
+        return button
+    }()
 	
 	let cellId = "cellId"
 	let loginCellId = "loginCellId"
@@ -38,53 +66,9 @@ class Walkthrough: UIViewController, UICollectionViewDataSource, UICollectionVie
 		return [firstPage, secondPage, thirdPage, fourthPage]
 	}()
 	
-	lazy var pageControl: UIPageControl = {
-		let pc = UIPageControl()
-		pc.pageIndicatorTintColor = .darkGray
-		pc.currentPageIndicatorTintColor = .verdeTitulo
-//		pc.backgroundColor = .red
-		pc.numberOfPages = pages.count + 1
-		return pc
-	}()
-	
-	let skipButton: UIButton = {
-		let button = UIButton(type: .system)
-		button.setTitle("Pular", for: .normal)
-		button.setTitleColor(.orange, for: .normal)
-		button.addTarget(self, action: #selector(handleSkip), for: .touchUpInside)
-		return button
-	}()
-	
-	lazy var nextButton: UIButton = {
-		let button = UIButton(type: .system)
-		button.setTitle("Próximo", for: .normal)
-		button.setTitleColor(.orange, for: .normal)
-		button.addTarget(self, action: #selector(handleNext), for: .touchUpInside)
-		return button
-	}()
-	
-	var pageControlBottomAnchor: NSLayoutConstraint?
-	var skipButtonBottomAnchor: NSLayoutConstraint?
-	var nextButtonBottomAnchor: NSLayoutConstraint?
-	
-	override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-        super.traitCollectionDidChange(previousTraitCollection)
+	// MARK:- LIFE CYCLE
 
-        if #available(iOS 13.0, *) {
-            if self.traitCollection.hasDifferentColorAppearance(comparedTo: previousTraitCollection) {
-                if traitCollection.userInterfaceStyle == .dark {
-					collectionView.backgroundColor = .black
-                }
-                else {
-					collectionView.backgroundColor = .white
-                }
-            }
-        } else {
-			collectionView.backgroundColor = .white
-        }
-    }
-	
-	override func viewDidLoad() {
+    override func viewDidLoad() {
 		super.viewDidLoad()
 		
 		view.addSubview(collectionView)
@@ -92,29 +76,77 @@ class Walkthrough: UIViewController, UICollectionViewDataSource, UICollectionVie
 		view.addSubview(skipButton)
 		view.addSubview(nextButton)
 		
-        collectionView.anchorToTop(view.topAnchor, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor)
-        pageControlBottomAnchor = pageControl.anchor(nil, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 40)[1]
-		skipButtonBottomAnchor = skipButton.anchor(nil, left: view.leftAnchor, bottom: view.bottomAnchor, right: nil, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 60, heightConstant: 50)[1]
-		nextButtonBottomAnchor = nextButton.anchor(nil, left: nil, bottom: view.bottomAnchor, right: view.rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 80, heightConstant: 50)[0]
-
+        setupUI()
 		
 		registerCells()
 	}
+    
+    override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
+        
+        collectionView.collectionViewLayout.invalidateLayout()
+        
+        let indexPath = IndexPath(item: pageControl.currentPage, section: 0)
+        
+        DispatchQueue.main.async {
+            self.collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+        }
+    }
 	
+    // MARK:- FUNCTIONS
+    
+    fileprivate func setupUI() {
+        
+        collectionView.snp.makeConstraints { make in
+            make.top.equalTo(view.snp.topMargin)
+            make.left.equalTo(view.snp.left)
+            make.right.equalTo(view.snp.right)
+            make.bottom.equalTo(view.snp.bottom)
+        }
+        
+        pageControl.snp.makeConstraints { make in
+            make.trailing.equalTo(view.snp.trailing)
+            make.leading.equalTo(view.snp.leading)
+            make.bottom.equalTo(view.snp.bottom)
+            make.height.equalTo(40)
+        }
+        
+        skipButton.snp.makeConstraints { make in
+            make.left.equalTo(view.snp.left).inset(15)
+            make.bottom.equalTo(view.snp.bottom)
+            make.height.equalTo(50)
+            make.width.equalTo(60)
+        }
+        
+        nextButton.snp.makeConstraints { make in
+            make.right.equalTo(view.snp.right).inset(15)
+            make.bottom.equalTo(view.snp.bottom)
+            make.height.equalTo(50)
+            make.width.equalTo(60)
+        }
+    }
+    
+    // If dark mode active collection view must be black background
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+
+        if #available(iOS 13.0, *) {
+            if self.traitCollection.hasDifferentColorAppearance(comparedTo: previousTraitCollection) {
+                if traitCollection.userInterfaceStyle == .dark {
+                    collectionView.backgroundColor = .black
+                }
+                else {
+                    collectionView.backgroundColor = .white
+                }
+            }
+        } else {
+            collectionView.backgroundColor = .white
+        }
+    }
+    
 	func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
 		
 		let pageNumber = Int(targetContentOffset.pointee.x / view.frame.width)
 		pageControl.currentPage = pageNumber
-		
-		if pageNumber == pages.count {
-			pageControlBottomAnchor?.constant = 60
-			skipButtonBottomAnchor?.constant = 70
-			nextButtonBottomAnchor?.constant = 70
-		} else {
-			pageControlBottomAnchor?.constant = 0
-			skipButtonBottomAnchor?.constant = 0
-			nextButtonBottomAnchor?.constant = 0
-		}
 		
 		UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
 			self.view.layoutIfNeeded()
@@ -131,7 +163,6 @@ class Walkthrough: UIViewController, UICollectionViewDataSource, UICollectionVie
 	}
 	
 	@objc func handleNext() {
-		
 		if pageControl.currentPage == pages.count {
 			return
 		}
@@ -141,7 +172,6 @@ class Walkthrough: UIViewController, UICollectionViewDataSource, UICollectionVie
 		pageControl.currentPage += 1
 		
 		goToLoginScreen()
-
 	}
 	
 	fileprivate func registerCells() {
@@ -180,30 +210,7 @@ class Walkthrough: UIViewController, UICollectionViewDataSource, UICollectionVie
 	}
 	
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-		return CGSize(width: view.frame.width, height: view.frame.height)
-	}
-	
-	override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
-		
-		collectionView.collectionViewLayout.invalidateLayout()
-		
-		let indexPath = IndexPath(item: pageControl.currentPage, section: 0)
-		
-		DispatchQueue.main.async {
-			self.collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
-		}
+        return CGSize(width: view.frame.width, height: view.frame.height)
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
