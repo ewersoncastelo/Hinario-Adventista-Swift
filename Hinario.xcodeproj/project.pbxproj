@@ -7,11 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7CB804E1C25BD6671B001CF4 /* Pods_Hinario_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18000ABE10EFAA8A37B60BF /* Pods_Hinario_OneSignalNotificationServiceExtension.framework */; };
 		90001C46205D93CC00BA06BF /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90001C45205D93CC00BA06BF /* Extension.swift */; };
 		900887EE22E524B800642894 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 900887ED22E524B800642894 /* GoogleService-Info.plist */; };
 		900A165D1FF274B400688AAA /* UIColor+theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900A165C1FF274B400688AAA /* UIColor+theme.swift */; };
-		900E494620536BD200A7787F /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900E494520536BD200A7787F /* Login.swift */; };
+		900E494620536BD200A7787F /* Walkthrough.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900E494520536BD200A7787F /* Walkthrough.swift */; };
 		900E494820541B2800A7787F /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900E494720541B2800A7787F /* PageCell.swift */; };
 		900E494A20546FB200A7787F /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900E494920546FB200A7787F /* Page.swift */; };
 		900FD31F249EB1360047F280 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900FD31E249EB1360047F280 /* NotificationService.swift */; };
@@ -22,7 +21,6 @@
 		907091E22034782900E8AD8E /* Favorito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907091E12034782900E8AD8E /* Favorito.swift */; };
 		9074BEED24B9F80900F9EB34 /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9074BEEB24B9F80900F9EB34 /* AuthState.swift */; };
 		9074BEEE24B9F80900F9EB34 /* SignInWithAppleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9074BEEC24B9F80900F9EB34 /* SignInWithAppleManager.swift */; };
-		907CC1A3249EAA6A0038A3C5 /* Pods_Hinario.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AC286F9481281BCD9147D0 /* Pods_Hinario.framework */; };
 		9080DAFD1FF7093D0081DFA7 /* BookmarkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9080DAFC1FF7093D0081DFA7 /* BookmarkController.swift */; };
 		90C9FD09203080160027650B /* BookmarkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C9FD08203080160027650B /* BookmarkCell.swift */; };
 		90CBDBD71FD88B580080BE00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CBDBD61FD88B580080BE00 /* AppDelegate.swift */; };
@@ -38,6 +36,8 @@
 		90E01A481FFC2601009CF7F0 /* InicioLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E01A471FFC2601009CF7F0 /* InicioLogin.swift */; };
 		90FA153820019DE6005D4F6B /* Hinario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FA153720019DE6005D4F6B /* Hinario.swift */; };
 		90FA153A20024BA2005D4F6B /* HinosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FA153920024BA2005D4F6B /* HinosCell.swift */; };
+		EA8711737B6138C7EE47E73B /* Pods_Hinario.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D85647D63AF752865B71465 /* Pods_Hinario.framework */; };
+		FB4F6432844304B8DEE4F4ED /* Pods_Hinario_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74279B862382C7B58EDA8CED /* Pods_Hinario_OneSignalNotificationServiceExtension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,15 +72,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		22AC286F9481281BCD9147D0 /* Pods_Hinario.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hinario.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		386796B51EC0683DD4BB5A4F /* Pods-Hinario.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hinario.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hinario/Pods-Hinario.release.xcconfig"; sourceTree = "<group>"; };
-		3CBDD83C30E23B7DB8D59557 /* Pods-Hinario-OneSignalNotificationServiceExtension.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hinario-OneSignalNotificationServiceExtension.staging.xcconfig"; path = "Pods/Target Support Files/Pods-Hinario-OneSignalNotificationServiceExtension/Pods-Hinario-OneSignalNotificationServiceExtension.staging.xcconfig"; sourceTree = "<group>"; };
-		5F325AA1797D41420A5DFE27 /* Pods-Hinario.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hinario.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hinario/Pods-Hinario.debug.xcconfig"; sourceTree = "<group>"; };
-		61BFC3C398B9622E732141DC /* Pods-Hinario-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hinario-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hinario-OneSignalNotificationServiceExtension/Pods-Hinario-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		0FFAD753B896CDAD0B2E8F2E /* Pods-Hinario-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hinario-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-Hinario-OneSignalNotificationServiceExtension/Pods-Hinario-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		4CAB5C605D4D7F7F747A7223 /* Pods-Hinario-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hinario-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-Hinario-OneSignalNotificationServiceExtension/Pods-Hinario-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		4D85647D63AF752865B71465 /* Pods_Hinario.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hinario.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72CF9B06BF54DA044DA7589F /* Pods-Hinario.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hinario.debug.xcconfig"; path = "Target Support Files/Pods-Hinario/Pods-Hinario.debug.xcconfig"; sourceTree = "<group>"; };
+		74279B862382C7B58EDA8CED /* Pods_Hinario_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hinario_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80BCF6E73D16DB7408F9F949 /* Pods-Hinario-OneSignalNotificationServiceExtension.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hinario-OneSignalNotificationServiceExtension.staging.xcconfig"; path = "Target Support Files/Pods-Hinario-OneSignalNotificationServiceExtension/Pods-Hinario-OneSignalNotificationServiceExtension.staging.xcconfig"; sourceTree = "<group>"; };
 		90001C45205D93CC00BA06BF /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		900887ED22E524B800642894 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		900A165C1FF274B400688AAA /* UIColor+theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+theme.swift"; sourceTree = "<group>"; };
-		900E494520536BD200A7787F /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		900E494520536BD200A7787F /* Walkthrough.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Walkthrough.swift; sourceTree = "<group>"; };
 		900E494720541B2800A7787F /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
 		900E494920546FB200A7787F /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		900FD31C249EB1360047F280 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,9 +117,8 @@
 		90E0E4902013D6030061F664 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		90FA153720019DE6005D4F6B /* Hinario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hinario.swift; sourceTree = "<group>"; };
 		90FA153920024BA2005D4F6B /* HinosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HinosCell.swift; sourceTree = "<group>"; };
-		9775CFA95D2EFA6931D0BB85 /* Pods-Hinario-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hinario-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hinario-OneSignalNotificationServiceExtension/Pods-Hinario-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
-		C18000ABE10EFAA8A37B60BF /* Pods_Hinario_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hinario_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EEBEA2B79C2FD35E9DE1C708 /* Pods-Hinario.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hinario.staging.xcconfig"; path = "Pods/Target Support Files/Pods-Hinario/Pods-Hinario.staging.xcconfig"; sourceTree = "<group>"; };
+		D9504EF2DAF2385BF7487C8F /* Pods-Hinario.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hinario.staging.xcconfig"; path = "Target Support Files/Pods-Hinario/Pods-Hinario.staging.xcconfig"; sourceTree = "<group>"; };
+		FFFA3985F9EED2F9B79B90DF /* Pods-Hinario.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hinario.release.xcconfig"; path = "Target Support Files/Pods-Hinario/Pods-Hinario.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CB804E1C25BD6671B001CF4 /* Pods_Hinario_OneSignalNotificationServiceExtension.framework in Frameworks */,
+				FB4F6432844304B8DEE4F4ED /* Pods_Hinario_OneSignalNotificationServiceExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,13 +141,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				907CC1A3249EAA6A0038A3C5 /* Pods_Hinario.framework in Frameworks */,
+				EA8711737B6138C7EE47E73B /* Pods_Hinario.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CDB9C0C48DBAC584A335262 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D85647D63AF752865B71465 /* Pods_Hinario.framework */,
+				74279B862382C7B58EDA8CED /* Pods_Hinario_OneSignalNotificationServiceExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7BE35B280C1910D2154014AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72CF9B06BF54DA044DA7589F /* Pods-Hinario.debug.xcconfig */,
+				FFFA3985F9EED2F9B79B90DF /* Pods-Hinario.release.xcconfig */,
+				D9504EF2DAF2385BF7487C8F /* Pods-Hinario.staging.xcconfig */,
+				0FFAD753B896CDAD0B2E8F2E /* Pods-Hinario-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				4CAB5C605D4D7F7F747A7223 /* Pods-Hinario-OneSignalNotificationServiceExtension.release.xcconfig */,
+				80BCF6E73D16DB7408F9F949 /* Pods-Hinario-OneSignalNotificationServiceExtension.staging.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		900FD31D249EB1360047F280 /* OneSignalNotificationServiceExtension */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,8 +207,8 @@
 				9028CF6F2014E5EF006F6DF5 /* HinarioUITests */,
 				900FD31D249EB1360047F280 /* OneSignalNotificationServiceExtension */,
 				90CBDBD41FD88B580080BE00 /* Products */,
-				FE77FDE834666AD41AFD82F0 /* Pods */,
-				A8F3550E69A73F702DC41B42 /* Frameworks */,
+				7BE35B280C1910D2154014AE /* Pods */,
+				0CDB9C0C48DBAC584A335262 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -222,7 +244,7 @@
 		90E01A441FFC25D8009CF7F0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				900E494520536BD200A7787F /* Login.swift */,
+				900E494520536BD200A7787F /* Walkthrough.swift */,
 				90E01A471FFC2601009CF7F0 /* InicioLogin.swift */,
 				90CBDBD81FD88B580080BE00 /* HinosController.swift */,
 				90D2F13120AF9E53000378AF /* HinosController+UITableView.swift */,
@@ -265,28 +287,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		A8F3550E69A73F702DC41B42 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				22AC286F9481281BCD9147D0 /* Pods_Hinario.framework */,
-				C18000ABE10EFAA8A37B60BF /* Pods_Hinario_OneSignalNotificationServiceExtension.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FE77FDE834666AD41AFD82F0 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5F325AA1797D41420A5DFE27 /* Pods-Hinario.debug.xcconfig */,
-				386796B51EC0683DD4BB5A4F /* Pods-Hinario.release.xcconfig */,
-				EEBEA2B79C2FD35E9DE1C708 /* Pods-Hinario.staging.xcconfig */,
-				61BFC3C398B9622E732141DC /* Pods-Hinario-OneSignalNotificationServiceExtension.debug.xcconfig */,
-				9775CFA95D2EFA6931D0BB85 /* Pods-Hinario-OneSignalNotificationServiceExtension.release.xcconfig */,
-				3CBDD83C30E23B7DB8D59557 /* Pods-Hinario-OneSignalNotificationServiceExtension.staging.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -294,11 +294,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 900FD324249EB1360047F280 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
 			buildPhases = (
-				4C4DC0DB911861DB13D4071E /* [CP] Check Pods Manifest.lock */,
+				C79B2754C35E9D9BF5EBDDB5 /* [CP] Check Pods Manifest.lock */,
 				900FD318249EB1360047F280 /* Sources */,
 				900FD319249EB1360047F280 /* Frameworks */,
 				900FD31A249EB1360047F280 /* Resources */,
-				DD3ED7903F7696BA51E716AC /* [CP] Copy Pods Resources */,
+				4DDB5F7A0CF8D98DBE26AECA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -331,13 +331,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90CBDBE51FD88B580080BE00 /* Build configuration list for PBXNativeTarget "Hinario" */;
 			buildPhases = (
-				D82CE6BEBAFD8EC933E0B791 /* [CP] Check Pods Manifest.lock */,
+				F92869FF037E3620EE24D205 /* [CP] Check Pods Manifest.lock */,
+				4DD1741494B58C73DE1DB3C7 /* [CP] Prepare Artifacts */,
 				90CBDBCF1FD88B580080BE00 /* Sources */,
 				90CBDBD11FD88B580080BE00 /* Resources */,
 				C068D8A0CD23F7EE75E0E7C6 /* Frameworks */,
-				5E92DF6E91D708570844142C /* [CP] Embed Pods Frameworks */,
-				4E550945D930F7A14A5590EC /* [CP] Copy Pods Resources */,
 				904897A4249E9D5600BAD61D /* Embed App Extensions */,
+				2CB26215869367D84C007A68 /* [CP] Embed Pods Frameworks */,
+				0CF41843555CBDE86AE9402E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -437,7 +438,75 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4C4DC0DB911861DB13D4071E /* [CP] Check Pods Manifest.lock */ = {
+		0CF41843555CBDE86AE9402E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hinario/Pods-Hinario-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hinario/Pods-Hinario-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hinario/Pods-Hinario-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2CB26215869367D84C007A68 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hinario/Pods-Hinario-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hinario/Pods-Hinario-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hinario/Pods-Hinario-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DD1741494B58C73DE1DB3C7 /* [CP] Prepare Artifacts */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hinario/Pods-Hinario-artifacts-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Prepare Artifacts";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hinario/Pods-Hinario-artifacts-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hinario/Pods-Hinario-artifacts.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DDB5F7A0CF8D98DBE26AECA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hinario-OneSignalNotificationServiceExtension/Pods-Hinario-OneSignalNotificationServiceExtension-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hinario-OneSignalNotificationServiceExtension/Pods-Hinario-OneSignalNotificationServiceExtension-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hinario-OneSignalNotificationServiceExtension/Pods-Hinario-OneSignalNotificationServiceExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C79B2754C35E9D9BF5EBDDB5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -459,41 +528,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4E550945D930F7A14A5590EC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Hinario/Pods-Hinario-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Hinario/Pods-Hinario-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hinario/Pods-Hinario-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5E92DF6E91D708570844142C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Hinario/Pods-Hinario-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Hinario/Pods-Hinario-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hinario/Pods-Hinario-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D82CE6BEBAFD8EC933E0B791 /* [CP] Check Pods Manifest.lock */ = {
+		F92869FF037E3620EE24D205 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -513,23 +548,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DD3ED7903F7696BA51E716AC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Hinario-OneSignalNotificationServiceExtension/Pods-Hinario-OneSignalNotificationServiceExtension-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Hinario-OneSignalNotificationServiceExtension/Pods-Hinario-OneSignalNotificationServiceExtension-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hinario-OneSignalNotificationServiceExtension/Pods-Hinario-OneSignalNotificationServiceExtension-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -563,7 +581,7 @@
 				9074BEED24B9F80900F9EB34 /* AuthState.swift in Sources */,
 				90FA153A20024BA2005D4F6B /* HinosCell.swift in Sources */,
 				9038D18722E544F300AC8C56 /* AlertExt.swift in Sources */,
-				900E494620536BD200A7787F /* Login.swift in Sources */,
+				900E494620536BD200A7787F /* Walkthrough.swift in Sources */,
 				900E494A20546FB200A7787F /* Page.swift in Sources */,
 				90CBDBD91FD88B580080BE00 /* HinosController.swift in Sources */,
 				90D2F13420AF9F37000378AF /* HinosController+SearchBar.swift in Sources */,
@@ -618,7 +636,7 @@
 /* Begin XCBuildConfiguration section */
 		900FD325249EB1360047F280 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 61BFC3C398B9622E732141DC /* Pods-Hinario-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			baseConfigurationReference = 0FFAD753B896CDAD0B2E8F2E /* Pods-Hinario-OneSignalNotificationServiceExtension.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
@@ -646,7 +664,7 @@
 		};
 		900FD326249EB1360047F280 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9775CFA95D2EFA6931D0BB85 /* Pods-Hinario-OneSignalNotificationServiceExtension.release.xcconfig */;
+			baseConfigurationReference = 4CAB5C605D4D7F7F747A7223 /* Pods-Hinario-OneSignalNotificationServiceExtension.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
@@ -673,7 +691,7 @@
 		};
 		900FD327249EB1360047F280 /* Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3CBDD83C30E23B7DB8D59557 /* Pods-Hinario-OneSignalNotificationServiceExtension.staging.xcconfig */;
+			baseConfigurationReference = 80BCF6E73D16DB7408F9F949 /* Pods-Hinario-OneSignalNotificationServiceExtension.staging.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
@@ -859,7 +877,7 @@
 		};
 		90CBDBE61FD88B580080BE00 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F325AA1797D41420A5DFE27 /* Pods-Hinario.debug.xcconfig */;
+			baseConfigurationReference = 72CF9B06BF54DA044DA7589F /* Pods-Hinario.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				APPLICATION_EXTENSION_API_ONLY = NO;
@@ -888,7 +906,7 @@
 		};
 		90CBDBE71FD88B580080BE00 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 386796B51EC0683DD4BB5A4F /* Pods-Hinario.release.xcconfig */;
+			baseConfigurationReference = FFFA3985F9EED2F9B79B90DF /* Pods-Hinario.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				APPLICATION_EXTENSION_API_ONLY = NO;
@@ -973,7 +991,7 @@
 		};
 		90FA7AF123496BAA00E0C626 /* Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EEBEA2B79C2FD35E9DE1C708 /* Pods-Hinario.staging.xcconfig */;
+			baseConfigurationReference = D9504EF2DAF2385BF7487C8F /* Pods-Hinario.staging.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				APPLICATION_EXTENSION_API_ONLY = NO;

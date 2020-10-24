@@ -301,7 +301,7 @@ class HinosController: UITableViewController {
 			print(logoutError)
 		}
 	
-		let loginPage = Login()
+		let loginPage = Walkthrough()
         loginPage.modalPresentationStyle = .fullScreen
 		present(loginPage, animated: true, completion: nil)
 

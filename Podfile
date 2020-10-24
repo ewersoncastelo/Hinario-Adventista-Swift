@@ -28,6 +28,8 @@ target 'Hinario' do
   pod 'AppCenter'
   pod 'OneSignal', '>= 2.11.2', '< 3.0'
   
+  pod 'SnapKit'
+  
   # For pod OneSignal target
   target 'OneSignalNotificationServiceExtension' do
     #only copy below line
