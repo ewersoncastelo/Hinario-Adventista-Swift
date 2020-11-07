@@ -36,6 +36,9 @@
 		90D2F13420AF9F37000378AF /* HinosController+SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D2F13320AF9F37000378AF /* HinosController+SearchBar.swift */; };
 		90D557B3200D757D007EAEC6 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 90D557B2200D757D007EAEC6 /* style.css */; };
 		90E01A481FFC2601009CF7F0 /* InicioLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E01A471FFC2601009CF7F0 /* InicioLogin.swift */; };
+		90F05BA72556F8F6008A022D /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F05BA62556F8F6008A022D /* AddAccount.swift */; };
+		90F05BAC2556F921008A022D /* AddAccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F05BAB2556F921008A022D /* AddAccountModel.swift */; };
+		90F05BB12556F9E2008A022D /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F05BB02556F9E2008A022D /* AccountModel.swift */; };
 		90FA153820019DE6005D4F6B /* Hinario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FA153720019DE6005D4F6B /* Hinario.swift */; };
 		90FA153A20024BA2005D4F6B /* HinosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FA153920024BA2005D4F6B /* HinosCell.swift */; };
 		EA8711737B6138C7EE47E73B /* Pods_Hinario.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D85647D63AF752865B71465 /* Pods_Hinario.framework */; };
@@ -129,6 +132,9 @@
 		90E0E4902013D6030061F664 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		90F05B952556F552008A022D /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F05B982556F552008A022D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90F05BA62556F8F6008A022D /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
+		90F05BAB2556F921008A022D /* AddAccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountModel.swift; sourceTree = "<group>"; };
+		90F05BB02556F9E2008A022D /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
 		90FA153720019DE6005D4F6B /* Hinario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hinario.swift; sourceTree = "<group>"; };
 		90FA153920024BA2005D4F6B /* HinosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HinosCell.swift; sourceTree = "<group>"; };
 		D9504EF2DAF2385BF7487C8F /* Pods-Hinario.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hinario.staging.xcconfig"; path = "Target Support Files/Pods-Hinario/Pods-Hinario.staging.xcconfig"; sourceTree = "<group>"; };
@@ -303,9 +309,28 @@
 		90F05B962556F552008A022D /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				90F05BA42556F5F9008A022D /* UseCases */,
+				90F05BA52556F60C008A022D /* Models */,
 				90F05B982556F552008A022D /* Info.plist */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		90F05BA42556F5F9008A022D /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				90F05BA62556F8F6008A022D /* AddAccount.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		90F05BA52556F60C008A022D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				90F05BAB2556F921008A022D /* AddAccountModel.swift */,
+				90F05BB02556F9E2008A022D /* AccountModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		90FA153620019DC8005D4F6B /* Model */ = {
@@ -418,7 +443,7 @@
 			attributes = {
 				DefaultBuildSystemTypeForWorkspace = Original;
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1210;
 				ORGANIZATIONNAME = "Ewerson Castelo";
 				TargetAttributes = {
 					900FD31B249EB1360047F280 = {
@@ -447,6 +472,7 @@
 					};
 					90F05B942556F552008A022D = {
 						CreatedOnToolsVersion = 12.1;
+						LastSwiftMigration = 1210;
 					};
 				};
 			};
@@ -672,6 +698,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90F05BA72556F8F6008A022D /* AddAccount.swift in Sources */,
+				90F05BB12556F9E2008A022D /* AccountModel.swift in Sources */,
+				90F05BAC2556F921008A022D /* AddAccountModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -723,7 +752,7 @@
 				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = 4TP5KVW8P3;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -751,7 +780,7 @@
 				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = 4TP5KVW8P3;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -778,7 +807,7 @@
 				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = 4TP5KVW8P3;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -800,7 +829,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4TP5KVW8P3;
 				INFOPLIST_FILE = HinarioUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -820,7 +849,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4TP5KVW8P3;
 				INFOPLIST_FILE = HinarioUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -860,6 +889,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -886,7 +916,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_MODULE_NAME = "$(PROJECT_NAME)";
@@ -922,6 +952,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -942,7 +973,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_MODULE_NAME = "$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
@@ -966,7 +997,7 @@
 				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = 4TP5KVW8P3;
 				INFOPLIST_FILE = Hinario/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -995,7 +1026,7 @@
 				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = 4TP5KVW8P3;
 				INFOPLIST_FILE = Hinario/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1013,6 +1044,7 @@
 		90F05B9A2556F552008A022D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1037,6 +1069,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1046,6 +1079,7 @@
 		90F05B9B2556F552008A022D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1078,6 +1112,7 @@
 		90F05B9C2556F552008A022D /* Staging */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1133,6 +1168,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1153,7 +1189,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_MODULE_NAME = "$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
@@ -1177,7 +1213,7 @@
 				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = 4TP5KVW8P3;
 				INFOPLIST_FILE = Hinario/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1199,7 +1235,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4TP5KVW8P3;
 				INFOPLIST_FILE = HinarioUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
