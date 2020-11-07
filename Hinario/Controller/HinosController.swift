@@ -304,7 +304,6 @@ class HinosController: UITableViewController {
 		let loginPage = Walkthrough()
         loginPage.modalPresentationStyle = .fullScreen
 		present(loginPage, animated: true, completion: nil)
-
 	}
 	
 	@objc func handleBookmark() {
