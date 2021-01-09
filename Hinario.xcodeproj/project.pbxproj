@@ -36,14 +36,6 @@
 		90D2F13420AF9F37000378AF /* HinosController+SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D2F13320AF9F37000378AF /* HinosController+SearchBar.swift */; };
 		90D557B3200D757D007EAEC6 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 90D557B2200D757D007EAEC6 /* style.css */; };
 		90E01A481FFC2601009CF7F0 /* InicioLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E01A471FFC2601009CF7F0 /* InicioLogin.swift */; };
-		90F05BA72556F8F6008A022D /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F05BA62556F8F6008A022D /* AddAccount.swift */; };
-		90F05BAC2556F921008A022D /* AddAccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F05BAB2556F921008A022D /* AddAccountModel.swift */; };
-		90F05BB12556F9E2008A022D /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F05BB02556F9E2008A022D /* AccountModel.swift */; };
-		90F05BC92556FBB7008A022D /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F05BC02556FBB6008A022D /* Data.framework */; };
-		90F05BCE2556FBB7008A022D /* DataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F05BCD2556FBB7008A022D /* DataTests.swift */; };
-		90F05BDE2556FBBF008A022D /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F05B952556F552008A022D /* Domain.framework */; };
-		90F05BDF2556FBBF008A022D /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 90F05B952556F552008A022D /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		90F05BE82556FE65008A022D /* RemoteAddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F05BE72556FE65008A022D /* RemoteAddAccount.swift */; };
 		90FA153820019DE6005D4F6B /* Hinario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FA153720019DE6005D4F6B /* Hinario.swift */; };
 		90FA153A20024BA2005D4F6B /* HinosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FA153920024BA2005D4F6B /* HinosCell.swift */; };
 		EA8711737B6138C7EE47E73B /* Pods_Hinario.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D85647D63AF752865B71465 /* Pods_Hinario.framework */; };
@@ -63,20 +55,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 90CBDBD21FD88B580080BE00;
 			remoteInfo = "Hinário";
-		};
-		90F05BCA2556FBB7008A022D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 90CBDBCB1FD88B580080BE00 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 90F05BBF2556FBB6008A022D;
-			remoteInfo = Data;
-		};
-		90F05BE02556FBBF008A022D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 90CBDBCB1FD88B580080BE00 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 90F05B942556F552008A022D;
-			remoteInfo = Domain;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -99,17 +77,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				905D68B925561221002B0F3D /* Pods_Hinario_OneSignalNotificationServiceExtension.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		90F05BE22556FBBF008A022D /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				90F05BDF2556FBBF008A022D /* Domain.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,17 +127,6 @@
 		90E01A471FFC2601009CF7F0 /* InicioLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioLogin.swift; sourceTree = "<group>"; };
 		90E0E48F2013D6020061F664 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
 		90E0E4902013D6030061F664 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		90F05B952556F552008A022D /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		90F05B982556F552008A022D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		90F05BA62556F8F6008A022D /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
-		90F05BAB2556F921008A022D /* AddAccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountModel.swift; sourceTree = "<group>"; };
-		90F05BB02556F9E2008A022D /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
-		90F05BC02556FBB6008A022D /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		90F05BC32556FBB6008A022D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		90F05BC82556FBB7008A022D /* DataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		90F05BCD2556FBB7008A022D /* DataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTests.swift; sourceTree = "<group>"; };
-		90F05BCF2556FBB7008A022D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		90F05BE72556FE65008A022D /* RemoteAddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddAccount.swift; sourceTree = "<group>"; };
 		90FA153720019DE6005D4F6B /* Hinario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hinario.swift; sourceTree = "<group>"; };
 		90FA153920024BA2005D4F6B /* HinosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HinosCell.swift; sourceTree = "<group>"; };
 		D9504EF2DAF2385BF7487C8F /* Pods-Hinario.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hinario.staging.xcconfig"; path = "Target Support Files/Pods-Hinario/Pods-Hinario.staging.xcconfig"; sourceTree = "<group>"; };
@@ -190,29 +146,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		90F05B922556F552008A022D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		90F05BBD2556FBB6008A022D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				90F05BDE2556FBBF008A022D /* Domain.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		90F05BC52556FBB7008A022D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				90F05BC92556FBB7008A022D /* Data.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,9 +218,6 @@
 				90CBDBD51FD88B580080BE00 /* Hinario */,
 				9028CF6F2014E5EF006F6DF5 /* HinarioUITests */,
 				900FD31D249EB1360047F280 /* OneSignalNotificationServiceExtension */,
-				90F05B962556F552008A022D /* Domain */,
-				90F05BC12556FBB6008A022D /* Data */,
-				90F05BCC2556FBB7008A022D /* DataTests */,
 				90CBDBD41FD88B580080BE00 /* Products */,
 				7BE35B280C1910D2154014AE /* Pods */,
 				0CDB9C0C48DBAC584A335262 /* Frameworks */,
@@ -300,9 +230,6 @@
 				90CBDBD31FD88B580080BE00 /* Hinário Seven.app */,
 				9028CF6E2014E5EF006F6DF5 /* HinarioUITests.xctest */,
 				900FD31C249EB1360047F280 /* OneSignalNotificationServiceExtension.appex */,
-				90F05B952556F552008A022D /* Domain.framework */,
-				90F05BC02556FBB6008A022D /* Data.framework */,
-				90F05BC82556FBB7008A022D /* DataTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -362,51 +289,6 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		90F05B962556F552008A022D /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				90F05BA42556F5F9008A022D /* UseCases */,
-				90F05BA52556F60C008A022D /* Models */,
-				90F05B982556F552008A022D /* Info.plist */,
-			);
-			path = Domain;
-			sourceTree = "<group>";
-		};
-		90F05BA42556F5F9008A022D /* UseCases */ = {
-			isa = PBXGroup;
-			children = (
-				90F05BA62556F8F6008A022D /* AddAccount.swift */,
-			);
-			path = UseCases;
-			sourceTree = "<group>";
-		};
-		90F05BA52556F60C008A022D /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				90F05BAB2556F921008A022D /* AddAccountModel.swift */,
-				90F05BB02556F9E2008A022D /* AccountModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		90F05BC12556FBB6008A022D /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				90F05BC32556FBB6008A022D /* Info.plist */,
-				90F05BE72556FE65008A022D /* RemoteAddAccount.swift */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		90F05BCC2556FBB7008A022D /* DataTests */ = {
-			isa = PBXGroup;
-			children = (
-				90F05BCD2556FBB7008A022D /* DataTests.swift */,
-				90F05BCF2556FBB7008A022D /* Info.plist */,
-			);
-			path = DataTests;
-			sourceTree = "<group>";
-		};
 		90FA153620019DC8005D4F6B /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -418,23 +300,6 @@
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		90F05B902556F552008A022D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		90F05BBB2556FBB6008A022D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		900FD31B249EB1360047F280 /* OneSignalNotificationServiceExtension */ = {
@@ -480,7 +345,6 @@
 			buildConfigurationList = 90CBDBE51FD88B580080BE00 /* Build configuration list for PBXNativeTarget "Hinario" */;
 			buildPhases = (
 				F92869FF037E3620EE24D205 /* [CP] Check Pods Manifest.lock */,
-				4DD1741494B58C73DE1DB3C7 /* [CP] Prepare Artifacts */,
 				90CBDBCF1FD88B580080BE00 /* Sources */,
 				90CBDBD11FD88B580080BE00 /* Resources */,
 				C068D8A0CD23F7EE75E0E7C6 /* Frameworks */,
@@ -497,62 +361,6 @@
 			productName = Hinario;
 			productReference = 90CBDBD31FD88B580080BE00 /* Hinário Seven.app */;
 			productType = "com.apple.product-type.application";
-		};
-		90F05B942556F552008A022D /* Domain */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 90F05B9D2556F552008A022D /* Build configuration list for PBXNativeTarget "Domain" */;
-			buildPhases = (
-				90F05B902556F552008A022D /* Headers */,
-				90F05B912556F552008A022D /* Sources */,
-				90F05B922556F552008A022D /* Frameworks */,
-				90F05B932556F552008A022D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Domain;
-			productName = Domain;
-			productReference = 90F05B952556F552008A022D /* Domain.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		90F05BBF2556FBB6008A022D /* Data */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 90F05BD12556FBB7008A022D /* Build configuration list for PBXNativeTarget "Data" */;
-			buildPhases = (
-				90F05BBB2556FBB6008A022D /* Headers */,
-				90F05BBC2556FBB6008A022D /* Sources */,
-				90F05BBD2556FBB6008A022D /* Frameworks */,
-				90F05BBE2556FBB6008A022D /* Resources */,
-				90F05BE22556FBBF008A022D /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				90F05BE12556FBBF008A022D /* PBXTargetDependency */,
-			);
-			name = Data;
-			productName = Data;
-			productReference = 90F05BC02556FBB6008A022D /* Data.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		90F05BC72556FBB7008A022D /* DataTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 90F05BD52556FBB7008A022D /* Build configuration list for PBXNativeTarget "DataTests" */;
-			buildPhases = (
-				90F05BC42556FBB7008A022D /* Sources */,
-				90F05BC52556FBB7008A022D /* Frameworks */,
-				90F05BC62556FBB7008A022D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				90F05BCB2556FBB7008A022D /* PBXTargetDependency */,
-			);
-			name = DataTests;
-			productName = DataTests;
-			productReference = 90F05BC82556FBB7008A022D /* DataTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -589,17 +397,6 @@
 							};
 						};
 					};
-					90F05B942556F552008A022D = {
-						CreatedOnToolsVersion = 12.1;
-						LastSwiftMigration = 1210;
-					};
-					90F05BBF2556FBB6008A022D = {
-						CreatedOnToolsVersion = 12.1;
-						LastSwiftMigration = 1210;
-					};
-					90F05BC72556FBB7008A022D = {
-						CreatedOnToolsVersion = 12.1;
-					};
 				};
 			};
 			buildConfigurationList = 90CBDBCE1FD88B580080BE00 /* Build configuration list for PBXProject "Hinario" */;
@@ -619,9 +416,6 @@
 				90CBDBD21FD88B580080BE00 /* Hinario */,
 				9028CF6D2014E5EF006F6DF5 /* HinarioUITests */,
 				900FD31B249EB1360047F280 /* OneSignalNotificationServiceExtension */,
-				90F05B942556F552008A022D /* Domain */,
-				90F05BBF2556FBB6008A022D /* Data */,
-				90F05BC72556FBB7008A022D /* DataTests */,
 			);
 		};
 /* End PBXProject section */
@@ -650,27 +444,6 @@
 				900887EE22E524B800642894 /* GoogleService-Info.plist in Resources */,
 				90CBDBDE1FD88B580080BE00 /* Assets.xcassets in Resources */,
 				90CBDBDC1FD88B580080BE00 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		90F05B932556F552008A022D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		90F05BBE2556FBB6008A022D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		90F05BC62556FBB7008A022D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -709,23 +482,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hinario/Pods-Hinario-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4DD1741494B58C73DE1DB3C7 /* [CP] Prepare Artifacts */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Hinario/Pods-Hinario-artifacts-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Prepare Artifacts";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Hinario/Pods-Hinario-artifacts-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hinario/Pods-Hinario-artifacts.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4DDB5F7A0CF8D98DBE26AECA /* [CP] Copy Pods Resources */ = {
@@ -836,32 +592,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		90F05B912556F552008A022D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				90F05BA72556F8F6008A022D /* AddAccount.swift in Sources */,
-				90F05BB12556F9E2008A022D /* AccountModel.swift in Sources */,
-				90F05BAC2556F921008A022D /* AddAccountModel.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		90F05BBC2556FBB6008A022D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				90F05BE82556FE65008A022D /* RemoteAddAccount.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		90F05BC42556FBB7008A022D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				90F05BCE2556FBB7008A022D /* DataTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -874,16 +604,6 @@
 			isa = PBXTargetDependency;
 			target = 90CBDBD21FD88B580080BE00 /* Hinario */;
 			targetProxy = 9028CF732014E5EF006F6DF5 /* PBXContainerItemProxy */;
-		};
-		90F05BCB2556FBB7008A022D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 90F05BBF2556FBB6008A022D /* Data */;
-			targetProxy = 90F05BCA2556FBB7008A022D /* PBXContainerItemProxy */;
-		};
-		90F05BE12556FBBF008A022D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 90F05B942556F552008A022D /* Domain */;
-			targetProxy = 90F05BE02556FBBF008A022D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1209,275 +929,6 @@
 			};
 			name = Release;
 		};
-		90F05B9A2556F552008A022D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 4TP5KVW8P3;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Domain/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.ewersoncastelo.Domain;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		90F05B9B2556F552008A022D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 4TP5KVW8P3;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Domain/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.ewersoncastelo.Domain;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		90F05B9C2556F552008A022D /* Staging */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 4TP5KVW8P3;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Domain/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.ewersoncastelo.Domain;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Staging;
-		};
-		90F05BD22556FBB7008A022D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 4TP5KVW8P3;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Data/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.ewersoncastelo.Data;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		90F05BD32556FBB7008A022D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 4TP5KVW8P3;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Data/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.ewersoncastelo.Data;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		90F05BD42556FBB7008A022D /* Staging */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 4TP5KVW8P3;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Data/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.ewersoncastelo.Data;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Staging;
-		};
-		90F05BD62556FBB7008A022D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 4TP5KVW8P3;
-				INFOPLIST_FILE = DataTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.ewersoncastelo.DataTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		90F05BD72556FBB7008A022D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 4TP5KVW8P3;
-				INFOPLIST_FILE = DataTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.ewersoncastelo.DataTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		90F05BD82556FBB7008A022D /* Staging */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 4TP5KVW8P3;
-				INFOPLIST_FILE = DataTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.ewersoncastelo.DataTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Staging;
-		};
 		90FA7AF023496BAA00E0C626 /* Staging */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1624,36 +1075,6 @@
 				90CBDBE61FD88B580080BE00 /* Debug */,
 				90CBDBE71FD88B580080BE00 /* Release */,
 				90FA7AF123496BAA00E0C626 /* Staging */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		90F05B9D2556F552008A022D /* Build configuration list for PBXNativeTarget "Domain" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				90F05B9A2556F552008A022D /* Debug */,
-				90F05B9B2556F552008A022D /* Release */,
-				90F05B9C2556F552008A022D /* Staging */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		90F05BD12556FBB7008A022D /* Build configuration list for PBXNativeTarget "Data" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				90F05BD22556FBB7008A022D /* Debug */,
-				90F05BD32556FBB7008A022D /* Release */,
-				90F05BD42556FBB7008A022D /* Staging */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		90F05BD52556FBB7008A022D /* Build configuration list for PBXNativeTarget "DataTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				90F05BD62556FBB7008A022D /* Debug */,
-				90F05BD72556FBB7008A022D /* Release */,
-				90F05BD82556FBB7008A022D /* Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
