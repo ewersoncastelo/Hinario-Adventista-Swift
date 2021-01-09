@@ -26,20 +26,21 @@ target 'Hinario' do
   pod 'ReachabilitySwift'
   pod 'SwiftyStoreKit'
   pod 'AppCenter'
-  pod 'OneSignal', '>= 2.11.2', '< 3.0'
+#  pod 'OneSignal', '>= 2.11.2', '< 3.0'
   
   pod 'SnapKit'
   
-  # For pod OneSignal target
-  target 'OneSignalNotificationServiceExtension' do
-    #only copy below line
-    pod 'OneSignal', '>= 2.11.2', '< 3.0'
-  end
-  
+#  # For pod OneSignal target
+#  target 'OneSignalNotificationServiceExtension' do
+#    #only copy below line
+#    pod 'OneSignal', '>= 2.11.2', '< 3.0'
+#  end
+
   post_install do |installer|
     installer.pods_project.targets.each do |target|
       target.build_configurations.each do |config|
         config.build_settings['APPLICATION_EXTENSION_API_ONLY'] = 'No'
+        config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
       end
     end
   end

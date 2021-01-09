@@ -18,8 +18,6 @@ import AppCenter
 import AppCenterAnalytics
 import AppCenterCrashes
 
-import OneSignal
-
 class CustomNavigationController: UINavigationController {
 	override var preferredStatusBarStyle: UIStatusBarStyle {
 		return .lightContent
@@ -80,31 +78,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		} catch {
 			print("Unable to start notifier")
 		}
-    
-    MSAppCenter.start("9a24c3ed-0628-4037-a909-1fe4b1447f04", withServices:[
-      MSAnalytics.self,
-      MSCrashes.self
-    ])
-    
-    //Remove this method to stop OneSignal Debugging
-    OneSignal.setLogLevel(.LL_VERBOSE, visualLevel: .LL_NONE)
-
-    //START OneSignal initialization code
-    let onesignalInitSettings = [kOSSettingsKeyAutoPrompt: false, kOSSettingsKeyInAppLaunchURL: false]
-    
-    // Replace 'YOUR_ONESIGNAL_APP_ID' with your OneSignal App ID.
-    OneSignal.initWithLaunchOptions(launchOptions,
-      appId: "a2a44aaf-1e59-44ae-ac61-adf8a847cb3a",
-      handleNotificationAction: nil,
-      settings: onesignalInitSettings)
-
-    OneSignal.inFocusDisplayType = OSNotificationDisplayType.notification;
-
-    // The promptForPushNotifications function code will show the iOS push notification prompt. We recommend removing the following code and instead using an In-App Message to prompt for notification permission (See step 6)
-    OneSignal.promptForPushNotifications(userResponse: { accepted in
-      print("User accepted notifications: \(accepted)")
-    })
-    //END OneSignal initializataion code
 
      return true
   }
